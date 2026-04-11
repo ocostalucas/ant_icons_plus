@@ -1,5 +1,6 @@
-import 'package:ant_icons_plus/ant_icons_plus.dart';
 import 'package:flutter/material.dart';
+
+import 'gallery_page.dart';
 
 void main() => runApp(const ExampleApp());
 
@@ -9,31 +10,15 @@ class ExampleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text('ant_icons_plus')),
-        body: const Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              // Outlined — uses Icon() with IconData
-              Icon(AntdIcons.heartOutlined, size: 48),
-              SizedBox(height: 16),
-
-              // Filled — uses Icon() with IconData
-              Icon(AntdIcons.heartFilled, size: 48, color: Colors.red),
-              SizedBox(height: 16),
-
-              // TwoTone — uses AntdIcon() with SVG string
-              AntdIcon(
-                AntdIcons.heartTwoTone,
-                size: 48,
-                color: Colors.red,
-                secondaryColor: Colors.pink,
-              ),
-            ],
-          ),
-        ),
+      title: 'ant_icons_plus',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(colorSchemeSeed: Colors.blue, useMaterial3: true),
+      darkTheme: ThemeData(
+        colorSchemeSeed: Colors.blue,
+        useMaterial3: true,
+        brightness: Brightness.dark,
       ),
+      home: const GalleryPage(),
     );
   }
 }
