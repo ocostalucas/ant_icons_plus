@@ -81,7 +81,7 @@ AntdIcon(
   AntdIcons.heartTwoTone,
   size: 32,
   color: Colors.red,           // primary color
-  secondaryColor: Colors.pink, // secondary color (default: 20% opacity of primary)
+  secondaryColor: Colors.white, // secondary color (default: white)
 )
 ```
 
