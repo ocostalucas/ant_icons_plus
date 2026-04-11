@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@ant-design/icons-svg": "^4.4.2"
+  },
+  "devDependencies": {
+    "fantasticon": "^3.0.0"
   }
 }
