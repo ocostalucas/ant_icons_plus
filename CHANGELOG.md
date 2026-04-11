@@ -1,4 +1,4 @@
-## 0.0.1
+## 1.0.0
 
 - Initial release.
 - 831 Ant Design icons included: 447 Outlined, 234 Filled, and 150 TwoTone.
