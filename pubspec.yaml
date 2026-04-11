@@ -2,6 +2,7 @@ name: ant_icons_plus
 description: Ant Design Icons for Flutter.
 version: 1.0.0
 homepage: https://github.com/ocostalucas/ant_icons_plus
+license: MIT
 
 environment:
   sdk: ^3.11.4
