@@ -1,11 +1,16 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-/// Widget to display Ant Design icons.
+/// Widget to display Ant Design TwoTone icons.
 ///
-/// Example:
+/// For Outlined and Filled icons, use the standard [Icon] widget:
 /// ```dart
-/// AntdIcon(AntdIcons.userOutlined, size: 24, color: Color(0xFF1677FF))
+/// Icon(AntdIcons.userOutlined, size: 24, color: Colors.blue)
+/// ```
+///
+/// For TwoTone icons, use this widget:
+/// ```dart
+/// AntdIcon(AntdIcons.heartTwoTone, size: 24, color: Colors.red)
 /// ```
 class AntdIcon extends StatelessWidget {
   final String svgString;
@@ -36,8 +41,7 @@ class AntdIcon extends StatelessWidget {
         .replaceFirst(RegExp(r'^<svg[^>]*>'), '')
         .replaceFirst('</svg>', '');
 
-    final svg =
-        '<svg xmlns="http://www.w3.org/2000/svg" '
+    final svg = '<svg xmlns="http://www.w3.org/2000/svg" '
         'width="$size" height="$size" '
         'fill="${_toHex(resolvedColor)}">'
         '$inner'
