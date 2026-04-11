@@ -5,14 +5,16 @@
 
 A Flutter package with **831 [Ant Design](https://ant.design/components/icon) icons** ready to use, in **Outlined**, **Filled**, and **TwoTone** variants.
 
+Live demo / Gallery: https://ocostalucas.github.io/ant_icons_plus/
+
 ## Available icons
 
 | Variant   | Count   |
 | --------- | ------- |
 | Outlined  | 447     |
-| Filled    | 234       |
-| TwoTone   | 150      |
-| **Total** | **831**    |
+| Filled    | 234     |
+| TwoTone   | 150     |
+| **Total** | **831** |
 
 ## Installation
 
