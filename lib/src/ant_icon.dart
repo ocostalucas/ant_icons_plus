@@ -30,20 +30,25 @@ class AntdIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     final iconTheme = IconTheme.of(context);
     final resolvedColor = color ?? iconTheme.color ?? const Color(0xFF000000);
-    final resolvedSecondary =
-        secondaryColor ?? resolvedColor.withAlpha((0.2 * 255).round());
+    final resolvedSecondary = secondaryColor ?? const Color(0xFFFFFFFF);
 
     final filled = svgString
         .replaceAll('{color}', _toHex(resolvedColor))
         .replaceAll('{secondaryColor}', _toHex(resolvedSecondary));
 
+    // Extract viewBox from original SVG
+    final vbMatch = RegExp(r'viewBox="([^"]*)"').firstMatch(filled);
+    final viewBox = vbMatch != null ? ' viewBox="${vbMatch.group(1)}"' : '';
+
     final inner = filled
         .replaceFirst(RegExp(r'^<svg[^>]*>'), '')
         .replaceFirst('</svg>', '');
 
-    final svg = '<svg xmlns="http://www.w3.org/2000/svg" '
-        'width="$size" height="$size" '
-        'fill="${_toHex(resolvedColor)}">'
+    final svg =
+        '<svg xmlns="http://www.w3.org/2000/svg"'
+        '$viewBox'
+        ' width="$size" height="$size"'
+        ' fill="${_toHex(resolvedColor)}">'
         '$inner'
         '</svg>';
 

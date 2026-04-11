@@ -114,6 +114,16 @@ void main() async {
 
   updateReadme(allEntries.length, outlined, filled, twoTone);
 
+  // ── Step 3: Generate example gallery registry ────────────────────────
+
+  final exampleDir = Directory('example/lib');
+  if (exampleDir.existsSync()) {
+    File(kRegistryFile).writeAsStringSync(
+      generateRegistryFile(fontIcons, codepoints, sortedTwoTone),
+    );
+    stdout.writeln('   Generated: $kRegistryFile');
+  }
+
   // ── Clean up ─────────────────────────────────────────────────────────
 
   cleanTemp();

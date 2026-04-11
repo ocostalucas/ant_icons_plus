@@ -159,3 +159,71 @@ class _AggEntry {
     required this.ref,
   });
 }
+
+/// Generates example/lib/icon_registry.dart — list of all icons for the gallery.
+String generateRegistryFile(
+  List<IconEntry> fontIcons,
+  Map<String, int> codepoints,
+  List<IconEntry> twoToneIcons,
+) {
+  final buffer = StringBuffer();
+
+  buffer.writeln('// GENERATED AUTOMATICALLY — DO NOT EDIT MANUALLY');
+  buffer.writeln('// To update: dart run tools/generate.dart');
+  buffer.writeln('');
+  buffer.writeln("import 'package:flutter/widgets.dart';");
+  buffer.writeln("import 'package:ant_icons_plus/ant_icons_plus.dart';");
+  buffer.writeln('');
+  buffer.writeln('enum IconVariant { outlined, filled, twotone }');
+  buffer.writeln('');
+  buffer.writeln('class IconItem {');
+  buffer.writeln('  final String name;');
+  buffer.writeln('  final IconVariant variant;');
+  buffer.writeln('  final IconData? iconData;');
+  buffer.writeln('  final String? svgString;');
+  buffer.writeln('  final String constName;');
+  buffer.writeln('');
+  buffer.writeln(
+    '  const IconItem({required this.name, required this.variant, this.iconData, this.svgString, required this.constName});',
+  );
+  buffer.writeln('}');
+  buffer.writeln('');
+  buffer.writeln('const List<IconItem> kAllIcons = [');
+
+  // Outlined
+  final outlinedIcons = fontIcons.where((i) => i.theme == 'outlined').toList()
+    ..sort((a, b) => a.className.compareTo(b.className));
+  for (final icon in outlinedIcons) {
+    final key = '${icon.name}-${icon.theme}';
+    if (!codepoints.containsKey(key)) continue;
+    final constName = _toLowerCamel(icon.className);
+    buffer.writeln(
+      "  IconItem(name: '${icon.name}', variant: IconVariant.outlined, iconData: AntdIcons.$constName, constName: '$constName'),",
+    );
+  }
+
+  // Filled
+  final filledIcons = fontIcons.where((i) => i.theme == 'filled').toList()
+    ..sort((a, b) => a.className.compareTo(b.className));
+  for (final icon in filledIcons) {
+    final key = '${icon.name}-${icon.theme}';
+    if (!codepoints.containsKey(key)) continue;
+    final constName = _toLowerCamel(icon.className);
+    buffer.writeln(
+      "  IconItem(name: '${icon.name}', variant: IconVariant.filled, iconData: AntdIcons.$constName, constName: '$constName'),",
+    );
+  }
+
+  // TwoTone
+  final sortedTT = List<IconEntry>.from(twoToneIcons)
+    ..sort((a, b) => a.className.compareTo(b.className));
+  for (final icon in sortedTT) {
+    final constName = _toLowerCamel(icon.className);
+    buffer.writeln(
+      "  IconItem(name: '${icon.name}', variant: IconVariant.twotone, svgString: AntdIcons.$constName, constName: '$constName'),",
+    );
+  }
+
+  buffer.writeln('];');
+  return buffer.toString();
+}

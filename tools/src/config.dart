@@ -16,6 +16,9 @@ const String kOutlinedFile = 'lib/src/icons/ant_icons_plus_outlined.dart';
 const String kFilledFile = 'lib/src/icons/ant_icons_plus_filled.dart';
 const String kTwoToneFile = 'lib/src/icons/ant_icons_plus_twotone.dart';
 
+// Example gallery registry
+const String kRegistryFile = 'example/lib/icon_registry.dart';
+
 // Font configuration
 const String kFontDir = 'lib/fonts';
 const String kFontFile = 'lib/fonts/AntdIcons.ttf';
