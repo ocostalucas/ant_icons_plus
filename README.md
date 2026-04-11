@@ -10,9 +10,9 @@ A Flutter package with **831 [Ant Design](https://ant.design/components/icon) ic
 | Variant   | Count   |
 | --------- | ------- |
 | Outlined  | 447     |
-| Filled    | 234     |
-| TwoTone   | 150     |
-| **Total** | **831** |
+| Filled    | 234       |
+| TwoTone   | 150      |
+| **Total** | **831**    |
 
 ## Installation
 
@@ -20,7 +20,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  ant_icons_plus: ^1.0.0
+  ant_icons_plus: ^2.0.0
 ```
 
 Then run:
@@ -31,25 +31,48 @@ flutter pub get
 
 ## Usage
 
-### Basic
+### Outlined & Filled (IconData — native Flutter)
 
 ```dart
 import 'package:ant_icons_plus/ant_icons_plus.dart';
 
-// Outlined icon with default size and color
-AntdIcon(AntdIcons.userOutlined)
+// Use with Flutter's standard Icon widget
+Icon(AntdIcons.userOutlined)
 
-// Filled icon with custom size and color
-AntdIcon(
+// With custom size and color
+Icon(
   AntdIcons.heartFilled,
   size: 32,
   color: Colors.red,
 )
 ```
 
-### TwoTone icons
+Works with any Flutter widget that accepts `IconData`:
 
-TwoTone icons accept a primary and a secondary color:
+```dart
+// IconButton
+IconButton(
+  icon: Icon(AntdIcons.settingOutlined),
+  onPressed: () {},
+)
+
+// BottomNavigationBar
+BottomNavigationBarItem(
+  icon: Icon(AntdIcons.homeOutlined),
+  activeIcon: Icon(AntdIcons.homeFilled),
+  label: 'Home',
+)
+
+// ListTile
+ListTile(
+  leading: Icon(AntdIcons.userOutlined),
+  title: Text('Profile'),
+)
+```
+
+### TwoTone icons (AntdIcon widget)
+
+TwoTone icons use SVG rendering and require the `AntdIcon` widget:
 
 ```dart
 AntdIcon(
@@ -62,39 +85,58 @@ AntdIcon(
 
 ### IconTheme integration
 
-The widget automatically inherits the color from the ambient `IconTheme`:
+Both `Icon` and `AntdIcon` inherit color from the ambient `IconTheme`:
 
 ```dart
 IconTheme(
-  data: IconThemeData(color: Colors.blue),
-  child: AntdIcon(AntdIcons.settingOutlined, size: 24),
+  data: IconThemeData(color: Colors.blue, size: 32),
+  child: Icon(AntdIcons.settingOutlined),
 )
 ```
 
-## `AntdIcon` widget API
+## Architecture
+
+This package uses a **hybrid approach** for the best of both worlds:
+
+| Variant           | Rendering    | Type       | Widget       |
+| ----------------- | ------------ | ---------- | ------------ |
+| Outlined & Filled | Icon font    | `IconData` | `Icon()`     |
+| TwoTone           | SVG (inline) | `String`   | `AntdIcon()` |
+
+**Why?** Icon fonts are monochromatic — each glyph supports a single fill color. TwoTone
+icons need two colors, so they use inline SVG with color placeholders instead.
+
+### Benefits
+
+| Benefit               | Outlined / Filled | TwoTone              |
+| --------------------- | ----------------- | -------------------- |
+| Native `IconData` API | Yes               | No (uses `AntdIcon`) |
+| Tree shaking          | Yes (font glyphs) | No                   |
+| No extra dependencies | Yes               | No (`flutter_svg`)   |
+| Multi-color support   | No                | Yes                  |
+
+## `AntdIcon` widget API (TwoTone only)
 
 | Parameter        | Type     | Default | Description                                                     |
 | ---------------- | -------- | ------- | --------------------------------------------------------------- |
-| `svgString`      | `String` | —       | Icon constant from `AntdIcons.*`                                |
+| `svgString`      | `String` | —       | TwoTone icon constant from `AntdIcons.*TwoTone`                 |
 | `size`           | `double` | `24.0`  | Width and height of the icon in logical pixels                  |
 | `color`          | `Color?` | `null`  | Primary color (falls back to `IconTheme` color if not provided) |
-| `secondaryColor` | `Color?` | `null`  | Secondary color (TwoTone); defaults to 20% opacity of `color`   |
+| `secondaryColor` | `Color?` | `null`  | Secondary color; defaults to 20% opacity of `color`             |
 
 ## Icon classes
 
 - `AntdIcons` — unified class with all 831 icons
-- `AntdIconsOutlined` — outlined variant only
-- `AntdIconsFilled` — filled variant only
-- `AntdIconsTwoTone` — twotone variant only
+- `AntdIconsOutlined` — outlined variant only (`IconData`)
+- `AntdIconsFilled` — filled variant only (`IconData`)
+- `AntdIconsTwoTone` — twotone variant only (`String` for `AntdIcon`)
 
 ## Bundle size
 
-Each icon is an independent `static const String`. The Dart AOT compiler applies **tree shaking** on release builds, so only the icons you actually reference in your code are included in the final bundle.
-
-| Build mode                  | Icons bundled               |
-| --------------------------- | --------------------------- |
-| `debug` / `flutter run`     | All icons (no tree shaking) |
-| `release` (`flutter build`) | Only the ones you use       |
+| Build mode                  | Outlined / Filled              | TwoTone                   |
+| --------------------------- | ------------------------------ | ------------------------- |
+| `debug` / `flutter run`     | All 681 glyphs (~170 KB)       | All 150 SVG strings       |
+| `release` (`flutter build`) | Only used glyphs (tree-shaken) | All 150 (no tree shaking) |
 
 ## Icon source
 
