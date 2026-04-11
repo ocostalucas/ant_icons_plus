@@ -4,7 +4,7 @@ import 'models.dart';
 
 // ─── Parser ──────────────────────────────────────────────────────────────────
 
-IconData? parseIconFile(File file) {
+IconEntry? parseIconFile(File file) {
   final content = file.readAsStringSync();
 
   final nameMatch = RegExp(r'"name":\s*"([^"]+)"').firstMatch(content);
@@ -29,7 +29,7 @@ IconData? parseIconFile(File file) {
 
   if (paths.isEmpty) return null;
 
-  return IconData(
+  return IconEntry(
     name: nameMatch.group(1)!,
     theme: themeMatch.group(1)!,
     viewBox: viewBoxMatch?.group(1) ?? '0 0 1024 1024',

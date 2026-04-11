@@ -1,6 +1,6 @@
 // ─── Models ──────────────────────────────────────────────────────────────────
 
-class IconData {
+class IconEntry {
   final String name;
   final String theme;
   final String viewBox;
@@ -21,7 +21,7 @@ class IconData {
     return '$base$suffix';
   }
 
-  const IconData({
+  const IconEntry({
     required this.name,
     required this.theme,
     required this.viewBox,
