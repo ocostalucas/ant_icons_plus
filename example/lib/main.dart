@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
 import 'gallery_page.dart';
+import 'hide_loader.dart';
 
-void main() => runApp(const ExampleApp());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const ExampleApp());
+  WidgetsBinding.instance.addPostFrameCallback((_) {
+    hideLoadingScreen();
+  });
+}
 
 class ExampleApp extends StatelessWidget {
   const ExampleApp({super.key});
