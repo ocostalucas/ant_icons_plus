@@ -1,7 +1,7 @@
 /// Automatic generator for ant_icons_plus
 ///
 /// Usage:
-///   dart run tools/generate.dart
+///   dart run scripts/generate.dart
 ///
 /// Prerequisites:
 ///   npm install

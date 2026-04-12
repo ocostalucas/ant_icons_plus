@@ -1,8 +1,8 @@
 // GENERATED AUTOMATICALLY — DO NOT EDIT MANUALLY
-// To update: dart run tools/generate.dart
+// To update: dart run scripts/generate.dart
 
-import 'package:flutter/widgets.dart';
 import 'package:ant_icons_plus/ant_icons_plus.dart';
+import 'package:flutter/widgets.dart';
 
 enum IconVariant { outlined, filled, twotone }
 

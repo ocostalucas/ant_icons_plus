@@ -18,7 +18,7 @@ String generateThemeFile(
   final buffer = StringBuffer();
 
   buffer.writeln('// GENERATED AUTOMATICALLY — DO NOT EDIT MANUALLY');
-  buffer.writeln('// To update: dart run tools/generate.dart');
+  buffer.writeln('// To update: dart run scripts/generate.dart');
   buffer.writeln('//');
   buffer.writeln('// Theme: $themeLabel');
   buffer.writeln('// Total: ${icons.length} icons');
@@ -49,7 +49,7 @@ String generateTwoToneFile(List<IconEntry> icons) {
   final buffer = StringBuffer();
 
   buffer.writeln('// GENERATED AUTOMATICALLY — DO NOT EDIT MANUALLY');
-  buffer.writeln('// To update: dart run tools/generate.dart');
+  buffer.writeln('// To update: dart run scripts/generate.dart');
   buffer.writeln('//');
   buffer.writeln('// Theme: TwoTone');
   buffer.writeln('// Total: ${icons.length} icons');
@@ -73,7 +73,7 @@ String generateEntryFile(int total, int outlined, int filled, int twoTone) {
   final buffer = StringBuffer();
 
   buffer.writeln('// GENERATED AUTOMATICALLY — DO NOT EDIT MANUALLY');
-  buffer.writeln('// To update: dart run tools/generate.dart');
+  buffer.writeln('// To update: dart run scripts/generate.dart');
   buffer.writeln('//');
   buffer.writeln('// Total: $total icons');
   buffer.writeln('//   Outlined: $outlined');
@@ -98,7 +98,7 @@ String generateAggregatorFile(
   final buffer = StringBuffer();
 
   buffer.writeln('// GENERATED AUTOMATICALLY — DO NOT EDIT MANUALLY');
-  buffer.writeln('// To update: dart run tools/generate.dart');
+  buffer.writeln('// To update: dart run scripts/generate.dart');
   buffer.writeln('');
   buffer.writeln("import 'package:flutter/widgets.dart';");
   buffer.writeln('');
@@ -169,7 +169,7 @@ String generateRegistryFile(
   final buffer = StringBuffer();
 
   buffer.writeln('// GENERATED AUTOMATICALLY — DO NOT EDIT MANUALLY');
-  buffer.writeln('// To update: dart run tools/generate.dart');
+  buffer.writeln('// To update: dart run scripts/generate.dart');
   buffer.writeln('');
   buffer.writeln("import 'package:flutter/widgets.dart';");
   buffer.writeln("import 'package:ant_icons_plus/ant_icons_plus.dart';");
