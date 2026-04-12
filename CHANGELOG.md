@@ -1,3 +1,7 @@
+## 1.0.1
+
+- Updated package `description` in `pubspec.yaml` to improve package summary and meet pub.dev requirements (50–180 characters).
+
 ## 1.0.0
 
 - Initial release.
