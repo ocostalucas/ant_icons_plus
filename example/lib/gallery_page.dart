@@ -1,5 +1,6 @@
 import 'package:ant_icons_plus/ant_icons_plus.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'icon_registry.dart';
 import 'widgets/color_selector.dart';
@@ -106,12 +107,99 @@ class _GalleryPageState extends State<GalleryPage>
 
   @override
   Widget build(BuildContext context) {
+    const pubDevUrl = 'https://pub.dev/packages/ant_icons_plus';
+    const gitHubUrl = 'https://github.com/ocostalucas/ant_icons_plus';
+
     return Scaffold(
       appBar: AppBar(
         bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(136),
+          preferredSize: const Size.fromHeight(220),
           child: Column(
             children: [
+              // Title and links area
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 8,
+                ),
+                child: Row(
+                  children: [
+                    // Title + description (left)
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: const [
+                          Text(
+                            'ant_icons_plus',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          SizedBox(height: 4),
+                          Text(
+                            'Explore and test icons',
+                            style: TextStyle(fontSize: 14),
+                          ),
+                        ],
+                      ),
+                    ),
+                    // Icons (right) linking to pub.dev and GitHub
+                    Row(
+                      children: [
+                        IconButton(
+                          tooltip: 'Open on pub.dev',
+                          icon: const Icon(AntdIcons.linkOutlined),
+                          onPressed: () async {
+                            final uri = Uri.parse(pubDevUrl);
+                            try {
+                              await launchUrl(
+                                uri,
+                                mode: LaunchMode.externalApplication,
+                              );
+                            } catch (_) {
+                              if (context.mounted) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(
+                                    content: Text(
+                                      'Could not open the link $pubDevUrl',
+                                    ),
+                                  ),
+                                );
+                              }
+                            }
+                          },
+                        ),
+                        IconButton(
+                          tooltip: 'View on GitHub',
+                          icon: const Icon(AntdIcons.githubOutlined),
+                          onPressed: () async {
+                            final uri = Uri.parse(gitHubUrl);
+                            try {
+                              await launchUrl(
+                                uri,
+                                mode: LaunchMode.externalApplication,
+                              );
+                            } catch (_) {
+                              if (context.mounted) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  const SnackBar(
+                                    content: Text(
+                                      'Could not open the link $gitHubUrl',
+                                    ),
+                                  ),
+                                );
+                              }
+                            }
+                          },
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 8),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: TextField(
