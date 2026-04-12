@@ -82,6 +82,8 @@ class _GalleryPageState extends State<GalleryPage>
             item: item,
             iconSize: _iconSize,
             iconPreview: _buildIcon(item, size: 64),
+            primaryColor: _color,
+            secondaryColor: _secondaryColor,
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

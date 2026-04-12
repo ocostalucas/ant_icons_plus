@@ -8,10 +8,35 @@ void showIconDetailSheet(
   required IconItem item,
   required double iconSize,
   required Widget iconPreview,
+  required Color primaryColor,
+  Color? secondaryColor,
 }) {
-  final code = item.variant == IconVariant.twotone
-      ? 'AntdIcon(\n  AntdIcons.${item.constName},\n  size: ${iconSize.round()},\n  color: Colors.blue,\n)'
-      : 'Icon(\n  AntdIcons.${item.constName},\n  size: ${iconSize.round()},\n)';
+    String colorToHex(Color c) =>
+      '0x${c.toARGB32().toRadixString(16).padLeft(8, '0').toUpperCase()}';
+  final primaryHex = colorToHex(primaryColor);
+  final secondaryHex = secondaryColor != null
+      ? colorToHex(secondaryColor)
+      : null;
+
+  final sb = StringBuffer();
+  if (item.variant == IconVariant.twotone) {
+    sb.writeln('AntdIcon(');
+    sb.writeln('  AntdIcons.${item.constName},');
+    sb.writeln('  size: ${iconSize.round()},');
+    sb.writeln('  color: Color($primaryHex),');
+    if (secondaryHex != null) {
+      sb.writeln('  secondaryColor: Color($secondaryHex),');
+    }
+    sb.writeln(')');
+  } else {
+    sb.writeln('Icon(');
+    sb.writeln('  AntdIcons.${item.constName},');
+    sb.writeln('  size: ${iconSize.round()},');
+    sb.writeln('  color: Color($primaryHex),');
+    sb.writeln(')');
+  }
+
+  final code = sb.toString();
 
   showModalBottomSheet(
     context: context,
