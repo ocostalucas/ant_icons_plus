@@ -52,5 +52,18 @@ void updateReadme(int total, int outlined, int filled, int twoTone) {
     'Icons are sourced from [`@ant-design/icons-svg`](https://www.npmjs.com/package/@ant-design/icons-svg) **v$sourceVersion**.',
   );
 
+  // Update installation version from pubspec.yaml
+  String packageVersion = '?';
+  final pubspecFile = File('pubspec.yaml');
+  if (pubspecFile.existsSync()) {
+    final pubspecContent = pubspecFile.readAsStringSync();
+    final match = RegExp(r'^version:\s*(\S+)', multiLine: true).firstMatch(pubspecContent);
+    if (match != null) packageVersion = match.group(1)!;
+  }
+  readme = readme.replaceFirst(
+    RegExp(r'ant_icons_plus:\s*\^[\d.]+'),
+    'ant_icons_plus: ^$packageVersion',
+  );
+
   readmeFile.writeAsStringSync(readme);
 }
