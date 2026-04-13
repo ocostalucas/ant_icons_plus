@@ -1,3 +1,9 @@
+## [2.0.1]
+
+- Fixed icon glyph sizing: icons rendered via `Icon` widget now visually match the expected size (e.g. `size: 24` produces a ~20 dp icon, consistent with Material Icons).
+- Root cause: Ant Design SVGs use `viewBox="64 64 896 896"`, causing glyphs to fill ~100% of the font em-square. A `fillFactor` of 85% was added to `svg_builder.dart` so glyphs occupy the same visual proportion as Material Icons (~83%).
+- Fixed SVG transform formula in `svg_builder.dart`: non-zero viewBox origins (`minX`/`minY`) were not correctly accounted for in the `translate()→scale()` transform, causing slight position offsets.
+
 ## [2.0.0]
 
 - Breaking: icon prefix renamed from `AntdIcons*` to `AntIcons*` (API change).
