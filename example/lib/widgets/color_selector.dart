@@ -88,7 +88,7 @@ class ColorSelector extends StatelessWidget {
                 border: Border.all(color: primary, width: 2),
               ),
               child: const Icon(
-                AntdIcons.bgColorsOutlined,
+                AntIcons.bgColorsOutlined,
                 size: 14,
                 color: Colors.white,
               ),

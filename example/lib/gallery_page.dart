@@ -51,7 +51,7 @@ class _GalleryPageState extends State<GalleryPage>
   Widget _buildIcon(IconItem item, {double? size}) {
     final s = size ?? _iconSize;
     if (item.variant == IconVariant.twotone) {
-      return AntdIcon(
+      return AntIcon(
         item.svgString!,
         size: s,
         color: _color,
@@ -150,7 +150,7 @@ class _GalleryPageState extends State<GalleryPage>
                       children: [
                         IconButton(
                           tooltip: 'Open on pub.dev',
-                          icon: const Icon(AntdIcons.linkOutlined),
+                          icon: const Icon(AntIcons.linkOutlined),
                           onPressed: () async {
                             final uri = Uri.parse(pubDevUrl);
                             try {
@@ -173,7 +173,7 @@ class _GalleryPageState extends State<GalleryPage>
                         ),
                         IconButton(
                           tooltip: 'View on GitHub',
-                          icon: const Icon(AntdIcons.githubOutlined),
+                          icon: const Icon(AntIcons.githubOutlined),
                           onPressed: () async {
                             final uri = Uri.parse(gitHubUrl);
                             try {
@@ -206,10 +206,10 @@ class _GalleryPageState extends State<GalleryPage>
                   controller: _searchController,
                   decoration: InputDecoration(
                     hintText: 'Search icons...',
-                    prefixIcon: const Icon(AntdIcons.searchOutlined),
+                    prefixIcon: const Icon(AntIcons.searchOutlined),
                     suffixIcon: _query.isNotEmpty
                         ? IconButton(
-                            icon: const Icon(AntdIcons.clearOutlined),
+                            icon: const Icon(AntIcons.clearOutlined),
                             onPressed: () {
                               _searchController.clear();
                               setState(() => _query = '');
@@ -277,7 +277,7 @@ class _GalleryPageState extends State<GalleryPage>
                 labelSuffix: Tooltip(
                   message: 'Only applies to TwoTone icons',
                   child: Icon(
-                    AntdIcons.infoCircleOutlined,
+                    AntIcons.infoCircleOutlined,
                     size: 14,
                     color: Theme.of(context).colorScheme.outline,
                   ),

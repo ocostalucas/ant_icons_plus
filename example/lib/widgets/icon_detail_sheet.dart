@@ -11,7 +11,7 @@ void showIconDetailSheet(
   required Color primaryColor,
   Color? secondaryColor,
 }) {
-    String colorToHex(Color c) =>
+  String colorToHex(Color c) =>
       '0x${c.toARGB32().toRadixString(16).padLeft(8, '0').toUpperCase()}';
   final primaryHex = colorToHex(primaryColor);
   final secondaryHex = secondaryColor != null
@@ -20,8 +20,8 @@ void showIconDetailSheet(
 
   final sb = StringBuffer();
   if (item.variant == IconVariant.twotone) {
-    sb.writeln('AntdIcon(');
-    sb.writeln('  AntdIcons.${item.constName},');
+    sb.writeln('AntIcon(');
+    sb.writeln('  AntIcons.${item.constName},');
     sb.writeln('  size: ${iconSize.round()},');
     sb.writeln('  color: Color($primaryHex),');
     if (secondaryHex != null) {
@@ -30,7 +30,7 @@ void showIconDetailSheet(
     sb.writeln(')');
   } else {
     sb.writeln('Icon(');
-    sb.writeln('  AntdIcons.${item.constName},');
+    sb.writeln('  AntIcons.${item.constName},');
     sb.writeln('  size: ${iconSize.round()},');
     sb.writeln('  color: Color($primaryHex),');
     sb.writeln(')');
@@ -48,7 +48,7 @@ void showIconDetailSheet(
           iconPreview,
           const SizedBox(height: 16),
           Text(
-            'AntdIcons.${item.constName}',
+            'AntIcons.${item.constName}',
             style: Theme.of(ctx).textTheme.titleMedium,
           ),
           Text(

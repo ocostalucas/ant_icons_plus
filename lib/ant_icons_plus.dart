@@ -8,6 +8,6 @@
 
 export 'src/ant_icon.dart';
 export 'src/ant_icons.dart';
-export 'src/icons/ant_icons_plus_filled.dart';
 export 'src/icons/ant_icons_plus_outlined.dart';
+export 'src/icons/ant_icons_plus_filled.dart';
 export 'src/icons/ant_icons_plus_twotone.dart';

@@ -12,9 +12,9 @@ Live demo / Gallery: https://ocostalucas.github.io/ant_icons_plus/
 | Variant   | Count   |
 | --------- | ------- |
 | Outlined  | 447     |
-| Filled    | 234     |
-| TwoTone   | 150     |
-| **Total** | **831** |
+| Filled    | 234       |
+| TwoTone   | 150      |
+| **Total** | **831**    |
 
 ## Installation
 
@@ -39,11 +39,11 @@ flutter pub get
 import 'package:ant_icons_plus/ant_icons_plus.dart';
 
 // Use with Flutter's standard Icon widget
-Icon(AntdIcons.userOutlined)
+Icon(AntIcons.userOutlined)
 
 // With custom size and color
 Icon(
-  AntdIcons.heartFilled,
+  AntIcons.heartFilled,
   size: 32,
   color: Colors.red,
 )
@@ -54,31 +54,31 @@ Works with any Flutter widget that accepts `IconData`:
 ```dart
 // IconButton
 IconButton(
-  icon: Icon(AntdIcons.settingOutlined),
+  icon: Icon(AntIcons.settingOutlined),
   onPressed: () {},
 )
 
 // BottomNavigationBar
 BottomNavigationBarItem(
-  icon: Icon(AntdIcons.homeOutlined),
-  activeIcon: Icon(AntdIcons.homeFilled),
+  icon: Icon(AntIcons.homeOutlined),
+  activeIcon: Icon(AntIcons.homeFilled),
   label: 'Home',
 )
 
 // ListTile
 ListTile(
-  leading: Icon(AntdIcons.userOutlined),
+  leading: Icon(AntIcons.userOutlined),
   title: Text('Profile'),
 )
 ```
 
-### TwoTone icons (AntdIcon widget)
+### TwoTone icons (AntIcon widget)
 
-TwoTone icons use SVG rendering and require the `AntdIcon` widget:
+TwoTone icons use SVG rendering and require the `AntIcon` widget:
 
 ```dart
-AntdIcon(
-  AntdIcons.heartTwoTone,
+AntIcon(
+  AntIcons.heartTwoTone,
   size: 32,
   color: Colors.red,           // primary color
   secondaryColor: Colors.white, // secondary color (default: white)
@@ -87,12 +87,12 @@ AntdIcon(
 
 ### IconTheme integration
 
-Both `Icon` and `AntdIcon` inherit color from the ambient `IconTheme`:
+Both `Icon` and `AntIcon` inherit color from the ambient `IconTheme`:
 
 ```dart
 IconTheme(
   data: IconThemeData(color: Colors.blue, size: 32),
-  child: Icon(AntdIcons.settingOutlined),
+  child: Icon(AntIcons.settingOutlined),
 )
 ```
 
@@ -100,38 +100,38 @@ IconTheme(
 
 This package uses a **hybrid approach** for the best of both worlds:
 
-| Variant           | Rendering    | Type       | Widget       |
-| ----------------- | ------------ | ---------- | ------------ |
-| Outlined & Filled | Icon font    | `IconData` | `Icon()`     |
-| TwoTone           | SVG (inline) | `String`   | `AntdIcon()` |
+| Variant           | Rendering    | Type       | Widget      |
+| ----------------- | ------------ | ---------- | ----------- |
+| Outlined & Filled | Icon font    | `IconData` | `Icon()`    |
+| TwoTone           | SVG (inline) | `String`   | `AntIcon()` |
 
 **Why?** Icon fonts are monochromatic — each glyph supports a single fill color. TwoTone
 icons need two colors, so they use inline SVG with color placeholders instead.
 
 ### Benefits
 
-| Benefit               | Outlined / Filled | TwoTone              |
-| --------------------- | ----------------- | -------------------- |
-| Native `IconData` API | Yes               | No (uses `AntdIcon`) |
-| Tree shaking          | Yes (font glyphs) | No                   |
-| No extra dependencies | Yes               | No (`flutter_svg`)   |
-| Multi-color support   | No                | Yes                  |
+| Benefit               | Outlined / Filled | TwoTone             |
+| --------------------- | ----------------- | ------------------- |
+| Native `IconData` API | Yes               | No (uses `AntIcon`) |
+| Tree shaking          | Yes (font glyphs) | No                  |
+| No extra dependencies | Yes               | No (`flutter_svg`)  |
+| Multi-color support   | No                | Yes                 |
 
-## `AntdIcon` widget API (TwoTone only)
+## `AntIcon` widget API (TwoTone only)
 
 | Parameter        | Type     | Default | Description                                                     |
 | ---------------- | -------- | ------- | --------------------------------------------------------------- |
-| `svgString`      | `String` | —       | TwoTone icon constant from `AntdIcons.*TwoTone`                 |
+| `svgString`      | `String` | —       | TwoTone icon constant from `AntIcons.*TwoTone`                  |
 | `size`           | `double` | `24.0`  | Width and height of the icon in logical pixels                  |
 | `color`          | `Color?` | `null`  | Primary color (falls back to `IconTheme` color if not provided) |
 | `secondaryColor` | `Color?` | `null`  | Secondary color; defaults to 20% opacity of `color`             |
 
 ## Icon classes
 
-- `AntdIcons` — unified class with all 831 icons
-- `AntdIconsOutlined` — outlined variant only (`IconData`)
-- `AntdIconsFilled` — filled variant only (`IconData`)
-- `AntdIconsTwoTone` — twotone variant only (`String` for `AntdIcon`)
+- `AntIcons` — unified class with all 831 icons
+- `AntIconsOutlined` — outlined variant only (`IconData`)
+- `AntIconsFilled` — filled variant only (`IconData`)
+- `AntIconsTwoTone` — twotone variant only (`String` for `AntIcon`)
 
 ## Bundle size
 

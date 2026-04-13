@@ -3,1394 +3,840 @@
 
 import 'package:flutter/widgets.dart';
 
-import 'icons/ant_icons_plus_filled.dart' as filled;
 import 'icons/ant_icons_plus_outlined.dart' as outlined;
+import 'icons/ant_icons_plus_filled.dart' as filled;
 import 'icons/ant_icons_plus_twotone.dart' as twotone;
 
-abstract class AntdIcons {
-  static const IconData accountBookFilled =
-      filled.AntdIconsFilled.accountBookFilled;
-  static const IconData accountBookOutlined =
-      outlined.AntdIconsOutlined.accountBookOutlined;
-  static const String accountBookTwoTone =
-      twotone.AntdIconsTwoTone.accountBookTwoTone;
-  static const IconData aimOutlined = outlined.AntdIconsOutlined.aimOutlined;
-  static const IconData alertFilled = filled.AntdIconsFilled.alertFilled;
-  static const IconData alertOutlined =
-      outlined.AntdIconsOutlined.alertOutlined;
-  static const String alertTwoTone = twotone.AntdIconsTwoTone.alertTwoTone;
-  static const IconData alibabaOutlined =
-      outlined.AntdIconsOutlined.alibabaOutlined;
-  static const IconData alignCenterOutlined =
-      outlined.AntdIconsOutlined.alignCenterOutlined;
-  static const IconData alignLeftOutlined =
-      outlined.AntdIconsOutlined.alignLeftOutlined;
-  static const IconData alignRightOutlined =
-      outlined.AntdIconsOutlined.alignRightOutlined;
-  static const IconData alipayCircleFilled =
-      filled.AntdIconsFilled.alipayCircleFilled;
-  static const IconData alipayCircleOutlined =
-      outlined.AntdIconsOutlined.alipayCircleOutlined;
-  static const IconData alipayOutlined =
-      outlined.AntdIconsOutlined.alipayOutlined;
-  static const IconData alipaySquareFilled =
-      filled.AntdIconsFilled.alipaySquareFilled;
-  static const IconData aliwangwangFilled =
-      filled.AntdIconsFilled.aliwangwangFilled;
-  static const IconData aliwangwangOutlined =
-      outlined.AntdIconsOutlined.aliwangwangOutlined;
-  static const IconData aliyunOutlined =
-      outlined.AntdIconsOutlined.aliyunOutlined;
-  static const IconData amazonCircleFilled =
-      filled.AntdIconsFilled.amazonCircleFilled;
-  static const IconData amazonOutlined =
-      outlined.AntdIconsOutlined.amazonOutlined;
-  static const IconData amazonSquareFilled =
-      filled.AntdIconsFilled.amazonSquareFilled;
-  static const IconData androidFilled = filled.AntdIconsFilled.androidFilled;
-  static const IconData androidOutlined =
-      outlined.AntdIconsOutlined.androidOutlined;
-  static const IconData antCloudOutlined =
-      outlined.AntdIconsOutlined.antCloudOutlined;
-  static const IconData antDesignOutlined =
-      outlined.AntdIconsOutlined.antDesignOutlined;
-  static const IconData apartmentOutlined =
-      outlined.AntdIconsOutlined.apartmentOutlined;
-  static const IconData apiFilled = filled.AntdIconsFilled.apiFilled;
-  static const IconData apiOutlined = outlined.AntdIconsOutlined.apiOutlined;
-  static const String apiTwoTone = twotone.AntdIconsTwoTone.apiTwoTone;
-  static const IconData appleFilled = filled.AntdIconsFilled.appleFilled;
-  static const IconData appleOutlined =
-      outlined.AntdIconsOutlined.appleOutlined;
-  static const IconData appstoreAddOutlined =
-      outlined.AntdIconsOutlined.appstoreAddOutlined;
-  static const IconData appstoreFilled = filled.AntdIconsFilled.appstoreFilled;
-  static const IconData appstoreOutlined =
-      outlined.AntdIconsOutlined.appstoreOutlined;
-  static const String appstoreTwoTone =
-      twotone.AntdIconsTwoTone.appstoreTwoTone;
-  static const IconData areaChartOutlined =
-      outlined.AntdIconsOutlined.areaChartOutlined;
-  static const IconData arrowDownOutlined =
-      outlined.AntdIconsOutlined.arrowDownOutlined;
-  static const IconData arrowLeftOutlined =
-      outlined.AntdIconsOutlined.arrowLeftOutlined;
-  static const IconData arrowRightOutlined =
-      outlined.AntdIconsOutlined.arrowRightOutlined;
-  static const IconData arrowUpOutlined =
-      outlined.AntdIconsOutlined.arrowUpOutlined;
-  static const IconData arrowsAltOutlined =
-      outlined.AntdIconsOutlined.arrowsAltOutlined;
-  static const IconData audioFilled = filled.AntdIconsFilled.audioFilled;
-  static const IconData audioMutedOutlined =
-      outlined.AntdIconsOutlined.audioMutedOutlined;
-  static const IconData audioOutlined =
-      outlined.AntdIconsOutlined.audioOutlined;
-  static const String audioTwoTone = twotone.AntdIconsTwoTone.audioTwoTone;
-  static const IconData auditOutlined =
-      outlined.AntdIconsOutlined.auditOutlined;
-  static const IconData backwardFilled = filled.AntdIconsFilled.backwardFilled;
-  static const IconData backwardOutlined =
-      outlined.AntdIconsOutlined.backwardOutlined;
-  static const IconData baiduOutlined =
-      outlined.AntdIconsOutlined.baiduOutlined;
-  static const IconData bankFilled = filled.AntdIconsFilled.bankFilled;
-  static const IconData bankOutlined = outlined.AntdIconsOutlined.bankOutlined;
-  static const String bankTwoTone = twotone.AntdIconsTwoTone.bankTwoTone;
-  static const IconData barChartOutlined =
-      outlined.AntdIconsOutlined.barChartOutlined;
-  static const IconData barcodeOutlined =
-      outlined.AntdIconsOutlined.barcodeOutlined;
-  static const IconData barsOutlined = outlined.AntdIconsOutlined.barsOutlined;
-  static const IconData behanceCircleFilled =
-      filled.AntdIconsFilled.behanceCircleFilled;
-  static const IconData behanceOutlined =
-      outlined.AntdIconsOutlined.behanceOutlined;
-  static const IconData behanceSquareFilled =
-      filled.AntdIconsFilled.behanceSquareFilled;
-  static const IconData behanceSquareOutlined =
-      outlined.AntdIconsOutlined.behanceSquareOutlined;
-  static const IconData bellFilled = filled.AntdIconsFilled.bellFilled;
-  static const IconData bellOutlined = outlined.AntdIconsOutlined.bellOutlined;
-  static const String bellTwoTone = twotone.AntdIconsTwoTone.bellTwoTone;
-  static const IconData bgColorsOutlined =
-      outlined.AntdIconsOutlined.bgColorsOutlined;
-  static const IconData bilibiliFilled = filled.AntdIconsFilled.bilibiliFilled;
-  static const IconData bilibiliOutlined =
-      outlined.AntdIconsOutlined.bilibiliOutlined;
-  static const IconData blockOutlined =
-      outlined.AntdIconsOutlined.blockOutlined;
-  static const IconData boldOutlined = outlined.AntdIconsOutlined.boldOutlined;
-  static const IconData bookFilled = filled.AntdIconsFilled.bookFilled;
-  static const IconData bookOutlined = outlined.AntdIconsOutlined.bookOutlined;
-  static const String bookTwoTone = twotone.AntdIconsTwoTone.bookTwoTone;
-  static const IconData borderBottomOutlined =
-      outlined.AntdIconsOutlined.borderBottomOutlined;
-  static const IconData borderHorizontalOutlined =
-      outlined.AntdIconsOutlined.borderHorizontalOutlined;
-  static const IconData borderInnerOutlined =
-      outlined.AntdIconsOutlined.borderInnerOutlined;
-  static const IconData borderLeftOutlined =
-      outlined.AntdIconsOutlined.borderLeftOutlined;
-  static const IconData borderOuterOutlined =
-      outlined.AntdIconsOutlined.borderOuterOutlined;
-  static const IconData borderOutlined =
-      outlined.AntdIconsOutlined.borderOutlined;
-  static const IconData borderRightOutlined =
-      outlined.AntdIconsOutlined.borderRightOutlined;
-  static const IconData borderTopOutlined =
-      outlined.AntdIconsOutlined.borderTopOutlined;
-  static const IconData borderVerticleOutlined =
-      outlined.AntdIconsOutlined.borderVerticleOutlined;
-  static const IconData borderlessTableOutlined =
-      outlined.AntdIconsOutlined.borderlessTableOutlined;
-  static const IconData boxPlotFilled = filled.AntdIconsFilled.boxPlotFilled;
-  static const IconData boxPlotOutlined =
-      outlined.AntdIconsOutlined.boxPlotOutlined;
-  static const String boxPlotTwoTone = twotone.AntdIconsTwoTone.boxPlotTwoTone;
-  static const IconData branchesOutlined =
-      outlined.AntdIconsOutlined.branchesOutlined;
-  static const IconData bugFilled = filled.AntdIconsFilled.bugFilled;
-  static const IconData bugOutlined = outlined.AntdIconsOutlined.bugOutlined;
-  static const String bugTwoTone = twotone.AntdIconsTwoTone.bugTwoTone;
-  static const IconData buildFilled = filled.AntdIconsFilled.buildFilled;
-  static const IconData buildOutlined =
-      outlined.AntdIconsOutlined.buildOutlined;
-  static const String buildTwoTone = twotone.AntdIconsTwoTone.buildTwoTone;
-  static const IconData bulbFilled = filled.AntdIconsFilled.bulbFilled;
-  static const IconData bulbOutlined = outlined.AntdIconsOutlined.bulbOutlined;
-  static const String bulbTwoTone = twotone.AntdIconsTwoTone.bulbTwoTone;
-  static const IconData calculatorFilled =
-      filled.AntdIconsFilled.calculatorFilled;
-  static const IconData calculatorOutlined =
-      outlined.AntdIconsOutlined.calculatorOutlined;
-  static const String calculatorTwoTone =
-      twotone.AntdIconsTwoTone.calculatorTwoTone;
-  static const IconData calendarFilled = filled.AntdIconsFilled.calendarFilled;
-  static const IconData calendarOutlined =
-      outlined.AntdIconsOutlined.calendarOutlined;
-  static const String calendarTwoTone =
-      twotone.AntdIconsTwoTone.calendarTwoTone;
-  static const IconData cameraFilled = filled.AntdIconsFilled.cameraFilled;
-  static const IconData cameraOutlined =
-      outlined.AntdIconsOutlined.cameraOutlined;
-  static const String cameraTwoTone = twotone.AntdIconsTwoTone.cameraTwoTone;
-  static const IconData carFilled = filled.AntdIconsFilled.carFilled;
-  static const IconData carOutlined = outlined.AntdIconsOutlined.carOutlined;
-  static const String carTwoTone = twotone.AntdIconsTwoTone.carTwoTone;
-  static const IconData caretDownFilled =
-      filled.AntdIconsFilled.caretDownFilled;
-  static const IconData caretDownOutlined =
-      outlined.AntdIconsOutlined.caretDownOutlined;
-  static const IconData caretLeftFilled =
-      filled.AntdIconsFilled.caretLeftFilled;
-  static const IconData caretLeftOutlined =
-      outlined.AntdIconsOutlined.caretLeftOutlined;
-  static const IconData caretRightFilled =
-      filled.AntdIconsFilled.caretRightFilled;
-  static const IconData caretRightOutlined =
-      outlined.AntdIconsOutlined.caretRightOutlined;
-  static const IconData caretUpFilled = filled.AntdIconsFilled.caretUpFilled;
-  static const IconData caretUpOutlined =
-      outlined.AntdIconsOutlined.caretUpOutlined;
-  static const IconData carryOutFilled = filled.AntdIconsFilled.carryOutFilled;
-  static const IconData carryOutOutlined =
-      outlined.AntdIconsOutlined.carryOutOutlined;
-  static const String carryOutTwoTone =
-      twotone.AntdIconsTwoTone.carryOutTwoTone;
-  static const IconData checkCircleFilled =
-      filled.AntdIconsFilled.checkCircleFilled;
-  static const IconData checkCircleOutlined =
-      outlined.AntdIconsOutlined.checkCircleOutlined;
-  static const String checkCircleTwoTone =
-      twotone.AntdIconsTwoTone.checkCircleTwoTone;
-  static const IconData checkOutlined =
-      outlined.AntdIconsOutlined.checkOutlined;
-  static const IconData checkSquareFilled =
-      filled.AntdIconsFilled.checkSquareFilled;
-  static const IconData checkSquareOutlined =
-      outlined.AntdIconsOutlined.checkSquareOutlined;
-  static const String checkSquareTwoTone =
-      twotone.AntdIconsTwoTone.checkSquareTwoTone;
-  static const IconData chromeFilled = filled.AntdIconsFilled.chromeFilled;
-  static const IconData chromeOutlined =
-      outlined.AntdIconsOutlined.chromeOutlined;
-  static const IconData ciCircleFilled = filled.AntdIconsFilled.ciCircleFilled;
-  static const IconData ciCircleOutlined =
-      outlined.AntdIconsOutlined.ciCircleOutlined;
-  static const String ciCircleTwoTone =
-      twotone.AntdIconsTwoTone.ciCircleTwoTone;
-  static const IconData ciOutlined = outlined.AntdIconsOutlined.ciOutlined;
-  static const String ciTwoTone = twotone.AntdIconsTwoTone.ciTwoTone;
-  static const IconData clearOutlined =
-      outlined.AntdIconsOutlined.clearOutlined;
-  static const IconData clockCircleFilled =
-      filled.AntdIconsFilled.clockCircleFilled;
-  static const IconData clockCircleOutlined =
-      outlined.AntdIconsOutlined.clockCircleOutlined;
-  static const String clockCircleTwoTone =
-      twotone.AntdIconsTwoTone.clockCircleTwoTone;
-  static const IconData closeCircleFilled =
-      filled.AntdIconsFilled.closeCircleFilled;
-  static const IconData closeCircleOutlined =
-      outlined.AntdIconsOutlined.closeCircleOutlined;
-  static const String closeCircleTwoTone =
-      twotone.AntdIconsTwoTone.closeCircleTwoTone;
-  static const IconData closeOutlined =
-      outlined.AntdIconsOutlined.closeOutlined;
-  static const IconData closeSquareFilled =
-      filled.AntdIconsFilled.closeSquareFilled;
-  static const IconData closeSquareOutlined =
-      outlined.AntdIconsOutlined.closeSquareOutlined;
-  static const String closeSquareTwoTone =
-      twotone.AntdIconsTwoTone.closeSquareTwoTone;
-  static const IconData cloudDownloadOutlined =
-      outlined.AntdIconsOutlined.cloudDownloadOutlined;
-  static const IconData cloudFilled = filled.AntdIconsFilled.cloudFilled;
-  static const IconData cloudOutlined =
-      outlined.AntdIconsOutlined.cloudOutlined;
-  static const IconData cloudServerOutlined =
-      outlined.AntdIconsOutlined.cloudServerOutlined;
-  static const IconData cloudSyncOutlined =
-      outlined.AntdIconsOutlined.cloudSyncOutlined;
-  static const String cloudTwoTone = twotone.AntdIconsTwoTone.cloudTwoTone;
-  static const IconData cloudUploadOutlined =
-      outlined.AntdIconsOutlined.cloudUploadOutlined;
-  static const IconData clusterOutlined =
-      outlined.AntdIconsOutlined.clusterOutlined;
-  static const IconData codeFilled = filled.AntdIconsFilled.codeFilled;
-  static const IconData codeOutlined = outlined.AntdIconsOutlined.codeOutlined;
-  static const IconData codeSandboxCircleFilled =
-      filled.AntdIconsFilled.codeSandboxCircleFilled;
-  static const IconData codeSandboxOutlined =
-      outlined.AntdIconsOutlined.codeSandboxOutlined;
-  static const IconData codeSandboxSquareFilled =
-      filled.AntdIconsFilled.codeSandboxSquareFilled;
-  static const String codeTwoTone = twotone.AntdIconsTwoTone.codeTwoTone;
-  static const IconData codepenCircleFilled =
-      filled.AntdIconsFilled.codepenCircleFilled;
-  static const IconData codepenCircleOutlined =
-      outlined.AntdIconsOutlined.codepenCircleOutlined;
-  static const IconData codepenOutlined =
-      outlined.AntdIconsOutlined.codepenOutlined;
-  static const IconData codepenSquareFilled =
-      filled.AntdIconsFilled.codepenSquareFilled;
-  static const IconData coffeeOutlined =
-      outlined.AntdIconsOutlined.coffeeOutlined;
-  static const IconData columnHeightOutlined =
-      outlined.AntdIconsOutlined.columnHeightOutlined;
-  static const IconData columnWidthOutlined =
-      outlined.AntdIconsOutlined.columnWidthOutlined;
-  static const IconData commentOutlined =
-      outlined.AntdIconsOutlined.commentOutlined;
-  static const IconData compassFilled = filled.AntdIconsFilled.compassFilled;
-  static const IconData compassOutlined =
-      outlined.AntdIconsOutlined.compassOutlined;
-  static const String compassTwoTone = twotone.AntdIconsTwoTone.compassTwoTone;
-  static const IconData compressOutlined =
-      outlined.AntdIconsOutlined.compressOutlined;
-  static const IconData consoleSqlOutlined =
-      outlined.AntdIconsOutlined.consoleSqlOutlined;
-  static const IconData contactsFilled = filled.AntdIconsFilled.contactsFilled;
-  static const IconData contactsOutlined =
-      outlined.AntdIconsOutlined.contactsOutlined;
-  static const String contactsTwoTone =
-      twotone.AntdIconsTwoTone.contactsTwoTone;
-  static const IconData containerFilled =
-      filled.AntdIconsFilled.containerFilled;
-  static const IconData containerOutlined =
-      outlined.AntdIconsOutlined.containerOutlined;
-  static const String containerTwoTone =
-      twotone.AntdIconsTwoTone.containerTwoTone;
-  static const IconData controlFilled = filled.AntdIconsFilled.controlFilled;
-  static const IconData controlOutlined =
-      outlined.AntdIconsOutlined.controlOutlined;
-  static const String controlTwoTone = twotone.AntdIconsTwoTone.controlTwoTone;
-  static const IconData copyFilled = filled.AntdIconsFilled.copyFilled;
-  static const IconData copyOutlined = outlined.AntdIconsOutlined.copyOutlined;
-  static const String copyTwoTone = twotone.AntdIconsTwoTone.copyTwoTone;
-  static const IconData copyrightCircleFilled =
-      filled.AntdIconsFilled.copyrightCircleFilled;
-  static const IconData copyrightCircleOutlined =
-      outlined.AntdIconsOutlined.copyrightCircleOutlined;
-  static const String copyrightCircleTwoTone =
-      twotone.AntdIconsTwoTone.copyrightCircleTwoTone;
-  static const IconData copyrightOutlined =
-      outlined.AntdIconsOutlined.copyrightOutlined;
-  static const String copyrightTwoTone =
-      twotone.AntdIconsTwoTone.copyrightTwoTone;
-  static const IconData creditCardFilled =
-      filled.AntdIconsFilled.creditCardFilled;
-  static const IconData creditCardOutlined =
-      outlined.AntdIconsOutlined.creditCardOutlined;
-  static const String creditCardTwoTone =
-      twotone.AntdIconsTwoTone.creditCardTwoTone;
-  static const IconData crownFilled = filled.AntdIconsFilled.crownFilled;
-  static const IconData crownOutlined =
-      outlined.AntdIconsOutlined.crownOutlined;
-  static const String crownTwoTone = twotone.AntdIconsTwoTone.crownTwoTone;
-  static const IconData customerServiceFilled =
-      filled.AntdIconsFilled.customerServiceFilled;
-  static const IconData customerServiceOutlined =
-      outlined.AntdIconsOutlined.customerServiceOutlined;
-  static const String customerServiceTwoTone =
-      twotone.AntdIconsTwoTone.customerServiceTwoTone;
-  static const IconData dashOutlined = outlined.AntdIconsOutlined.dashOutlined;
-  static const IconData dashboardFilled =
-      filled.AntdIconsFilled.dashboardFilled;
-  static const IconData dashboardOutlined =
-      outlined.AntdIconsOutlined.dashboardOutlined;
-  static const String dashboardTwoTone =
-      twotone.AntdIconsTwoTone.dashboardTwoTone;
-  static const IconData databaseFilled = filled.AntdIconsFilled.databaseFilled;
-  static const IconData databaseOutlined =
-      outlined.AntdIconsOutlined.databaseOutlined;
-  static const String databaseTwoTone =
-      twotone.AntdIconsTwoTone.databaseTwoTone;
-  static const IconData deleteColumnOutlined =
-      outlined.AntdIconsOutlined.deleteColumnOutlined;
-  static const IconData deleteFilled = filled.AntdIconsFilled.deleteFilled;
-  static const IconData deleteOutlined =
-      outlined.AntdIconsOutlined.deleteOutlined;
-  static const IconData deleteRowOutlined =
-      outlined.AntdIconsOutlined.deleteRowOutlined;
-  static const String deleteTwoTone = twotone.AntdIconsTwoTone.deleteTwoTone;
-  static const IconData deliveredProcedureOutlined =
-      outlined.AntdIconsOutlined.deliveredProcedureOutlined;
-  static const IconData deploymentUnitOutlined =
-      outlined.AntdIconsOutlined.deploymentUnitOutlined;
-  static const IconData desktopOutlined =
-      outlined.AntdIconsOutlined.desktopOutlined;
-  static const IconData diffFilled = filled.AntdIconsFilled.diffFilled;
-  static const IconData diffOutlined = outlined.AntdIconsOutlined.diffOutlined;
-  static const String diffTwoTone = twotone.AntdIconsTwoTone.diffTwoTone;
-  static const IconData dingdingOutlined =
-      outlined.AntdIconsOutlined.dingdingOutlined;
-  static const IconData dingtalkCircleFilled =
-      filled.AntdIconsFilled.dingtalkCircleFilled;
-  static const IconData dingtalkOutlined =
-      outlined.AntdIconsOutlined.dingtalkOutlined;
-  static const IconData dingtalkSquareFilled =
-      filled.AntdIconsFilled.dingtalkSquareFilled;
-  static const IconData disconnectOutlined =
-      outlined.AntdIconsOutlined.disconnectOutlined;
-  static const IconData discordFilled = filled.AntdIconsFilled.discordFilled;
-  static const IconData discordOutlined =
-      outlined.AntdIconsOutlined.discordOutlined;
-  static const IconData dislikeFilled = filled.AntdIconsFilled.dislikeFilled;
-  static const IconData dislikeOutlined =
-      outlined.AntdIconsOutlined.dislikeOutlined;
-  static const String dislikeTwoTone = twotone.AntdIconsTwoTone.dislikeTwoTone;
-  static const IconData dockerOutlined =
-      outlined.AntdIconsOutlined.dockerOutlined;
-  static const IconData dollarCircleFilled =
-      filled.AntdIconsFilled.dollarCircleFilled;
-  static const IconData dollarCircleOutlined =
-      outlined.AntdIconsOutlined.dollarCircleOutlined;
-  static const String dollarCircleTwoTone =
-      twotone.AntdIconsTwoTone.dollarCircleTwoTone;
-  static const IconData dollarOutlined =
-      outlined.AntdIconsOutlined.dollarOutlined;
-  static const String dollarTwoTone = twotone.AntdIconsTwoTone.dollarTwoTone;
-  static const IconData dotChartOutlined =
-      outlined.AntdIconsOutlined.dotChartOutlined;
-  static const IconData dotNetOutlined =
-      outlined.AntdIconsOutlined.dotNetOutlined;
-  static const IconData doubleLeftOutlined =
-      outlined.AntdIconsOutlined.doubleLeftOutlined;
-  static const IconData doubleRightOutlined =
-      outlined.AntdIconsOutlined.doubleRightOutlined;
-  static const IconData downCircleFilled =
-      filled.AntdIconsFilled.downCircleFilled;
-  static const IconData downCircleOutlined =
-      outlined.AntdIconsOutlined.downCircleOutlined;
-  static const String downCircleTwoTone =
-      twotone.AntdIconsTwoTone.downCircleTwoTone;
-  static const IconData downOutlined = outlined.AntdIconsOutlined.downOutlined;
-  static const IconData downSquareFilled =
-      filled.AntdIconsFilled.downSquareFilled;
-  static const IconData downSquareOutlined =
-      outlined.AntdIconsOutlined.downSquareOutlined;
-  static const String downSquareTwoTone =
-      twotone.AntdIconsTwoTone.downSquareTwoTone;
-  static const IconData downloadOutlined =
-      outlined.AntdIconsOutlined.downloadOutlined;
-  static const IconData dragOutlined = outlined.AntdIconsOutlined.dragOutlined;
-  static const IconData dribbbleCircleFilled =
-      filled.AntdIconsFilled.dribbbleCircleFilled;
-  static const IconData dribbbleOutlined =
-      outlined.AntdIconsOutlined.dribbbleOutlined;
-  static const IconData dribbbleSquareFilled =
-      filled.AntdIconsFilled.dribbbleSquareFilled;
-  static const IconData dribbbleSquareOutlined =
-      outlined.AntdIconsOutlined.dribbbleSquareOutlined;
-  static const IconData dropboxCircleFilled =
-      filled.AntdIconsFilled.dropboxCircleFilled;
-  static const IconData dropboxOutlined =
-      outlined.AntdIconsOutlined.dropboxOutlined;
-  static const IconData dropboxSquareFilled =
-      filled.AntdIconsFilled.dropboxSquareFilled;
-  static const IconData editFilled = filled.AntdIconsFilled.editFilled;
-  static const IconData editOutlined = outlined.AntdIconsOutlined.editOutlined;
-  static const String editTwoTone = twotone.AntdIconsTwoTone.editTwoTone;
-  static const IconData ellipsisOutlined =
-      outlined.AntdIconsOutlined.ellipsisOutlined;
-  static const IconData enterOutlined =
-      outlined.AntdIconsOutlined.enterOutlined;
-  static const IconData environmentFilled =
-      filled.AntdIconsFilled.environmentFilled;
-  static const IconData environmentOutlined =
-      outlined.AntdIconsOutlined.environmentOutlined;
-  static const String environmentTwoTone =
-      twotone.AntdIconsTwoTone.environmentTwoTone;
-  static const IconData euroCircleFilled =
-      filled.AntdIconsFilled.euroCircleFilled;
-  static const IconData euroCircleOutlined =
-      outlined.AntdIconsOutlined.euroCircleOutlined;
-  static const String euroCircleTwoTone =
-      twotone.AntdIconsTwoTone.euroCircleTwoTone;
-  static const IconData euroOutlined = outlined.AntdIconsOutlined.euroOutlined;
-  static const String euroTwoTone = twotone.AntdIconsTwoTone.euroTwoTone;
-  static const IconData exceptionOutlined =
-      outlined.AntdIconsOutlined.exceptionOutlined;
-  static const IconData exclamationCircleFilled =
-      filled.AntdIconsFilled.exclamationCircleFilled;
-  static const IconData exclamationCircleOutlined =
-      outlined.AntdIconsOutlined.exclamationCircleOutlined;
-  static const String exclamationCircleTwoTone =
-      twotone.AntdIconsTwoTone.exclamationCircleTwoTone;
-  static const IconData exclamationOutlined =
-      outlined.AntdIconsOutlined.exclamationOutlined;
-  static const IconData expandAltOutlined =
-      outlined.AntdIconsOutlined.expandAltOutlined;
-  static const IconData expandOutlined =
-      outlined.AntdIconsOutlined.expandOutlined;
-  static const IconData experimentFilled =
-      filled.AntdIconsFilled.experimentFilled;
-  static const IconData experimentOutlined =
-      outlined.AntdIconsOutlined.experimentOutlined;
-  static const String experimentTwoTone =
-      twotone.AntdIconsTwoTone.experimentTwoTone;
-  static const IconData exportOutlined =
-      outlined.AntdIconsOutlined.exportOutlined;
-  static const IconData eyeFilled = filled.AntdIconsFilled.eyeFilled;
-  static const IconData eyeInvisibleFilled =
-      filled.AntdIconsFilled.eyeInvisibleFilled;
-  static const IconData eyeInvisibleOutlined =
-      outlined.AntdIconsOutlined.eyeInvisibleOutlined;
-  static const String eyeInvisibleTwoTone =
-      twotone.AntdIconsTwoTone.eyeInvisibleTwoTone;
-  static const IconData eyeOutlined = outlined.AntdIconsOutlined.eyeOutlined;
-  static const String eyeTwoTone = twotone.AntdIconsTwoTone.eyeTwoTone;
-  static const IconData facebookFilled = filled.AntdIconsFilled.facebookFilled;
-  static const IconData facebookOutlined =
-      outlined.AntdIconsOutlined.facebookOutlined;
-  static const IconData fallOutlined = outlined.AntdIconsOutlined.fallOutlined;
-  static const IconData fastBackwardFilled =
-      filled.AntdIconsFilled.fastBackwardFilled;
-  static const IconData fastBackwardOutlined =
-      outlined.AntdIconsOutlined.fastBackwardOutlined;
-  static const IconData fastForwardFilled =
-      filled.AntdIconsFilled.fastForwardFilled;
-  static const IconData fastForwardOutlined =
-      outlined.AntdIconsOutlined.fastForwardOutlined;
-  static const IconData fieldBinaryOutlined =
-      outlined.AntdIconsOutlined.fieldBinaryOutlined;
-  static const IconData fieldNumberOutlined =
-      outlined.AntdIconsOutlined.fieldNumberOutlined;
-  static const IconData fieldStringOutlined =
-      outlined.AntdIconsOutlined.fieldStringOutlined;
-  static const IconData fieldTimeOutlined =
-      outlined.AntdIconsOutlined.fieldTimeOutlined;
-  static const IconData fileAddFilled = filled.AntdIconsFilled.fileAddFilled;
-  static const IconData fileAddOutlined =
-      outlined.AntdIconsOutlined.fileAddOutlined;
-  static const String fileAddTwoTone = twotone.AntdIconsTwoTone.fileAddTwoTone;
-  static const IconData fileDoneOutlined =
-      outlined.AntdIconsOutlined.fileDoneOutlined;
-  static const IconData fileExcelFilled =
-      filled.AntdIconsFilled.fileExcelFilled;
-  static const IconData fileExcelOutlined =
-      outlined.AntdIconsOutlined.fileExcelOutlined;
-  static const String fileExcelTwoTone =
-      twotone.AntdIconsTwoTone.fileExcelTwoTone;
-  static const IconData fileExclamationFilled =
-      filled.AntdIconsFilled.fileExclamationFilled;
-  static const IconData fileExclamationOutlined =
-      outlined.AntdIconsOutlined.fileExclamationOutlined;
-  static const String fileExclamationTwoTone =
-      twotone.AntdIconsTwoTone.fileExclamationTwoTone;
-  static const IconData fileFilled = filled.AntdIconsFilled.fileFilled;
-  static const IconData fileGifOutlined =
-      outlined.AntdIconsOutlined.fileGifOutlined;
-  static const IconData fileImageFilled =
-      filled.AntdIconsFilled.fileImageFilled;
-  static const IconData fileImageOutlined =
-      outlined.AntdIconsOutlined.fileImageOutlined;
-  static const String fileImageTwoTone =
-      twotone.AntdIconsTwoTone.fileImageTwoTone;
-  static const IconData fileJpgOutlined =
-      outlined.AntdIconsOutlined.fileJpgOutlined;
-  static const IconData fileMarkdownFilled =
-      filled.AntdIconsFilled.fileMarkdownFilled;
-  static const IconData fileMarkdownOutlined =
-      outlined.AntdIconsOutlined.fileMarkdownOutlined;
-  static const String fileMarkdownTwoTone =
-      twotone.AntdIconsTwoTone.fileMarkdownTwoTone;
-  static const IconData fileOutlined = outlined.AntdIconsOutlined.fileOutlined;
-  static const IconData filePdfFilled = filled.AntdIconsFilled.filePdfFilled;
-  static const IconData filePdfOutlined =
-      outlined.AntdIconsOutlined.filePdfOutlined;
-  static const String filePdfTwoTone = twotone.AntdIconsTwoTone.filePdfTwoTone;
-  static const IconData filePptFilled = filled.AntdIconsFilled.filePptFilled;
-  static const IconData filePptOutlined =
-      outlined.AntdIconsOutlined.filePptOutlined;
-  static const String filePptTwoTone = twotone.AntdIconsTwoTone.filePptTwoTone;
-  static const IconData fileProtectOutlined =
-      outlined.AntdIconsOutlined.fileProtectOutlined;
-  static const IconData fileSearchOutlined =
-      outlined.AntdIconsOutlined.fileSearchOutlined;
-  static const IconData fileSyncOutlined =
-      outlined.AntdIconsOutlined.fileSyncOutlined;
-  static const IconData fileTextFilled = filled.AntdIconsFilled.fileTextFilled;
-  static const IconData fileTextOutlined =
-      outlined.AntdIconsOutlined.fileTextOutlined;
-  static const String fileTextTwoTone =
-      twotone.AntdIconsTwoTone.fileTextTwoTone;
-  static const String fileTwoTone = twotone.AntdIconsTwoTone.fileTwoTone;
-  static const IconData fileUnknownFilled =
-      filled.AntdIconsFilled.fileUnknownFilled;
-  static const IconData fileUnknownOutlined =
-      outlined.AntdIconsOutlined.fileUnknownOutlined;
-  static const String fileUnknownTwoTone =
-      twotone.AntdIconsTwoTone.fileUnknownTwoTone;
-  static const IconData fileWordFilled = filled.AntdIconsFilled.fileWordFilled;
-  static const IconData fileWordOutlined =
-      outlined.AntdIconsOutlined.fileWordOutlined;
-  static const String fileWordTwoTone =
-      twotone.AntdIconsTwoTone.fileWordTwoTone;
-  static const IconData fileZipFilled = filled.AntdIconsFilled.fileZipFilled;
-  static const IconData fileZipOutlined =
-      outlined.AntdIconsOutlined.fileZipOutlined;
-  static const String fileZipTwoTone = twotone.AntdIconsTwoTone.fileZipTwoTone;
-  static const IconData filterFilled = filled.AntdIconsFilled.filterFilled;
-  static const IconData filterOutlined =
-      outlined.AntdIconsOutlined.filterOutlined;
-  static const String filterTwoTone = twotone.AntdIconsTwoTone.filterTwoTone;
-  static const IconData fireFilled = filled.AntdIconsFilled.fireFilled;
-  static const IconData fireOutlined = outlined.AntdIconsOutlined.fireOutlined;
-  static const String fireTwoTone = twotone.AntdIconsTwoTone.fireTwoTone;
-  static const IconData flagFilled = filled.AntdIconsFilled.flagFilled;
-  static const IconData flagOutlined = outlined.AntdIconsOutlined.flagOutlined;
-  static const String flagTwoTone = twotone.AntdIconsTwoTone.flagTwoTone;
-  static const IconData folderAddFilled =
-      filled.AntdIconsFilled.folderAddFilled;
-  static const IconData folderAddOutlined =
-      outlined.AntdIconsOutlined.folderAddOutlined;
-  static const String folderAddTwoTone =
-      twotone.AntdIconsTwoTone.folderAddTwoTone;
-  static const IconData folderFilled = filled.AntdIconsFilled.folderFilled;
-  static const IconData folderOpenFilled =
-      filled.AntdIconsFilled.folderOpenFilled;
-  static const IconData folderOpenOutlined =
-      outlined.AntdIconsOutlined.folderOpenOutlined;
-  static const String folderOpenTwoTone =
-      twotone.AntdIconsTwoTone.folderOpenTwoTone;
-  static const IconData folderOutlined =
-      outlined.AntdIconsOutlined.folderOutlined;
-  static const String folderTwoTone = twotone.AntdIconsTwoTone.folderTwoTone;
-  static const IconData folderViewOutlined =
-      outlined.AntdIconsOutlined.folderViewOutlined;
-  static const IconData fontColorsOutlined =
-      outlined.AntdIconsOutlined.fontColorsOutlined;
-  static const IconData fontSizeOutlined =
-      outlined.AntdIconsOutlined.fontSizeOutlined;
-  static const IconData forkOutlined = outlined.AntdIconsOutlined.forkOutlined;
-  static const IconData formOutlined = outlined.AntdIconsOutlined.formOutlined;
-  static const IconData formatPainterFilled =
-      filled.AntdIconsFilled.formatPainterFilled;
-  static const IconData formatPainterOutlined =
-      outlined.AntdIconsOutlined.formatPainterOutlined;
-  static const IconData forwardFilled = filled.AntdIconsFilled.forwardFilled;
-  static const IconData forwardOutlined =
-      outlined.AntdIconsOutlined.forwardOutlined;
-  static const IconData frownFilled = filled.AntdIconsFilled.frownFilled;
-  static const IconData frownOutlined =
-      outlined.AntdIconsOutlined.frownOutlined;
-  static const String frownTwoTone = twotone.AntdIconsTwoTone.frownTwoTone;
-  static const IconData fullscreenExitOutlined =
-      outlined.AntdIconsOutlined.fullscreenExitOutlined;
-  static const IconData fullscreenOutlined =
-      outlined.AntdIconsOutlined.fullscreenOutlined;
-  static const IconData functionOutlined =
-      outlined.AntdIconsOutlined.functionOutlined;
-  static const IconData fundFilled = filled.AntdIconsFilled.fundFilled;
-  static const IconData fundOutlined = outlined.AntdIconsOutlined.fundOutlined;
-  static const IconData fundProjectionScreenOutlined =
-      outlined.AntdIconsOutlined.fundProjectionScreenOutlined;
-  static const String fundTwoTone = twotone.AntdIconsTwoTone.fundTwoTone;
-  static const IconData fundViewOutlined =
-      outlined.AntdIconsOutlined.fundViewOutlined;
-  static const IconData funnelPlotFilled =
-      filled.AntdIconsFilled.funnelPlotFilled;
-  static const IconData funnelPlotOutlined =
-      outlined.AntdIconsOutlined.funnelPlotOutlined;
-  static const String funnelPlotTwoTone =
-      twotone.AntdIconsTwoTone.funnelPlotTwoTone;
-  static const IconData gatewayOutlined =
-      outlined.AntdIconsOutlined.gatewayOutlined;
-  static const IconData gifOutlined = outlined.AntdIconsOutlined.gifOutlined;
-  static const IconData giftFilled = filled.AntdIconsFilled.giftFilled;
-  static const IconData giftOutlined = outlined.AntdIconsOutlined.giftOutlined;
-  static const String giftTwoTone = twotone.AntdIconsTwoTone.giftTwoTone;
-  static const IconData githubFilled = filled.AntdIconsFilled.githubFilled;
-  static const IconData githubOutlined =
-      outlined.AntdIconsOutlined.githubOutlined;
-  static const IconData gitlabFilled = filled.AntdIconsFilled.gitlabFilled;
-  static const IconData gitlabOutlined =
-      outlined.AntdIconsOutlined.gitlabOutlined;
-  static const IconData globalOutlined =
-      outlined.AntdIconsOutlined.globalOutlined;
-  static const IconData goldFilled = filled.AntdIconsFilled.goldFilled;
-  static const IconData goldOutlined = outlined.AntdIconsOutlined.goldOutlined;
-  static const String goldTwoTone = twotone.AntdIconsTwoTone.goldTwoTone;
-  static const IconData goldenFilled = filled.AntdIconsFilled.goldenFilled;
-  static const IconData googleCircleFilled =
-      filled.AntdIconsFilled.googleCircleFilled;
-  static const IconData googleOutlined =
-      outlined.AntdIconsOutlined.googleOutlined;
-  static const IconData googlePlusCircleFilled =
-      filled.AntdIconsFilled.googlePlusCircleFilled;
-  static const IconData googlePlusOutlined =
-      outlined.AntdIconsOutlined.googlePlusOutlined;
-  static const IconData googlePlusSquareFilled =
-      filled.AntdIconsFilled.googlePlusSquareFilled;
-  static const IconData googleSquareFilled =
-      filled.AntdIconsFilled.googleSquareFilled;
-  static const IconData groupOutlined =
-      outlined.AntdIconsOutlined.groupOutlined;
-  static const IconData harmonyOSOutlined =
-      outlined.AntdIconsOutlined.harmonyOSOutlined;
-  static const IconData hddFilled = filled.AntdIconsFilled.hddFilled;
-  static const IconData hddOutlined = outlined.AntdIconsOutlined.hddOutlined;
-  static const String hddTwoTone = twotone.AntdIconsTwoTone.hddTwoTone;
-  static const IconData heartFilled = filled.AntdIconsFilled.heartFilled;
-  static const IconData heartOutlined =
-      outlined.AntdIconsOutlined.heartOutlined;
-  static const String heartTwoTone = twotone.AntdIconsTwoTone.heartTwoTone;
-  static const IconData heatMapOutlined =
-      outlined.AntdIconsOutlined.heatMapOutlined;
-  static const IconData highlightFilled =
-      filled.AntdIconsFilled.highlightFilled;
-  static const IconData highlightOutlined =
-      outlined.AntdIconsOutlined.highlightOutlined;
-  static const String highlightTwoTone =
-      twotone.AntdIconsTwoTone.highlightTwoTone;
-  static const IconData historyOutlined =
-      outlined.AntdIconsOutlined.historyOutlined;
-  static const IconData holderOutlined =
-      outlined.AntdIconsOutlined.holderOutlined;
-  static const IconData homeFilled = filled.AntdIconsFilled.homeFilled;
-  static const IconData homeOutlined = outlined.AntdIconsOutlined.homeOutlined;
-  static const String homeTwoTone = twotone.AntdIconsTwoTone.homeTwoTone;
-  static const IconData hourglassFilled =
-      filled.AntdIconsFilled.hourglassFilled;
-  static const IconData hourglassOutlined =
-      outlined.AntdIconsOutlined.hourglassOutlined;
-  static const String hourglassTwoTone =
-      twotone.AntdIconsTwoTone.hourglassTwoTone;
-  static const IconData html5Filled = filled.AntdIconsFilled.html5Filled;
-  static const IconData html5Outlined =
-      outlined.AntdIconsOutlined.html5Outlined;
-  static const String html5TwoTone = twotone.AntdIconsTwoTone.html5TwoTone;
-  static const IconData idcardFilled = filled.AntdIconsFilled.idcardFilled;
-  static const IconData idcardOutlined =
-      outlined.AntdIconsOutlined.idcardOutlined;
-  static const String idcardTwoTone = twotone.AntdIconsTwoTone.idcardTwoTone;
-  static const IconData ieCircleFilled = filled.AntdIconsFilled.ieCircleFilled;
-  static const IconData ieOutlined = outlined.AntdIconsOutlined.ieOutlined;
-  static const IconData ieSquareFilled = filled.AntdIconsFilled.ieSquareFilled;
-  static const IconData importOutlined =
-      outlined.AntdIconsOutlined.importOutlined;
-  static const IconData inboxOutlined =
-      outlined.AntdIconsOutlined.inboxOutlined;
-  static const IconData infoCircleFilled =
-      filled.AntdIconsFilled.infoCircleFilled;
-  static const IconData infoCircleOutlined =
-      outlined.AntdIconsOutlined.infoCircleOutlined;
-  static const String infoCircleTwoTone =
-      twotone.AntdIconsTwoTone.infoCircleTwoTone;
-  static const IconData infoOutlined = outlined.AntdIconsOutlined.infoOutlined;
-  static const IconData insertRowAboveOutlined =
-      outlined.AntdIconsOutlined.insertRowAboveOutlined;
-  static const IconData insertRowBelowOutlined =
-      outlined.AntdIconsOutlined.insertRowBelowOutlined;
-  static const IconData insertRowLeftOutlined =
-      outlined.AntdIconsOutlined.insertRowLeftOutlined;
-  static const IconData insertRowRightOutlined =
-      outlined.AntdIconsOutlined.insertRowRightOutlined;
-  static const IconData instagramFilled =
-      filled.AntdIconsFilled.instagramFilled;
-  static const IconData instagramOutlined =
-      outlined.AntdIconsOutlined.instagramOutlined;
-  static const IconData insuranceFilled =
-      filled.AntdIconsFilled.insuranceFilled;
-  static const IconData insuranceOutlined =
-      outlined.AntdIconsOutlined.insuranceOutlined;
-  static const String insuranceTwoTone =
-      twotone.AntdIconsTwoTone.insuranceTwoTone;
-  static const IconData interactionFilled =
-      filled.AntdIconsFilled.interactionFilled;
-  static const IconData interactionOutlined =
-      outlined.AntdIconsOutlined.interactionOutlined;
-  static const String interactionTwoTone =
-      twotone.AntdIconsTwoTone.interactionTwoTone;
-  static const IconData issuesCloseOutlined =
-      outlined.AntdIconsOutlined.issuesCloseOutlined;
-  static const IconData italicOutlined =
-      outlined.AntdIconsOutlined.italicOutlined;
-  static const IconData javaOutlined = outlined.AntdIconsOutlined.javaOutlined;
-  static const IconData javaScriptOutlined =
-      outlined.AntdIconsOutlined.javaScriptOutlined;
-  static const IconData keyOutlined = outlined.AntdIconsOutlined.keyOutlined;
-  static const IconData kubernetesOutlined =
-      outlined.AntdIconsOutlined.kubernetesOutlined;
-  static const IconData laptopOutlined =
-      outlined.AntdIconsOutlined.laptopOutlined;
-  static const IconData layoutFilled = filled.AntdIconsFilled.layoutFilled;
-  static const IconData layoutOutlined =
-      outlined.AntdIconsOutlined.layoutOutlined;
-  static const String layoutTwoTone = twotone.AntdIconsTwoTone.layoutTwoTone;
-  static const IconData leftCircleFilled =
-      filled.AntdIconsFilled.leftCircleFilled;
-  static const IconData leftCircleOutlined =
-      outlined.AntdIconsOutlined.leftCircleOutlined;
-  static const String leftCircleTwoTone =
-      twotone.AntdIconsTwoTone.leftCircleTwoTone;
-  static const IconData leftOutlined = outlined.AntdIconsOutlined.leftOutlined;
-  static const IconData leftSquareFilled =
-      filled.AntdIconsFilled.leftSquareFilled;
-  static const IconData leftSquareOutlined =
-      outlined.AntdIconsOutlined.leftSquareOutlined;
-  static const String leftSquareTwoTone =
-      twotone.AntdIconsTwoTone.leftSquareTwoTone;
-  static const IconData likeFilled = filled.AntdIconsFilled.likeFilled;
-  static const IconData likeOutlined = outlined.AntdIconsOutlined.likeOutlined;
-  static const String likeTwoTone = twotone.AntdIconsTwoTone.likeTwoTone;
-  static const IconData lineChartOutlined =
-      outlined.AntdIconsOutlined.lineChartOutlined;
-  static const IconData lineHeightOutlined =
-      outlined.AntdIconsOutlined.lineHeightOutlined;
-  static const IconData lineOutlined = outlined.AntdIconsOutlined.lineOutlined;
-  static const IconData linkOutlined = outlined.AntdIconsOutlined.linkOutlined;
-  static const IconData linkedinFilled = filled.AntdIconsFilled.linkedinFilled;
-  static const IconData linkedinOutlined =
-      outlined.AntdIconsOutlined.linkedinOutlined;
-  static const IconData linuxOutlined =
-      outlined.AntdIconsOutlined.linuxOutlined;
-  static const IconData loading3QuartersOutlined =
-      outlined.AntdIconsOutlined.loading3QuartersOutlined;
-  static const IconData loadingOutlined =
-      outlined.AntdIconsOutlined.loadingOutlined;
-  static const IconData lockFilled = filled.AntdIconsFilled.lockFilled;
-  static const IconData lockOutlined = outlined.AntdIconsOutlined.lockOutlined;
-  static const String lockTwoTone = twotone.AntdIconsTwoTone.lockTwoTone;
-  static const IconData loginOutlined =
-      outlined.AntdIconsOutlined.loginOutlined;
-  static const IconData logoutOutlined =
-      outlined.AntdIconsOutlined.logoutOutlined;
-  static const IconData macCommandFilled =
-      filled.AntdIconsFilled.macCommandFilled;
-  static const IconData macCommandOutlined =
-      outlined.AntdIconsOutlined.macCommandOutlined;
-  static const IconData mailFilled = filled.AntdIconsFilled.mailFilled;
-  static const IconData mailOutlined = outlined.AntdIconsOutlined.mailOutlined;
-  static const String mailTwoTone = twotone.AntdIconsTwoTone.mailTwoTone;
-  static const IconData manOutlined = outlined.AntdIconsOutlined.manOutlined;
-  static const IconData medicineBoxFilled =
-      filled.AntdIconsFilled.medicineBoxFilled;
-  static const IconData medicineBoxOutlined =
-      outlined.AntdIconsOutlined.medicineBoxOutlined;
-  static const String medicineBoxTwoTone =
-      twotone.AntdIconsTwoTone.medicineBoxTwoTone;
-  static const IconData mediumCircleFilled =
-      filled.AntdIconsFilled.mediumCircleFilled;
-  static const IconData mediumOutlined =
-      outlined.AntdIconsOutlined.mediumOutlined;
-  static const IconData mediumSquareFilled =
-      filled.AntdIconsFilled.mediumSquareFilled;
-  static const IconData mediumWorkmarkOutlined =
-      outlined.AntdIconsOutlined.mediumWorkmarkOutlined;
-  static const IconData mehFilled = filled.AntdIconsFilled.mehFilled;
-  static const IconData mehOutlined = outlined.AntdIconsOutlined.mehOutlined;
-  static const String mehTwoTone = twotone.AntdIconsTwoTone.mehTwoTone;
-  static const IconData menuFoldOutlined =
-      outlined.AntdIconsOutlined.menuFoldOutlined;
-  static const IconData menuOutlined = outlined.AntdIconsOutlined.menuOutlined;
-  static const IconData menuUnfoldOutlined =
-      outlined.AntdIconsOutlined.menuUnfoldOutlined;
-  static const IconData mergeCellsOutlined =
-      outlined.AntdIconsOutlined.mergeCellsOutlined;
-  static const IconData mergeFilled = filled.AntdIconsFilled.mergeFilled;
-  static const IconData mergeOutlined =
-      outlined.AntdIconsOutlined.mergeOutlined;
-  static const IconData messageFilled = filled.AntdIconsFilled.messageFilled;
-  static const IconData messageOutlined =
-      outlined.AntdIconsOutlined.messageOutlined;
-  static const String messageTwoTone = twotone.AntdIconsTwoTone.messageTwoTone;
-  static const IconData minusCircleFilled =
-      filled.AntdIconsFilled.minusCircleFilled;
-  static const IconData minusCircleOutlined =
-      outlined.AntdIconsOutlined.minusCircleOutlined;
-  static const String minusCircleTwoTone =
-      twotone.AntdIconsTwoTone.minusCircleTwoTone;
-  static const IconData minusOutlined =
-      outlined.AntdIconsOutlined.minusOutlined;
-  static const IconData minusSquareFilled =
-      filled.AntdIconsFilled.minusSquareFilled;
-  static const IconData minusSquareOutlined =
-      outlined.AntdIconsOutlined.minusSquareOutlined;
-  static const String minusSquareTwoTone =
-      twotone.AntdIconsTwoTone.minusSquareTwoTone;
-  static const IconData mobileFilled = filled.AntdIconsFilled.mobileFilled;
-  static const IconData mobileOutlined =
-      outlined.AntdIconsOutlined.mobileOutlined;
-  static const String mobileTwoTone = twotone.AntdIconsTwoTone.mobileTwoTone;
-  static const IconData moneyCollectFilled =
-      filled.AntdIconsFilled.moneyCollectFilled;
-  static const IconData moneyCollectOutlined =
-      outlined.AntdIconsOutlined.moneyCollectOutlined;
-  static const String moneyCollectTwoTone =
-      twotone.AntdIconsTwoTone.moneyCollectTwoTone;
-  static const IconData monitorOutlined =
-      outlined.AntdIconsOutlined.monitorOutlined;
-  static const IconData moonFilled = filled.AntdIconsFilled.moonFilled;
-  static const IconData moonOutlined = outlined.AntdIconsOutlined.moonOutlined;
-  static const IconData moreOutlined = outlined.AntdIconsOutlined.moreOutlined;
-  static const IconData mutedFilled = filled.AntdIconsFilled.mutedFilled;
-  static const IconData mutedOutlined =
-      outlined.AntdIconsOutlined.mutedOutlined;
-  static const IconData nodeCollapseOutlined =
-      outlined.AntdIconsOutlined.nodeCollapseOutlined;
-  static const IconData nodeExpandOutlined =
-      outlined.AntdIconsOutlined.nodeExpandOutlined;
-  static const IconData nodeIndexOutlined =
-      outlined.AntdIconsOutlined.nodeIndexOutlined;
-  static const IconData notificationFilled =
-      filled.AntdIconsFilled.notificationFilled;
-  static const IconData notificationOutlined =
-      outlined.AntdIconsOutlined.notificationOutlined;
-  static const String notificationTwoTone =
-      twotone.AntdIconsTwoTone.notificationTwoTone;
-  static const IconData numberOutlined =
-      outlined.AntdIconsOutlined.numberOutlined;
-  static const IconData oneToOneOutlined =
-      outlined.AntdIconsOutlined.oneToOneOutlined;
-  static const IconData openAIFilled = filled.AntdIconsFilled.openAIFilled;
-  static const IconData openAIOutlined =
-      outlined.AntdIconsOutlined.openAIOutlined;
-  static const IconData orderedListOutlined =
-      outlined.AntdIconsOutlined.orderedListOutlined;
-  static const IconData paperClipOutlined =
-      outlined.AntdIconsOutlined.paperClipOutlined;
-  static const IconData partitionOutlined =
-      outlined.AntdIconsOutlined.partitionOutlined;
-  static const IconData pauseCircleFilled =
-      filled.AntdIconsFilled.pauseCircleFilled;
-  static const IconData pauseCircleOutlined =
-      outlined.AntdIconsOutlined.pauseCircleOutlined;
-  static const String pauseCircleTwoTone =
-      twotone.AntdIconsTwoTone.pauseCircleTwoTone;
-  static const IconData pauseOutlined =
-      outlined.AntdIconsOutlined.pauseOutlined;
-  static const IconData payCircleFilled =
-      filled.AntdIconsFilled.payCircleFilled;
-  static const IconData payCircleOutlined =
-      outlined.AntdIconsOutlined.payCircleOutlined;
-  static const IconData percentageOutlined =
-      outlined.AntdIconsOutlined.percentageOutlined;
-  static const IconData phoneFilled = filled.AntdIconsFilled.phoneFilled;
-  static const IconData phoneOutlined =
-      outlined.AntdIconsOutlined.phoneOutlined;
-  static const String phoneTwoTone = twotone.AntdIconsTwoTone.phoneTwoTone;
-  static const IconData picCenterOutlined =
-      outlined.AntdIconsOutlined.picCenterOutlined;
-  static const IconData picLeftOutlined =
-      outlined.AntdIconsOutlined.picLeftOutlined;
-  static const IconData picRightOutlined =
-      outlined.AntdIconsOutlined.picRightOutlined;
-  static const IconData pictureFilled = filled.AntdIconsFilled.pictureFilled;
-  static const IconData pictureOutlined =
-      outlined.AntdIconsOutlined.pictureOutlined;
-  static const String pictureTwoTone = twotone.AntdIconsTwoTone.pictureTwoTone;
-  static const IconData pieChartFilled = filled.AntdIconsFilled.pieChartFilled;
-  static const IconData pieChartOutlined =
-      outlined.AntdIconsOutlined.pieChartOutlined;
-  static const String pieChartTwoTone =
-      twotone.AntdIconsTwoTone.pieChartTwoTone;
-  static const IconData pinterestFilled =
-      filled.AntdIconsFilled.pinterestFilled;
-  static const IconData pinterestOutlined =
-      outlined.AntdIconsOutlined.pinterestOutlined;
-  static const IconData playCircleFilled =
-      filled.AntdIconsFilled.playCircleFilled;
-  static const IconData playCircleOutlined =
-      outlined.AntdIconsOutlined.playCircleOutlined;
-  static const String playCircleTwoTone =
-      twotone.AntdIconsTwoTone.playCircleTwoTone;
-  static const IconData playSquareFilled =
-      filled.AntdIconsFilled.playSquareFilled;
-  static const IconData playSquareOutlined =
-      outlined.AntdIconsOutlined.playSquareOutlined;
-  static const String playSquareTwoTone =
-      twotone.AntdIconsTwoTone.playSquareTwoTone;
-  static const IconData plusCircleFilled =
-      filled.AntdIconsFilled.plusCircleFilled;
-  static const IconData plusCircleOutlined =
-      outlined.AntdIconsOutlined.plusCircleOutlined;
-  static const String plusCircleTwoTone =
-      twotone.AntdIconsTwoTone.plusCircleTwoTone;
-  static const IconData plusOutlined = outlined.AntdIconsOutlined.plusOutlined;
-  static const IconData plusSquareFilled =
-      filled.AntdIconsFilled.plusSquareFilled;
-  static const IconData plusSquareOutlined =
-      outlined.AntdIconsOutlined.plusSquareOutlined;
-  static const String plusSquareTwoTone =
-      twotone.AntdIconsTwoTone.plusSquareTwoTone;
-  static const IconData poundCircleFilled =
-      filled.AntdIconsFilled.poundCircleFilled;
-  static const IconData poundCircleOutlined =
-      outlined.AntdIconsOutlined.poundCircleOutlined;
-  static const String poundCircleTwoTone =
-      twotone.AntdIconsTwoTone.poundCircleTwoTone;
-  static const IconData poundOutlined =
-      outlined.AntdIconsOutlined.poundOutlined;
-  static const IconData poweroffOutlined =
-      outlined.AntdIconsOutlined.poweroffOutlined;
-  static const IconData printerFilled = filled.AntdIconsFilled.printerFilled;
-  static const IconData printerOutlined =
-      outlined.AntdIconsOutlined.printerOutlined;
-  static const String printerTwoTone = twotone.AntdIconsTwoTone.printerTwoTone;
-  static const IconData productFilled = filled.AntdIconsFilled.productFilled;
-  static const IconData productOutlined =
-      outlined.AntdIconsOutlined.productOutlined;
-  static const IconData profileFilled = filled.AntdIconsFilled.profileFilled;
-  static const IconData profileOutlined =
-      outlined.AntdIconsOutlined.profileOutlined;
-  static const String profileTwoTone = twotone.AntdIconsTwoTone.profileTwoTone;
-  static const IconData projectFilled = filled.AntdIconsFilled.projectFilled;
-  static const IconData projectOutlined =
-      outlined.AntdIconsOutlined.projectOutlined;
-  static const String projectTwoTone = twotone.AntdIconsTwoTone.projectTwoTone;
-  static const IconData propertySafetyFilled =
-      filled.AntdIconsFilled.propertySafetyFilled;
-  static const IconData propertySafetyOutlined =
-      outlined.AntdIconsOutlined.propertySafetyOutlined;
-  static const String propertySafetyTwoTone =
-      twotone.AntdIconsTwoTone.propertySafetyTwoTone;
-  static const IconData pullRequestOutlined =
-      outlined.AntdIconsOutlined.pullRequestOutlined;
-  static const IconData pushpinFilled = filled.AntdIconsFilled.pushpinFilled;
-  static const IconData pushpinOutlined =
-      outlined.AntdIconsOutlined.pushpinOutlined;
-  static const String pushpinTwoTone = twotone.AntdIconsTwoTone.pushpinTwoTone;
-  static const IconData pythonOutlined =
-      outlined.AntdIconsOutlined.pythonOutlined;
-  static const IconData qqCircleFilled = filled.AntdIconsFilled.qqCircleFilled;
-  static const IconData qqOutlined = outlined.AntdIconsOutlined.qqOutlined;
-  static const IconData qqSquareFilled = filled.AntdIconsFilled.qqSquareFilled;
-  static const IconData qrcodeOutlined =
-      outlined.AntdIconsOutlined.qrcodeOutlined;
-  static const IconData questionCircleFilled =
-      filled.AntdIconsFilled.questionCircleFilled;
-  static const IconData questionCircleOutlined =
-      outlined.AntdIconsOutlined.questionCircleOutlined;
-  static const String questionCircleTwoTone =
-      twotone.AntdIconsTwoTone.questionCircleTwoTone;
-  static const IconData questionOutlined =
-      outlined.AntdIconsOutlined.questionOutlined;
-  static const IconData radarChartOutlined =
-      outlined.AntdIconsOutlined.radarChartOutlined;
-  static const IconData radiusBottomleftOutlined =
-      outlined.AntdIconsOutlined.radiusBottomleftOutlined;
-  static const IconData radiusBottomrightOutlined =
-      outlined.AntdIconsOutlined.radiusBottomrightOutlined;
-  static const IconData radiusSettingOutlined =
-      outlined.AntdIconsOutlined.radiusSettingOutlined;
-  static const IconData radiusUpleftOutlined =
-      outlined.AntdIconsOutlined.radiusUpleftOutlined;
-  static const IconData radiusUprightOutlined =
-      outlined.AntdIconsOutlined.radiusUprightOutlined;
-  static const IconData readFilled = filled.AntdIconsFilled.readFilled;
-  static const IconData readOutlined = outlined.AntdIconsOutlined.readOutlined;
-  static const IconData reconciliationFilled =
-      filled.AntdIconsFilled.reconciliationFilled;
-  static const IconData reconciliationOutlined =
-      outlined.AntdIconsOutlined.reconciliationOutlined;
-  static const String reconciliationTwoTone =
-      twotone.AntdIconsTwoTone.reconciliationTwoTone;
-  static const IconData redEnvelopeFilled =
-      filled.AntdIconsFilled.redEnvelopeFilled;
-  static const IconData redEnvelopeOutlined =
-      outlined.AntdIconsOutlined.redEnvelopeOutlined;
-  static const String redEnvelopeTwoTone =
-      twotone.AntdIconsTwoTone.redEnvelopeTwoTone;
-  static const IconData redditCircleFilled =
-      filled.AntdIconsFilled.redditCircleFilled;
-  static const IconData redditOutlined =
-      outlined.AntdIconsOutlined.redditOutlined;
-  static const IconData redditSquareFilled =
-      filled.AntdIconsFilled.redditSquareFilled;
-  static const IconData redoOutlined = outlined.AntdIconsOutlined.redoOutlined;
-  static const IconData reloadOutlined =
-      outlined.AntdIconsOutlined.reloadOutlined;
-  static const IconData restFilled = filled.AntdIconsFilled.restFilled;
-  static const IconData restOutlined = outlined.AntdIconsOutlined.restOutlined;
-  static const String restTwoTone = twotone.AntdIconsTwoTone.restTwoTone;
-  static const IconData retweetOutlined =
-      outlined.AntdIconsOutlined.retweetOutlined;
-  static const IconData rightCircleFilled =
-      filled.AntdIconsFilled.rightCircleFilled;
-  static const IconData rightCircleOutlined =
-      outlined.AntdIconsOutlined.rightCircleOutlined;
-  static const String rightCircleTwoTone =
-      twotone.AntdIconsTwoTone.rightCircleTwoTone;
-  static const IconData rightOutlined =
-      outlined.AntdIconsOutlined.rightOutlined;
-  static const IconData rightSquareFilled =
-      filled.AntdIconsFilled.rightSquareFilled;
-  static const IconData rightSquareOutlined =
-      outlined.AntdIconsOutlined.rightSquareOutlined;
-  static const String rightSquareTwoTone =
-      twotone.AntdIconsTwoTone.rightSquareTwoTone;
-  static const IconData riseOutlined = outlined.AntdIconsOutlined.riseOutlined;
-  static const IconData robotFilled = filled.AntdIconsFilled.robotFilled;
-  static const IconData robotOutlined =
-      outlined.AntdIconsOutlined.robotOutlined;
-  static const IconData rocketFilled = filled.AntdIconsFilled.rocketFilled;
-  static const IconData rocketOutlined =
-      outlined.AntdIconsOutlined.rocketOutlined;
-  static const String rocketTwoTone = twotone.AntdIconsTwoTone.rocketTwoTone;
-  static const IconData rollbackOutlined =
-      outlined.AntdIconsOutlined.rollbackOutlined;
-  static const IconData rotateLeftOutlined =
-      outlined.AntdIconsOutlined.rotateLeftOutlined;
-  static const IconData rotateRightOutlined =
-      outlined.AntdIconsOutlined.rotateRightOutlined;
-  static const IconData rubyOutlined = outlined.AntdIconsOutlined.rubyOutlined;
-  static const IconData safetyCertificateFilled =
-      filled.AntdIconsFilled.safetyCertificateFilled;
-  static const IconData safetyCertificateOutlined =
-      outlined.AntdIconsOutlined.safetyCertificateOutlined;
-  static const String safetyCertificateTwoTone =
-      twotone.AntdIconsTwoTone.safetyCertificateTwoTone;
-  static const IconData safetyOutlined =
-      outlined.AntdIconsOutlined.safetyOutlined;
-  static const IconData saveFilled = filled.AntdIconsFilled.saveFilled;
-  static const IconData saveOutlined = outlined.AntdIconsOutlined.saveOutlined;
-  static const String saveTwoTone = twotone.AntdIconsTwoTone.saveTwoTone;
-  static const IconData scanOutlined = outlined.AntdIconsOutlined.scanOutlined;
-  static const IconData scheduleFilled = filled.AntdIconsFilled.scheduleFilled;
-  static const IconData scheduleOutlined =
-      outlined.AntdIconsOutlined.scheduleOutlined;
-  static const String scheduleTwoTone =
-      twotone.AntdIconsTwoTone.scheduleTwoTone;
-  static const IconData scissorOutlined =
-      outlined.AntdIconsOutlined.scissorOutlined;
-  static const IconData searchOutlined =
-      outlined.AntdIconsOutlined.searchOutlined;
-  static const IconData securityScanFilled =
-      filled.AntdIconsFilled.securityScanFilled;
-  static const IconData securityScanOutlined =
-      outlined.AntdIconsOutlined.securityScanOutlined;
-  static const String securityScanTwoTone =
-      twotone.AntdIconsTwoTone.securityScanTwoTone;
-  static const IconData selectOutlined =
-      outlined.AntdIconsOutlined.selectOutlined;
-  static const IconData sendOutlined = outlined.AntdIconsOutlined.sendOutlined;
-  static const IconData settingFilled = filled.AntdIconsFilled.settingFilled;
-  static const IconData settingOutlined =
-      outlined.AntdIconsOutlined.settingOutlined;
-  static const String settingTwoTone = twotone.AntdIconsTwoTone.settingTwoTone;
-  static const IconData shakeOutlined =
-      outlined.AntdIconsOutlined.shakeOutlined;
-  static const IconData shareAltOutlined =
-      outlined.AntdIconsOutlined.shareAltOutlined;
-  static const IconData shopFilled = filled.AntdIconsFilled.shopFilled;
-  static const IconData shopOutlined = outlined.AntdIconsOutlined.shopOutlined;
-  static const String shopTwoTone = twotone.AntdIconsTwoTone.shopTwoTone;
-  static const IconData shoppingCartOutlined =
-      outlined.AntdIconsOutlined.shoppingCartOutlined;
-  static const IconData shoppingFilled = filled.AntdIconsFilled.shoppingFilled;
-  static const IconData shoppingOutlined =
-      outlined.AntdIconsOutlined.shoppingOutlined;
-  static const String shoppingTwoTone =
-      twotone.AntdIconsTwoTone.shoppingTwoTone;
-  static const IconData shrinkOutlined =
-      outlined.AntdIconsOutlined.shrinkOutlined;
-  static const IconData signalFilled = filled.AntdIconsFilled.signalFilled;
-  static const IconData signatureFilled =
-      filled.AntdIconsFilled.signatureFilled;
-  static const IconData signatureOutlined =
-      outlined.AntdIconsOutlined.signatureOutlined;
-  static const IconData sisternodeOutlined =
-      outlined.AntdIconsOutlined.sisternodeOutlined;
-  static const IconData sketchCircleFilled =
-      filled.AntdIconsFilled.sketchCircleFilled;
-  static const IconData sketchOutlined =
-      outlined.AntdIconsOutlined.sketchOutlined;
-  static const IconData sketchSquareFilled =
-      filled.AntdIconsFilled.sketchSquareFilled;
-  static const IconData skinFilled = filled.AntdIconsFilled.skinFilled;
-  static const IconData skinOutlined = outlined.AntdIconsOutlined.skinOutlined;
-  static const String skinTwoTone = twotone.AntdIconsTwoTone.skinTwoTone;
-  static const IconData skypeFilled = filled.AntdIconsFilled.skypeFilled;
-  static const IconData skypeOutlined =
-      outlined.AntdIconsOutlined.skypeOutlined;
-  static const IconData slackCircleFilled =
-      filled.AntdIconsFilled.slackCircleFilled;
-  static const IconData slackOutlined =
-      outlined.AntdIconsOutlined.slackOutlined;
-  static const IconData slackSquareFilled =
-      filled.AntdIconsFilled.slackSquareFilled;
-  static const IconData slackSquareOutlined =
-      outlined.AntdIconsOutlined.slackSquareOutlined;
-  static const IconData slidersFilled = filled.AntdIconsFilled.slidersFilled;
-  static const IconData slidersOutlined =
-      outlined.AntdIconsOutlined.slidersOutlined;
-  static const String slidersTwoTone = twotone.AntdIconsTwoTone.slidersTwoTone;
-  static const IconData smallDashOutlined =
-      outlined.AntdIconsOutlined.smallDashOutlined;
-  static const IconData smileFilled = filled.AntdIconsFilled.smileFilled;
-  static const IconData smileOutlined =
-      outlined.AntdIconsOutlined.smileOutlined;
-  static const String smileTwoTone = twotone.AntdIconsTwoTone.smileTwoTone;
-  static const IconData snippetsFilled = filled.AntdIconsFilled.snippetsFilled;
-  static const IconData snippetsOutlined =
-      outlined.AntdIconsOutlined.snippetsOutlined;
-  static const String snippetsTwoTone =
-      twotone.AntdIconsTwoTone.snippetsTwoTone;
-  static const IconData solutionOutlined =
-      outlined.AntdIconsOutlined.solutionOutlined;
-  static const IconData sortAscendingOutlined =
-      outlined.AntdIconsOutlined.sortAscendingOutlined;
-  static const IconData sortDescendingOutlined =
-      outlined.AntdIconsOutlined.sortDescendingOutlined;
-  static const IconData soundFilled = filled.AntdIconsFilled.soundFilled;
-  static const IconData soundOutlined =
-      outlined.AntdIconsOutlined.soundOutlined;
-  static const String soundTwoTone = twotone.AntdIconsTwoTone.soundTwoTone;
-  static const IconData splitCellsOutlined =
-      outlined.AntdIconsOutlined.splitCellsOutlined;
-  static const IconData spotifyFilled = filled.AntdIconsFilled.spotifyFilled;
-  static const IconData spotifyOutlined =
-      outlined.AntdIconsOutlined.spotifyOutlined;
-  static const IconData starFilled = filled.AntdIconsFilled.starFilled;
-  static const IconData starOutlined = outlined.AntdIconsOutlined.starOutlined;
-  static const String starTwoTone = twotone.AntdIconsTwoTone.starTwoTone;
-  static const IconData stepBackwardFilled =
-      filled.AntdIconsFilled.stepBackwardFilled;
-  static const IconData stepBackwardOutlined =
-      outlined.AntdIconsOutlined.stepBackwardOutlined;
-  static const IconData stepForwardFilled =
-      filled.AntdIconsFilled.stepForwardFilled;
-  static const IconData stepForwardOutlined =
-      outlined.AntdIconsOutlined.stepForwardOutlined;
-  static const IconData stockOutlined =
-      outlined.AntdIconsOutlined.stockOutlined;
-  static const IconData stopFilled = filled.AntdIconsFilled.stopFilled;
-  static const IconData stopOutlined = outlined.AntdIconsOutlined.stopOutlined;
-  static const String stopTwoTone = twotone.AntdIconsTwoTone.stopTwoTone;
-  static const IconData strikethroughOutlined =
-      outlined.AntdIconsOutlined.strikethroughOutlined;
-  static const IconData subnodeOutlined =
-      outlined.AntdIconsOutlined.subnodeOutlined;
-  static const IconData sunFilled = filled.AntdIconsFilled.sunFilled;
-  static const IconData sunOutlined = outlined.AntdIconsOutlined.sunOutlined;
-  static const IconData swapLeftOutlined =
-      outlined.AntdIconsOutlined.swapLeftOutlined;
-  static const IconData swapOutlined = outlined.AntdIconsOutlined.swapOutlined;
-  static const IconData swapRightOutlined =
-      outlined.AntdIconsOutlined.swapRightOutlined;
-  static const IconData switcherFilled = filled.AntdIconsFilled.switcherFilled;
-  static const IconData switcherOutlined =
-      outlined.AntdIconsOutlined.switcherOutlined;
-  static const String switcherTwoTone =
-      twotone.AntdIconsTwoTone.switcherTwoTone;
-  static const IconData syncOutlined = outlined.AntdIconsOutlined.syncOutlined;
-  static const IconData tableOutlined =
-      outlined.AntdIconsOutlined.tableOutlined;
-  static const IconData tabletFilled = filled.AntdIconsFilled.tabletFilled;
-  static const IconData tabletOutlined =
-      outlined.AntdIconsOutlined.tabletOutlined;
-  static const String tabletTwoTone = twotone.AntdIconsTwoTone.tabletTwoTone;
-  static const IconData tagFilled = filled.AntdIconsFilled.tagFilled;
-  static const IconData tagOutlined = outlined.AntdIconsOutlined.tagOutlined;
-  static const String tagTwoTone = twotone.AntdIconsTwoTone.tagTwoTone;
-  static const IconData tagsFilled = filled.AntdIconsFilled.tagsFilled;
-  static const IconData tagsOutlined = outlined.AntdIconsOutlined.tagsOutlined;
-  static const String tagsTwoTone = twotone.AntdIconsTwoTone.tagsTwoTone;
-  static const IconData taobaoCircleFilled =
-      filled.AntdIconsFilled.taobaoCircleFilled;
-  static const IconData taobaoCircleOutlined =
-      outlined.AntdIconsOutlined.taobaoCircleOutlined;
-  static const IconData taobaoOutlined =
-      outlined.AntdIconsOutlined.taobaoOutlined;
-  static const IconData taobaoSquareFilled =
-      filled.AntdIconsFilled.taobaoSquareFilled;
-  static const IconData teamOutlined = outlined.AntdIconsOutlined.teamOutlined;
-  static const IconData thunderboltFilled =
-      filled.AntdIconsFilled.thunderboltFilled;
-  static const IconData thunderboltOutlined =
-      outlined.AntdIconsOutlined.thunderboltOutlined;
-  static const String thunderboltTwoTone =
-      twotone.AntdIconsTwoTone.thunderboltTwoTone;
-  static const IconData tikTokFilled = filled.AntdIconsFilled.tikTokFilled;
-  static const IconData tikTokOutlined =
-      outlined.AntdIconsOutlined.tikTokOutlined;
-  static const IconData toTopOutlined =
-      outlined.AntdIconsOutlined.toTopOutlined;
-  static const IconData toolFilled = filled.AntdIconsFilled.toolFilled;
-  static const IconData toolOutlined = outlined.AntdIconsOutlined.toolOutlined;
-  static const String toolTwoTone = twotone.AntdIconsTwoTone.toolTwoTone;
-  static const IconData trademarkCircleFilled =
-      filled.AntdIconsFilled.trademarkCircleFilled;
-  static const IconData trademarkCircleOutlined =
-      outlined.AntdIconsOutlined.trademarkCircleOutlined;
-  static const String trademarkCircleTwoTone =
-      twotone.AntdIconsTwoTone.trademarkCircleTwoTone;
-  static const IconData trademarkOutlined =
-      outlined.AntdIconsOutlined.trademarkOutlined;
-  static const IconData transactionOutlined =
-      outlined.AntdIconsOutlined.transactionOutlined;
-  static const IconData translationOutlined =
-      outlined.AntdIconsOutlined.translationOutlined;
-  static const IconData trophyFilled = filled.AntdIconsFilled.trophyFilled;
-  static const IconData trophyOutlined =
-      outlined.AntdIconsOutlined.trophyOutlined;
-  static const String trophyTwoTone = twotone.AntdIconsTwoTone.trophyTwoTone;
-  static const IconData truckFilled = filled.AntdIconsFilled.truckFilled;
-  static const IconData truckOutlined =
-      outlined.AntdIconsOutlined.truckOutlined;
-  static const IconData twitchFilled = filled.AntdIconsFilled.twitchFilled;
-  static const IconData twitchOutlined =
-      outlined.AntdIconsOutlined.twitchOutlined;
-  static const IconData twitterCircleFilled =
-      filled.AntdIconsFilled.twitterCircleFilled;
-  static const IconData twitterOutlined =
-      outlined.AntdIconsOutlined.twitterOutlined;
-  static const IconData twitterSquareFilled =
-      filled.AntdIconsFilled.twitterSquareFilled;
-  static const IconData underlineOutlined =
-      outlined.AntdIconsOutlined.underlineOutlined;
-  static const IconData undoOutlined = outlined.AntdIconsOutlined.undoOutlined;
-  static const IconData ungroupOutlined =
-      outlined.AntdIconsOutlined.ungroupOutlined;
-  static const IconData unlockFilled = filled.AntdIconsFilled.unlockFilled;
-  static const IconData unlockOutlined =
-      outlined.AntdIconsOutlined.unlockOutlined;
-  static const String unlockTwoTone = twotone.AntdIconsTwoTone.unlockTwoTone;
-  static const IconData unorderedListOutlined =
-      outlined.AntdIconsOutlined.unorderedListOutlined;
-  static const IconData upCircleFilled = filled.AntdIconsFilled.upCircleFilled;
-  static const IconData upCircleOutlined =
-      outlined.AntdIconsOutlined.upCircleOutlined;
-  static const String upCircleTwoTone =
-      twotone.AntdIconsTwoTone.upCircleTwoTone;
-  static const IconData upOutlined = outlined.AntdIconsOutlined.upOutlined;
-  static const IconData upSquareFilled = filled.AntdIconsFilled.upSquareFilled;
-  static const IconData upSquareOutlined =
-      outlined.AntdIconsOutlined.upSquareOutlined;
-  static const String upSquareTwoTone =
-      twotone.AntdIconsTwoTone.upSquareTwoTone;
-  static const IconData uploadOutlined =
-      outlined.AntdIconsOutlined.uploadOutlined;
-  static const IconData usbFilled = filled.AntdIconsFilled.usbFilled;
-  static const IconData usbOutlined = outlined.AntdIconsOutlined.usbOutlined;
-  static const String usbTwoTone = twotone.AntdIconsTwoTone.usbTwoTone;
-  static const IconData userAddOutlined =
-      outlined.AntdIconsOutlined.userAddOutlined;
-  static const IconData userDeleteOutlined =
-      outlined.AntdIconsOutlined.userDeleteOutlined;
-  static const IconData userOutlined = outlined.AntdIconsOutlined.userOutlined;
-  static const IconData userSwitchOutlined =
-      outlined.AntdIconsOutlined.userSwitchOutlined;
-  static const IconData usergroupAddOutlined =
-      outlined.AntdIconsOutlined.usergroupAddOutlined;
-  static const IconData usergroupDeleteOutlined =
-      outlined.AntdIconsOutlined.usergroupDeleteOutlined;
-  static const IconData verifiedOutlined =
-      outlined.AntdIconsOutlined.verifiedOutlined;
-  static const IconData verticalAlignBottomOutlined =
-      outlined.AntdIconsOutlined.verticalAlignBottomOutlined;
-  static const IconData verticalAlignMiddleOutlined =
-      outlined.AntdIconsOutlined.verticalAlignMiddleOutlined;
-  static const IconData verticalAlignTopOutlined =
-      outlined.AntdIconsOutlined.verticalAlignTopOutlined;
-  static const IconData verticalLeftOutlined =
-      outlined.AntdIconsOutlined.verticalLeftOutlined;
-  static const IconData verticalRightOutlined =
-      outlined.AntdIconsOutlined.verticalRightOutlined;
-  static const IconData videoCameraAddOutlined =
-      outlined.AntdIconsOutlined.videoCameraAddOutlined;
-  static const IconData videoCameraFilled =
-      filled.AntdIconsFilled.videoCameraFilled;
-  static const IconData videoCameraOutlined =
-      outlined.AntdIconsOutlined.videoCameraOutlined;
-  static const String videoCameraTwoTone =
-      twotone.AntdIconsTwoTone.videoCameraTwoTone;
-  static const IconData walletFilled = filled.AntdIconsFilled.walletFilled;
-  static const IconData walletOutlined =
-      outlined.AntdIconsOutlined.walletOutlined;
-  static const String walletTwoTone = twotone.AntdIconsTwoTone.walletTwoTone;
-  static const IconData warningFilled = filled.AntdIconsFilled.warningFilled;
-  static const IconData warningOutlined =
-      outlined.AntdIconsOutlined.warningOutlined;
-  static const String warningTwoTone = twotone.AntdIconsTwoTone.warningTwoTone;
-  static const IconData wechatFilled = filled.AntdIconsFilled.wechatFilled;
-  static const IconData wechatOutlined =
-      outlined.AntdIconsOutlined.wechatOutlined;
-  static const IconData wechatWorkFilled =
-      filled.AntdIconsFilled.wechatWorkFilled;
-  static const IconData wechatWorkOutlined =
-      outlined.AntdIconsOutlined.wechatWorkOutlined;
-  static const IconData weiboCircleFilled =
-      filled.AntdIconsFilled.weiboCircleFilled;
-  static const IconData weiboCircleOutlined =
-      outlined.AntdIconsOutlined.weiboCircleOutlined;
-  static const IconData weiboOutlined =
-      outlined.AntdIconsOutlined.weiboOutlined;
-  static const IconData weiboSquareFilled =
-      filled.AntdIconsFilled.weiboSquareFilled;
-  static const IconData weiboSquareOutlined =
-      outlined.AntdIconsOutlined.weiboSquareOutlined;
-  static const IconData whatsAppOutlined =
-      outlined.AntdIconsOutlined.whatsAppOutlined;
-  static const IconData wifiOutlined = outlined.AntdIconsOutlined.wifiOutlined;
-  static const IconData windowsFilled = filled.AntdIconsFilled.windowsFilled;
-  static const IconData windowsOutlined =
-      outlined.AntdIconsOutlined.windowsOutlined;
-  static const IconData womanOutlined =
-      outlined.AntdIconsOutlined.womanOutlined;
-  static const IconData xFilled = filled.AntdIconsFilled.xFilled;
-  static const IconData xOutlined = outlined.AntdIconsOutlined.xOutlined;
-  static const IconData yahooFilled = filled.AntdIconsFilled.yahooFilled;
-  static const IconData yahooOutlined =
-      outlined.AntdIconsOutlined.yahooOutlined;
-  static const IconData youtubeFilled = filled.AntdIconsFilled.youtubeFilled;
-  static const IconData youtubeOutlined =
-      outlined.AntdIconsOutlined.youtubeOutlined;
-  static const IconData yuqueFilled = filled.AntdIconsFilled.yuqueFilled;
-  static const IconData yuqueOutlined =
-      outlined.AntdIconsOutlined.yuqueOutlined;
-  static const IconData zhihuCircleFilled =
-      filled.AntdIconsFilled.zhihuCircleFilled;
-  static const IconData zhihuOutlined =
-      outlined.AntdIconsOutlined.zhihuOutlined;
-  static const IconData zhihuSquareFilled =
-      filled.AntdIconsFilled.zhihuSquareFilled;
-  static const IconData zoomInOutlined =
-      outlined.AntdIconsOutlined.zoomInOutlined;
-  static const IconData zoomOutOutlined =
-      outlined.AntdIconsOutlined.zoomOutOutlined;
+abstract class AntIcons {
+  static const IconData accountBookFilled = filled.AntIconsFilled.accountBookFilled;
+  static const IconData accountBookOutlined = outlined.AntIconsOutlined.accountBookOutlined;
+  static const String accountBookTwoTone = twotone.AntIconsTwoTone.accountBookTwoTone;
+  static const IconData aimOutlined = outlined.AntIconsOutlined.aimOutlined;
+  static const IconData alertFilled = filled.AntIconsFilled.alertFilled;
+  static const IconData alertOutlined = outlined.AntIconsOutlined.alertOutlined;
+  static const String alertTwoTone = twotone.AntIconsTwoTone.alertTwoTone;
+  static const IconData alibabaOutlined = outlined.AntIconsOutlined.alibabaOutlined;
+  static const IconData alignCenterOutlined = outlined.AntIconsOutlined.alignCenterOutlined;
+  static const IconData alignLeftOutlined = outlined.AntIconsOutlined.alignLeftOutlined;
+  static const IconData alignRightOutlined = outlined.AntIconsOutlined.alignRightOutlined;
+  static const IconData alipayCircleFilled = filled.AntIconsFilled.alipayCircleFilled;
+  static const IconData alipayCircleOutlined = outlined.AntIconsOutlined.alipayCircleOutlined;
+  static const IconData alipayOutlined = outlined.AntIconsOutlined.alipayOutlined;
+  static const IconData alipaySquareFilled = filled.AntIconsFilled.alipaySquareFilled;
+  static const IconData aliwangwangFilled = filled.AntIconsFilled.aliwangwangFilled;
+  static const IconData aliwangwangOutlined = outlined.AntIconsOutlined.aliwangwangOutlined;
+  static const IconData aliyunOutlined = outlined.AntIconsOutlined.aliyunOutlined;
+  static const IconData amazonCircleFilled = filled.AntIconsFilled.amazonCircleFilled;
+  static const IconData amazonOutlined = outlined.AntIconsOutlined.amazonOutlined;
+  static const IconData amazonSquareFilled = filled.AntIconsFilled.amazonSquareFilled;
+  static const IconData androidFilled = filled.AntIconsFilled.androidFilled;
+  static const IconData androidOutlined = outlined.AntIconsOutlined.androidOutlined;
+  static const IconData antCloudOutlined = outlined.AntIconsOutlined.antCloudOutlined;
+  static const IconData antDesignOutlined = outlined.AntIconsOutlined.antDesignOutlined;
+  static const IconData apartmentOutlined = outlined.AntIconsOutlined.apartmentOutlined;
+  static const IconData apiFilled = filled.AntIconsFilled.apiFilled;
+  static const IconData apiOutlined = outlined.AntIconsOutlined.apiOutlined;
+  static const String apiTwoTone = twotone.AntIconsTwoTone.apiTwoTone;
+  static const IconData appleFilled = filled.AntIconsFilled.appleFilled;
+  static const IconData appleOutlined = outlined.AntIconsOutlined.appleOutlined;
+  static const IconData appstoreAddOutlined = outlined.AntIconsOutlined.appstoreAddOutlined;
+  static const IconData appstoreFilled = filled.AntIconsFilled.appstoreFilled;
+  static const IconData appstoreOutlined = outlined.AntIconsOutlined.appstoreOutlined;
+  static const String appstoreTwoTone = twotone.AntIconsTwoTone.appstoreTwoTone;
+  static const IconData areaChartOutlined = outlined.AntIconsOutlined.areaChartOutlined;
+  static const IconData arrowDownOutlined = outlined.AntIconsOutlined.arrowDownOutlined;
+  static const IconData arrowLeftOutlined = outlined.AntIconsOutlined.arrowLeftOutlined;
+  static const IconData arrowRightOutlined = outlined.AntIconsOutlined.arrowRightOutlined;
+  static const IconData arrowUpOutlined = outlined.AntIconsOutlined.arrowUpOutlined;
+  static const IconData arrowsAltOutlined = outlined.AntIconsOutlined.arrowsAltOutlined;
+  static const IconData audioFilled = filled.AntIconsFilled.audioFilled;
+  static const IconData audioMutedOutlined = outlined.AntIconsOutlined.audioMutedOutlined;
+  static const IconData audioOutlined = outlined.AntIconsOutlined.audioOutlined;
+  static const String audioTwoTone = twotone.AntIconsTwoTone.audioTwoTone;
+  static const IconData auditOutlined = outlined.AntIconsOutlined.auditOutlined;
+  static const IconData backwardFilled = filled.AntIconsFilled.backwardFilled;
+  static const IconData backwardOutlined = outlined.AntIconsOutlined.backwardOutlined;
+  static const IconData baiduOutlined = outlined.AntIconsOutlined.baiduOutlined;
+  static const IconData bankFilled = filled.AntIconsFilled.bankFilled;
+  static const IconData bankOutlined = outlined.AntIconsOutlined.bankOutlined;
+  static const String bankTwoTone = twotone.AntIconsTwoTone.bankTwoTone;
+  static const IconData barChartOutlined = outlined.AntIconsOutlined.barChartOutlined;
+  static const IconData barcodeOutlined = outlined.AntIconsOutlined.barcodeOutlined;
+  static const IconData barsOutlined = outlined.AntIconsOutlined.barsOutlined;
+  static const IconData behanceCircleFilled = filled.AntIconsFilled.behanceCircleFilled;
+  static const IconData behanceOutlined = outlined.AntIconsOutlined.behanceOutlined;
+  static const IconData behanceSquareFilled = filled.AntIconsFilled.behanceSquareFilled;
+  static const IconData behanceSquareOutlined = outlined.AntIconsOutlined.behanceSquareOutlined;
+  static const IconData bellFilled = filled.AntIconsFilled.bellFilled;
+  static const IconData bellOutlined = outlined.AntIconsOutlined.bellOutlined;
+  static const String bellTwoTone = twotone.AntIconsTwoTone.bellTwoTone;
+  static const IconData bgColorsOutlined = outlined.AntIconsOutlined.bgColorsOutlined;
+  static const IconData bilibiliFilled = filled.AntIconsFilled.bilibiliFilled;
+  static const IconData bilibiliOutlined = outlined.AntIconsOutlined.bilibiliOutlined;
+  static const IconData blockOutlined = outlined.AntIconsOutlined.blockOutlined;
+  static const IconData boldOutlined = outlined.AntIconsOutlined.boldOutlined;
+  static const IconData bookFilled = filled.AntIconsFilled.bookFilled;
+  static const IconData bookOutlined = outlined.AntIconsOutlined.bookOutlined;
+  static const String bookTwoTone = twotone.AntIconsTwoTone.bookTwoTone;
+  static const IconData borderBottomOutlined = outlined.AntIconsOutlined.borderBottomOutlined;
+  static const IconData borderHorizontalOutlined = outlined.AntIconsOutlined.borderHorizontalOutlined;
+  static const IconData borderInnerOutlined = outlined.AntIconsOutlined.borderInnerOutlined;
+  static const IconData borderLeftOutlined = outlined.AntIconsOutlined.borderLeftOutlined;
+  static const IconData borderOuterOutlined = outlined.AntIconsOutlined.borderOuterOutlined;
+  static const IconData borderOutlined = outlined.AntIconsOutlined.borderOutlined;
+  static const IconData borderRightOutlined = outlined.AntIconsOutlined.borderRightOutlined;
+  static const IconData borderTopOutlined = outlined.AntIconsOutlined.borderTopOutlined;
+  static const IconData borderVerticleOutlined = outlined.AntIconsOutlined.borderVerticleOutlined;
+  static const IconData borderlessTableOutlined = outlined.AntIconsOutlined.borderlessTableOutlined;
+  static const IconData boxPlotFilled = filled.AntIconsFilled.boxPlotFilled;
+  static const IconData boxPlotOutlined = outlined.AntIconsOutlined.boxPlotOutlined;
+  static const String boxPlotTwoTone = twotone.AntIconsTwoTone.boxPlotTwoTone;
+  static const IconData branchesOutlined = outlined.AntIconsOutlined.branchesOutlined;
+  static const IconData bugFilled = filled.AntIconsFilled.bugFilled;
+  static const IconData bugOutlined = outlined.AntIconsOutlined.bugOutlined;
+  static const String bugTwoTone = twotone.AntIconsTwoTone.bugTwoTone;
+  static const IconData buildFilled = filled.AntIconsFilled.buildFilled;
+  static const IconData buildOutlined = outlined.AntIconsOutlined.buildOutlined;
+  static const String buildTwoTone = twotone.AntIconsTwoTone.buildTwoTone;
+  static const IconData bulbFilled = filled.AntIconsFilled.bulbFilled;
+  static const IconData bulbOutlined = outlined.AntIconsOutlined.bulbOutlined;
+  static const String bulbTwoTone = twotone.AntIconsTwoTone.bulbTwoTone;
+  static const IconData calculatorFilled = filled.AntIconsFilled.calculatorFilled;
+  static const IconData calculatorOutlined = outlined.AntIconsOutlined.calculatorOutlined;
+  static const String calculatorTwoTone = twotone.AntIconsTwoTone.calculatorTwoTone;
+  static const IconData calendarFilled = filled.AntIconsFilled.calendarFilled;
+  static const IconData calendarOutlined = outlined.AntIconsOutlined.calendarOutlined;
+  static const String calendarTwoTone = twotone.AntIconsTwoTone.calendarTwoTone;
+  static const IconData cameraFilled = filled.AntIconsFilled.cameraFilled;
+  static const IconData cameraOutlined = outlined.AntIconsOutlined.cameraOutlined;
+  static const String cameraTwoTone = twotone.AntIconsTwoTone.cameraTwoTone;
+  static const IconData carFilled = filled.AntIconsFilled.carFilled;
+  static const IconData carOutlined = outlined.AntIconsOutlined.carOutlined;
+  static const String carTwoTone = twotone.AntIconsTwoTone.carTwoTone;
+  static const IconData caretDownFilled = filled.AntIconsFilled.caretDownFilled;
+  static const IconData caretDownOutlined = outlined.AntIconsOutlined.caretDownOutlined;
+  static const IconData caretLeftFilled = filled.AntIconsFilled.caretLeftFilled;
+  static const IconData caretLeftOutlined = outlined.AntIconsOutlined.caretLeftOutlined;
+  static const IconData caretRightFilled = filled.AntIconsFilled.caretRightFilled;
+  static const IconData caretRightOutlined = outlined.AntIconsOutlined.caretRightOutlined;
+  static const IconData caretUpFilled = filled.AntIconsFilled.caretUpFilled;
+  static const IconData caretUpOutlined = outlined.AntIconsOutlined.caretUpOutlined;
+  static const IconData carryOutFilled = filled.AntIconsFilled.carryOutFilled;
+  static const IconData carryOutOutlined = outlined.AntIconsOutlined.carryOutOutlined;
+  static const String carryOutTwoTone = twotone.AntIconsTwoTone.carryOutTwoTone;
+  static const IconData checkCircleFilled = filled.AntIconsFilled.checkCircleFilled;
+  static const IconData checkCircleOutlined = outlined.AntIconsOutlined.checkCircleOutlined;
+  static const String checkCircleTwoTone = twotone.AntIconsTwoTone.checkCircleTwoTone;
+  static const IconData checkOutlined = outlined.AntIconsOutlined.checkOutlined;
+  static const IconData checkSquareFilled = filled.AntIconsFilled.checkSquareFilled;
+  static const IconData checkSquareOutlined = outlined.AntIconsOutlined.checkSquareOutlined;
+  static const String checkSquareTwoTone = twotone.AntIconsTwoTone.checkSquareTwoTone;
+  static const IconData chromeFilled = filled.AntIconsFilled.chromeFilled;
+  static const IconData chromeOutlined = outlined.AntIconsOutlined.chromeOutlined;
+  static const IconData ciCircleFilled = filled.AntIconsFilled.ciCircleFilled;
+  static const IconData ciCircleOutlined = outlined.AntIconsOutlined.ciCircleOutlined;
+  static const String ciCircleTwoTone = twotone.AntIconsTwoTone.ciCircleTwoTone;
+  static const IconData ciOutlined = outlined.AntIconsOutlined.ciOutlined;
+  static const String ciTwoTone = twotone.AntIconsTwoTone.ciTwoTone;
+  static const IconData clearOutlined = outlined.AntIconsOutlined.clearOutlined;
+  static const IconData clockCircleFilled = filled.AntIconsFilled.clockCircleFilled;
+  static const IconData clockCircleOutlined = outlined.AntIconsOutlined.clockCircleOutlined;
+  static const String clockCircleTwoTone = twotone.AntIconsTwoTone.clockCircleTwoTone;
+  static const IconData closeCircleFilled = filled.AntIconsFilled.closeCircleFilled;
+  static const IconData closeCircleOutlined = outlined.AntIconsOutlined.closeCircleOutlined;
+  static const String closeCircleTwoTone = twotone.AntIconsTwoTone.closeCircleTwoTone;
+  static const IconData closeOutlined = outlined.AntIconsOutlined.closeOutlined;
+  static const IconData closeSquareFilled = filled.AntIconsFilled.closeSquareFilled;
+  static const IconData closeSquareOutlined = outlined.AntIconsOutlined.closeSquareOutlined;
+  static const String closeSquareTwoTone = twotone.AntIconsTwoTone.closeSquareTwoTone;
+  static const IconData cloudDownloadOutlined = outlined.AntIconsOutlined.cloudDownloadOutlined;
+  static const IconData cloudFilled = filled.AntIconsFilled.cloudFilled;
+  static const IconData cloudOutlined = outlined.AntIconsOutlined.cloudOutlined;
+  static const IconData cloudServerOutlined = outlined.AntIconsOutlined.cloudServerOutlined;
+  static const IconData cloudSyncOutlined = outlined.AntIconsOutlined.cloudSyncOutlined;
+  static const String cloudTwoTone = twotone.AntIconsTwoTone.cloudTwoTone;
+  static const IconData cloudUploadOutlined = outlined.AntIconsOutlined.cloudUploadOutlined;
+  static const IconData clusterOutlined = outlined.AntIconsOutlined.clusterOutlined;
+  static const IconData codeFilled = filled.AntIconsFilled.codeFilled;
+  static const IconData codeOutlined = outlined.AntIconsOutlined.codeOutlined;
+  static const IconData codeSandboxCircleFilled = filled.AntIconsFilled.codeSandboxCircleFilled;
+  static const IconData codeSandboxOutlined = outlined.AntIconsOutlined.codeSandboxOutlined;
+  static const IconData codeSandboxSquareFilled = filled.AntIconsFilled.codeSandboxSquareFilled;
+  static const String codeTwoTone = twotone.AntIconsTwoTone.codeTwoTone;
+  static const IconData codepenCircleFilled = filled.AntIconsFilled.codepenCircleFilled;
+  static const IconData codepenCircleOutlined = outlined.AntIconsOutlined.codepenCircleOutlined;
+  static const IconData codepenOutlined = outlined.AntIconsOutlined.codepenOutlined;
+  static const IconData codepenSquareFilled = filled.AntIconsFilled.codepenSquareFilled;
+  static const IconData coffeeOutlined = outlined.AntIconsOutlined.coffeeOutlined;
+  static const IconData columnHeightOutlined = outlined.AntIconsOutlined.columnHeightOutlined;
+  static const IconData columnWidthOutlined = outlined.AntIconsOutlined.columnWidthOutlined;
+  static const IconData commentOutlined = outlined.AntIconsOutlined.commentOutlined;
+  static const IconData compassFilled = filled.AntIconsFilled.compassFilled;
+  static const IconData compassOutlined = outlined.AntIconsOutlined.compassOutlined;
+  static const String compassTwoTone = twotone.AntIconsTwoTone.compassTwoTone;
+  static const IconData compressOutlined = outlined.AntIconsOutlined.compressOutlined;
+  static const IconData consoleSqlOutlined = outlined.AntIconsOutlined.consoleSqlOutlined;
+  static const IconData contactsFilled = filled.AntIconsFilled.contactsFilled;
+  static const IconData contactsOutlined = outlined.AntIconsOutlined.contactsOutlined;
+  static const String contactsTwoTone = twotone.AntIconsTwoTone.contactsTwoTone;
+  static const IconData containerFilled = filled.AntIconsFilled.containerFilled;
+  static const IconData containerOutlined = outlined.AntIconsOutlined.containerOutlined;
+  static const String containerTwoTone = twotone.AntIconsTwoTone.containerTwoTone;
+  static const IconData controlFilled = filled.AntIconsFilled.controlFilled;
+  static const IconData controlOutlined = outlined.AntIconsOutlined.controlOutlined;
+  static const String controlTwoTone = twotone.AntIconsTwoTone.controlTwoTone;
+  static const IconData copyFilled = filled.AntIconsFilled.copyFilled;
+  static const IconData copyOutlined = outlined.AntIconsOutlined.copyOutlined;
+  static const String copyTwoTone = twotone.AntIconsTwoTone.copyTwoTone;
+  static const IconData copyrightCircleFilled = filled.AntIconsFilled.copyrightCircleFilled;
+  static const IconData copyrightCircleOutlined = outlined.AntIconsOutlined.copyrightCircleOutlined;
+  static const String copyrightCircleTwoTone = twotone.AntIconsTwoTone.copyrightCircleTwoTone;
+  static const IconData copyrightOutlined = outlined.AntIconsOutlined.copyrightOutlined;
+  static const String copyrightTwoTone = twotone.AntIconsTwoTone.copyrightTwoTone;
+  static const IconData creditCardFilled = filled.AntIconsFilled.creditCardFilled;
+  static const IconData creditCardOutlined = outlined.AntIconsOutlined.creditCardOutlined;
+  static const String creditCardTwoTone = twotone.AntIconsTwoTone.creditCardTwoTone;
+  static const IconData crownFilled = filled.AntIconsFilled.crownFilled;
+  static const IconData crownOutlined = outlined.AntIconsOutlined.crownOutlined;
+  static const String crownTwoTone = twotone.AntIconsTwoTone.crownTwoTone;
+  static const IconData customerServiceFilled = filled.AntIconsFilled.customerServiceFilled;
+  static const IconData customerServiceOutlined = outlined.AntIconsOutlined.customerServiceOutlined;
+  static const String customerServiceTwoTone = twotone.AntIconsTwoTone.customerServiceTwoTone;
+  static const IconData dashOutlined = outlined.AntIconsOutlined.dashOutlined;
+  static const IconData dashboardFilled = filled.AntIconsFilled.dashboardFilled;
+  static const IconData dashboardOutlined = outlined.AntIconsOutlined.dashboardOutlined;
+  static const String dashboardTwoTone = twotone.AntIconsTwoTone.dashboardTwoTone;
+  static const IconData databaseFilled = filled.AntIconsFilled.databaseFilled;
+  static const IconData databaseOutlined = outlined.AntIconsOutlined.databaseOutlined;
+  static const String databaseTwoTone = twotone.AntIconsTwoTone.databaseTwoTone;
+  static const IconData deleteColumnOutlined = outlined.AntIconsOutlined.deleteColumnOutlined;
+  static const IconData deleteFilled = filled.AntIconsFilled.deleteFilled;
+  static const IconData deleteOutlined = outlined.AntIconsOutlined.deleteOutlined;
+  static const IconData deleteRowOutlined = outlined.AntIconsOutlined.deleteRowOutlined;
+  static const String deleteTwoTone = twotone.AntIconsTwoTone.deleteTwoTone;
+  static const IconData deliveredProcedureOutlined = outlined.AntIconsOutlined.deliveredProcedureOutlined;
+  static const IconData deploymentUnitOutlined = outlined.AntIconsOutlined.deploymentUnitOutlined;
+  static const IconData desktopOutlined = outlined.AntIconsOutlined.desktopOutlined;
+  static const IconData diffFilled = filled.AntIconsFilled.diffFilled;
+  static const IconData diffOutlined = outlined.AntIconsOutlined.diffOutlined;
+  static const String diffTwoTone = twotone.AntIconsTwoTone.diffTwoTone;
+  static const IconData dingdingOutlined = outlined.AntIconsOutlined.dingdingOutlined;
+  static const IconData dingtalkCircleFilled = filled.AntIconsFilled.dingtalkCircleFilled;
+  static const IconData dingtalkOutlined = outlined.AntIconsOutlined.dingtalkOutlined;
+  static const IconData dingtalkSquareFilled = filled.AntIconsFilled.dingtalkSquareFilled;
+  static const IconData disconnectOutlined = outlined.AntIconsOutlined.disconnectOutlined;
+  static const IconData discordFilled = filled.AntIconsFilled.discordFilled;
+  static const IconData discordOutlined = outlined.AntIconsOutlined.discordOutlined;
+  static const IconData dislikeFilled = filled.AntIconsFilled.dislikeFilled;
+  static const IconData dislikeOutlined = outlined.AntIconsOutlined.dislikeOutlined;
+  static const String dislikeTwoTone = twotone.AntIconsTwoTone.dislikeTwoTone;
+  static const IconData dockerOutlined = outlined.AntIconsOutlined.dockerOutlined;
+  static const IconData dollarCircleFilled = filled.AntIconsFilled.dollarCircleFilled;
+  static const IconData dollarCircleOutlined = outlined.AntIconsOutlined.dollarCircleOutlined;
+  static const String dollarCircleTwoTone = twotone.AntIconsTwoTone.dollarCircleTwoTone;
+  static const IconData dollarOutlined = outlined.AntIconsOutlined.dollarOutlined;
+  static const String dollarTwoTone = twotone.AntIconsTwoTone.dollarTwoTone;
+  static const IconData dotChartOutlined = outlined.AntIconsOutlined.dotChartOutlined;
+  static const IconData dotNetOutlined = outlined.AntIconsOutlined.dotNetOutlined;
+  static const IconData doubleLeftOutlined = outlined.AntIconsOutlined.doubleLeftOutlined;
+  static const IconData doubleRightOutlined = outlined.AntIconsOutlined.doubleRightOutlined;
+  static const IconData downCircleFilled = filled.AntIconsFilled.downCircleFilled;
+  static const IconData downCircleOutlined = outlined.AntIconsOutlined.downCircleOutlined;
+  static const String downCircleTwoTone = twotone.AntIconsTwoTone.downCircleTwoTone;
+  static const IconData downOutlined = outlined.AntIconsOutlined.downOutlined;
+  static const IconData downSquareFilled = filled.AntIconsFilled.downSquareFilled;
+  static const IconData downSquareOutlined = outlined.AntIconsOutlined.downSquareOutlined;
+  static const String downSquareTwoTone = twotone.AntIconsTwoTone.downSquareTwoTone;
+  static const IconData downloadOutlined = outlined.AntIconsOutlined.downloadOutlined;
+  static const IconData dragOutlined = outlined.AntIconsOutlined.dragOutlined;
+  static const IconData dribbbleCircleFilled = filled.AntIconsFilled.dribbbleCircleFilled;
+  static const IconData dribbbleOutlined = outlined.AntIconsOutlined.dribbbleOutlined;
+  static const IconData dribbbleSquareFilled = filled.AntIconsFilled.dribbbleSquareFilled;
+  static const IconData dribbbleSquareOutlined = outlined.AntIconsOutlined.dribbbleSquareOutlined;
+  static const IconData dropboxCircleFilled = filled.AntIconsFilled.dropboxCircleFilled;
+  static const IconData dropboxOutlined = outlined.AntIconsOutlined.dropboxOutlined;
+  static const IconData dropboxSquareFilled = filled.AntIconsFilled.dropboxSquareFilled;
+  static const IconData editFilled = filled.AntIconsFilled.editFilled;
+  static const IconData editOutlined = outlined.AntIconsOutlined.editOutlined;
+  static const String editTwoTone = twotone.AntIconsTwoTone.editTwoTone;
+  static const IconData ellipsisOutlined = outlined.AntIconsOutlined.ellipsisOutlined;
+  static const IconData enterOutlined = outlined.AntIconsOutlined.enterOutlined;
+  static const IconData environmentFilled = filled.AntIconsFilled.environmentFilled;
+  static const IconData environmentOutlined = outlined.AntIconsOutlined.environmentOutlined;
+  static const String environmentTwoTone = twotone.AntIconsTwoTone.environmentTwoTone;
+  static const IconData euroCircleFilled = filled.AntIconsFilled.euroCircleFilled;
+  static const IconData euroCircleOutlined = outlined.AntIconsOutlined.euroCircleOutlined;
+  static const String euroCircleTwoTone = twotone.AntIconsTwoTone.euroCircleTwoTone;
+  static const IconData euroOutlined = outlined.AntIconsOutlined.euroOutlined;
+  static const String euroTwoTone = twotone.AntIconsTwoTone.euroTwoTone;
+  static const IconData exceptionOutlined = outlined.AntIconsOutlined.exceptionOutlined;
+  static const IconData exclamationCircleFilled = filled.AntIconsFilled.exclamationCircleFilled;
+  static const IconData exclamationCircleOutlined = outlined.AntIconsOutlined.exclamationCircleOutlined;
+  static const String exclamationCircleTwoTone = twotone.AntIconsTwoTone.exclamationCircleTwoTone;
+  static const IconData exclamationOutlined = outlined.AntIconsOutlined.exclamationOutlined;
+  static const IconData expandAltOutlined = outlined.AntIconsOutlined.expandAltOutlined;
+  static const IconData expandOutlined = outlined.AntIconsOutlined.expandOutlined;
+  static const IconData experimentFilled = filled.AntIconsFilled.experimentFilled;
+  static const IconData experimentOutlined = outlined.AntIconsOutlined.experimentOutlined;
+  static const String experimentTwoTone = twotone.AntIconsTwoTone.experimentTwoTone;
+  static const IconData exportOutlined = outlined.AntIconsOutlined.exportOutlined;
+  static const IconData eyeFilled = filled.AntIconsFilled.eyeFilled;
+  static const IconData eyeInvisibleFilled = filled.AntIconsFilled.eyeInvisibleFilled;
+  static const IconData eyeInvisibleOutlined = outlined.AntIconsOutlined.eyeInvisibleOutlined;
+  static const String eyeInvisibleTwoTone = twotone.AntIconsTwoTone.eyeInvisibleTwoTone;
+  static const IconData eyeOutlined = outlined.AntIconsOutlined.eyeOutlined;
+  static const String eyeTwoTone = twotone.AntIconsTwoTone.eyeTwoTone;
+  static const IconData facebookFilled = filled.AntIconsFilled.facebookFilled;
+  static const IconData facebookOutlined = outlined.AntIconsOutlined.facebookOutlined;
+  static const IconData fallOutlined = outlined.AntIconsOutlined.fallOutlined;
+  static const IconData fastBackwardFilled = filled.AntIconsFilled.fastBackwardFilled;
+  static const IconData fastBackwardOutlined = outlined.AntIconsOutlined.fastBackwardOutlined;
+  static const IconData fastForwardFilled = filled.AntIconsFilled.fastForwardFilled;
+  static const IconData fastForwardOutlined = outlined.AntIconsOutlined.fastForwardOutlined;
+  static const IconData fieldBinaryOutlined = outlined.AntIconsOutlined.fieldBinaryOutlined;
+  static const IconData fieldNumberOutlined = outlined.AntIconsOutlined.fieldNumberOutlined;
+  static const IconData fieldStringOutlined = outlined.AntIconsOutlined.fieldStringOutlined;
+  static const IconData fieldTimeOutlined = outlined.AntIconsOutlined.fieldTimeOutlined;
+  static const IconData fileAddFilled = filled.AntIconsFilled.fileAddFilled;
+  static const IconData fileAddOutlined = outlined.AntIconsOutlined.fileAddOutlined;
+  static const String fileAddTwoTone = twotone.AntIconsTwoTone.fileAddTwoTone;
+  static const IconData fileDoneOutlined = outlined.AntIconsOutlined.fileDoneOutlined;
+  static const IconData fileExcelFilled = filled.AntIconsFilled.fileExcelFilled;
+  static const IconData fileExcelOutlined = outlined.AntIconsOutlined.fileExcelOutlined;
+  static const String fileExcelTwoTone = twotone.AntIconsTwoTone.fileExcelTwoTone;
+  static const IconData fileExclamationFilled = filled.AntIconsFilled.fileExclamationFilled;
+  static const IconData fileExclamationOutlined = outlined.AntIconsOutlined.fileExclamationOutlined;
+  static const String fileExclamationTwoTone = twotone.AntIconsTwoTone.fileExclamationTwoTone;
+  static const IconData fileFilled = filled.AntIconsFilled.fileFilled;
+  static const IconData fileGifOutlined = outlined.AntIconsOutlined.fileGifOutlined;
+  static const IconData fileImageFilled = filled.AntIconsFilled.fileImageFilled;
+  static const IconData fileImageOutlined = outlined.AntIconsOutlined.fileImageOutlined;
+  static const String fileImageTwoTone = twotone.AntIconsTwoTone.fileImageTwoTone;
+  static const IconData fileJpgOutlined = outlined.AntIconsOutlined.fileJpgOutlined;
+  static const IconData fileMarkdownFilled = filled.AntIconsFilled.fileMarkdownFilled;
+  static const IconData fileMarkdownOutlined = outlined.AntIconsOutlined.fileMarkdownOutlined;
+  static const String fileMarkdownTwoTone = twotone.AntIconsTwoTone.fileMarkdownTwoTone;
+  static const IconData fileOutlined = outlined.AntIconsOutlined.fileOutlined;
+  static const IconData filePdfFilled = filled.AntIconsFilled.filePdfFilled;
+  static const IconData filePdfOutlined = outlined.AntIconsOutlined.filePdfOutlined;
+  static const String filePdfTwoTone = twotone.AntIconsTwoTone.filePdfTwoTone;
+  static const IconData filePptFilled = filled.AntIconsFilled.filePptFilled;
+  static const IconData filePptOutlined = outlined.AntIconsOutlined.filePptOutlined;
+  static const String filePptTwoTone = twotone.AntIconsTwoTone.filePptTwoTone;
+  static const IconData fileProtectOutlined = outlined.AntIconsOutlined.fileProtectOutlined;
+  static const IconData fileSearchOutlined = outlined.AntIconsOutlined.fileSearchOutlined;
+  static const IconData fileSyncOutlined = outlined.AntIconsOutlined.fileSyncOutlined;
+  static const IconData fileTextFilled = filled.AntIconsFilled.fileTextFilled;
+  static const IconData fileTextOutlined = outlined.AntIconsOutlined.fileTextOutlined;
+  static const String fileTextTwoTone = twotone.AntIconsTwoTone.fileTextTwoTone;
+  static const String fileTwoTone = twotone.AntIconsTwoTone.fileTwoTone;
+  static const IconData fileUnknownFilled = filled.AntIconsFilled.fileUnknownFilled;
+  static const IconData fileUnknownOutlined = outlined.AntIconsOutlined.fileUnknownOutlined;
+  static const String fileUnknownTwoTone = twotone.AntIconsTwoTone.fileUnknownTwoTone;
+  static const IconData fileWordFilled = filled.AntIconsFilled.fileWordFilled;
+  static const IconData fileWordOutlined = outlined.AntIconsOutlined.fileWordOutlined;
+  static const String fileWordTwoTone = twotone.AntIconsTwoTone.fileWordTwoTone;
+  static const IconData fileZipFilled = filled.AntIconsFilled.fileZipFilled;
+  static const IconData fileZipOutlined = outlined.AntIconsOutlined.fileZipOutlined;
+  static const String fileZipTwoTone = twotone.AntIconsTwoTone.fileZipTwoTone;
+  static const IconData filterFilled = filled.AntIconsFilled.filterFilled;
+  static const IconData filterOutlined = outlined.AntIconsOutlined.filterOutlined;
+  static const String filterTwoTone = twotone.AntIconsTwoTone.filterTwoTone;
+  static const IconData fireFilled = filled.AntIconsFilled.fireFilled;
+  static const IconData fireOutlined = outlined.AntIconsOutlined.fireOutlined;
+  static const String fireTwoTone = twotone.AntIconsTwoTone.fireTwoTone;
+  static const IconData flagFilled = filled.AntIconsFilled.flagFilled;
+  static const IconData flagOutlined = outlined.AntIconsOutlined.flagOutlined;
+  static const String flagTwoTone = twotone.AntIconsTwoTone.flagTwoTone;
+  static const IconData folderAddFilled = filled.AntIconsFilled.folderAddFilled;
+  static const IconData folderAddOutlined = outlined.AntIconsOutlined.folderAddOutlined;
+  static const String folderAddTwoTone = twotone.AntIconsTwoTone.folderAddTwoTone;
+  static const IconData folderFilled = filled.AntIconsFilled.folderFilled;
+  static const IconData folderOpenFilled = filled.AntIconsFilled.folderOpenFilled;
+  static const IconData folderOpenOutlined = outlined.AntIconsOutlined.folderOpenOutlined;
+  static const String folderOpenTwoTone = twotone.AntIconsTwoTone.folderOpenTwoTone;
+  static const IconData folderOutlined = outlined.AntIconsOutlined.folderOutlined;
+  static const String folderTwoTone = twotone.AntIconsTwoTone.folderTwoTone;
+  static const IconData folderViewOutlined = outlined.AntIconsOutlined.folderViewOutlined;
+  static const IconData fontColorsOutlined = outlined.AntIconsOutlined.fontColorsOutlined;
+  static const IconData fontSizeOutlined = outlined.AntIconsOutlined.fontSizeOutlined;
+  static const IconData forkOutlined = outlined.AntIconsOutlined.forkOutlined;
+  static const IconData formOutlined = outlined.AntIconsOutlined.formOutlined;
+  static const IconData formatPainterFilled = filled.AntIconsFilled.formatPainterFilled;
+  static const IconData formatPainterOutlined = outlined.AntIconsOutlined.formatPainterOutlined;
+  static const IconData forwardFilled = filled.AntIconsFilled.forwardFilled;
+  static const IconData forwardOutlined = outlined.AntIconsOutlined.forwardOutlined;
+  static const IconData frownFilled = filled.AntIconsFilled.frownFilled;
+  static const IconData frownOutlined = outlined.AntIconsOutlined.frownOutlined;
+  static const String frownTwoTone = twotone.AntIconsTwoTone.frownTwoTone;
+  static const IconData fullscreenExitOutlined = outlined.AntIconsOutlined.fullscreenExitOutlined;
+  static const IconData fullscreenOutlined = outlined.AntIconsOutlined.fullscreenOutlined;
+  static const IconData functionOutlined = outlined.AntIconsOutlined.functionOutlined;
+  static const IconData fundFilled = filled.AntIconsFilled.fundFilled;
+  static const IconData fundOutlined = outlined.AntIconsOutlined.fundOutlined;
+  static const IconData fundProjectionScreenOutlined = outlined.AntIconsOutlined.fundProjectionScreenOutlined;
+  static const String fundTwoTone = twotone.AntIconsTwoTone.fundTwoTone;
+  static const IconData fundViewOutlined = outlined.AntIconsOutlined.fundViewOutlined;
+  static const IconData funnelPlotFilled = filled.AntIconsFilled.funnelPlotFilled;
+  static const IconData funnelPlotOutlined = outlined.AntIconsOutlined.funnelPlotOutlined;
+  static const String funnelPlotTwoTone = twotone.AntIconsTwoTone.funnelPlotTwoTone;
+  static const IconData gatewayOutlined = outlined.AntIconsOutlined.gatewayOutlined;
+  static const IconData gifOutlined = outlined.AntIconsOutlined.gifOutlined;
+  static const IconData giftFilled = filled.AntIconsFilled.giftFilled;
+  static const IconData giftOutlined = outlined.AntIconsOutlined.giftOutlined;
+  static const String giftTwoTone = twotone.AntIconsTwoTone.giftTwoTone;
+  static const IconData githubFilled = filled.AntIconsFilled.githubFilled;
+  static const IconData githubOutlined = outlined.AntIconsOutlined.githubOutlined;
+  static const IconData gitlabFilled = filled.AntIconsFilled.gitlabFilled;
+  static const IconData gitlabOutlined = outlined.AntIconsOutlined.gitlabOutlined;
+  static const IconData globalOutlined = outlined.AntIconsOutlined.globalOutlined;
+  static const IconData goldFilled = filled.AntIconsFilled.goldFilled;
+  static const IconData goldOutlined = outlined.AntIconsOutlined.goldOutlined;
+  static const String goldTwoTone = twotone.AntIconsTwoTone.goldTwoTone;
+  static const IconData goldenFilled = filled.AntIconsFilled.goldenFilled;
+  static const IconData googleCircleFilled = filled.AntIconsFilled.googleCircleFilled;
+  static const IconData googleOutlined = outlined.AntIconsOutlined.googleOutlined;
+  static const IconData googlePlusCircleFilled = filled.AntIconsFilled.googlePlusCircleFilled;
+  static const IconData googlePlusOutlined = outlined.AntIconsOutlined.googlePlusOutlined;
+  static const IconData googlePlusSquareFilled = filled.AntIconsFilled.googlePlusSquareFilled;
+  static const IconData googleSquareFilled = filled.AntIconsFilled.googleSquareFilled;
+  static const IconData groupOutlined = outlined.AntIconsOutlined.groupOutlined;
+  static const IconData harmonyOSOutlined = outlined.AntIconsOutlined.harmonyOSOutlined;
+  static const IconData hddFilled = filled.AntIconsFilled.hddFilled;
+  static const IconData hddOutlined = outlined.AntIconsOutlined.hddOutlined;
+  static const String hddTwoTone = twotone.AntIconsTwoTone.hddTwoTone;
+  static const IconData heartFilled = filled.AntIconsFilled.heartFilled;
+  static const IconData heartOutlined = outlined.AntIconsOutlined.heartOutlined;
+  static const String heartTwoTone = twotone.AntIconsTwoTone.heartTwoTone;
+  static const IconData heatMapOutlined = outlined.AntIconsOutlined.heatMapOutlined;
+  static const IconData highlightFilled = filled.AntIconsFilled.highlightFilled;
+  static const IconData highlightOutlined = outlined.AntIconsOutlined.highlightOutlined;
+  static const String highlightTwoTone = twotone.AntIconsTwoTone.highlightTwoTone;
+  static const IconData historyOutlined = outlined.AntIconsOutlined.historyOutlined;
+  static const IconData holderOutlined = outlined.AntIconsOutlined.holderOutlined;
+  static const IconData homeFilled = filled.AntIconsFilled.homeFilled;
+  static const IconData homeOutlined = outlined.AntIconsOutlined.homeOutlined;
+  static const String homeTwoTone = twotone.AntIconsTwoTone.homeTwoTone;
+  static const IconData hourglassFilled = filled.AntIconsFilled.hourglassFilled;
+  static const IconData hourglassOutlined = outlined.AntIconsOutlined.hourglassOutlined;
+  static const String hourglassTwoTone = twotone.AntIconsTwoTone.hourglassTwoTone;
+  static const IconData html5Filled = filled.AntIconsFilled.html5Filled;
+  static const IconData html5Outlined = outlined.AntIconsOutlined.html5Outlined;
+  static const String html5TwoTone = twotone.AntIconsTwoTone.html5TwoTone;
+  static const IconData idcardFilled = filled.AntIconsFilled.idcardFilled;
+  static const IconData idcardOutlined = outlined.AntIconsOutlined.idcardOutlined;
+  static const String idcardTwoTone = twotone.AntIconsTwoTone.idcardTwoTone;
+  static const IconData ieCircleFilled = filled.AntIconsFilled.ieCircleFilled;
+  static const IconData ieOutlined = outlined.AntIconsOutlined.ieOutlined;
+  static const IconData ieSquareFilled = filled.AntIconsFilled.ieSquareFilled;
+  static const IconData importOutlined = outlined.AntIconsOutlined.importOutlined;
+  static const IconData inboxOutlined = outlined.AntIconsOutlined.inboxOutlined;
+  static const IconData infoCircleFilled = filled.AntIconsFilled.infoCircleFilled;
+  static const IconData infoCircleOutlined = outlined.AntIconsOutlined.infoCircleOutlined;
+  static const String infoCircleTwoTone = twotone.AntIconsTwoTone.infoCircleTwoTone;
+  static const IconData infoOutlined = outlined.AntIconsOutlined.infoOutlined;
+  static const IconData insertRowAboveOutlined = outlined.AntIconsOutlined.insertRowAboveOutlined;
+  static const IconData insertRowBelowOutlined = outlined.AntIconsOutlined.insertRowBelowOutlined;
+  static const IconData insertRowLeftOutlined = outlined.AntIconsOutlined.insertRowLeftOutlined;
+  static const IconData insertRowRightOutlined = outlined.AntIconsOutlined.insertRowRightOutlined;
+  static const IconData instagramFilled = filled.AntIconsFilled.instagramFilled;
+  static const IconData instagramOutlined = outlined.AntIconsOutlined.instagramOutlined;
+  static const IconData insuranceFilled = filled.AntIconsFilled.insuranceFilled;
+  static const IconData insuranceOutlined = outlined.AntIconsOutlined.insuranceOutlined;
+  static const String insuranceTwoTone = twotone.AntIconsTwoTone.insuranceTwoTone;
+  static const IconData interactionFilled = filled.AntIconsFilled.interactionFilled;
+  static const IconData interactionOutlined = outlined.AntIconsOutlined.interactionOutlined;
+  static const String interactionTwoTone = twotone.AntIconsTwoTone.interactionTwoTone;
+  static const IconData issuesCloseOutlined = outlined.AntIconsOutlined.issuesCloseOutlined;
+  static const IconData italicOutlined = outlined.AntIconsOutlined.italicOutlined;
+  static const IconData javaOutlined = outlined.AntIconsOutlined.javaOutlined;
+  static const IconData javaScriptOutlined = outlined.AntIconsOutlined.javaScriptOutlined;
+  static const IconData keyOutlined = outlined.AntIconsOutlined.keyOutlined;
+  static const IconData kubernetesOutlined = outlined.AntIconsOutlined.kubernetesOutlined;
+  static const IconData laptopOutlined = outlined.AntIconsOutlined.laptopOutlined;
+  static const IconData layoutFilled = filled.AntIconsFilled.layoutFilled;
+  static const IconData layoutOutlined = outlined.AntIconsOutlined.layoutOutlined;
+  static const String layoutTwoTone = twotone.AntIconsTwoTone.layoutTwoTone;
+  static const IconData leftCircleFilled = filled.AntIconsFilled.leftCircleFilled;
+  static const IconData leftCircleOutlined = outlined.AntIconsOutlined.leftCircleOutlined;
+  static const String leftCircleTwoTone = twotone.AntIconsTwoTone.leftCircleTwoTone;
+  static const IconData leftOutlined = outlined.AntIconsOutlined.leftOutlined;
+  static const IconData leftSquareFilled = filled.AntIconsFilled.leftSquareFilled;
+  static const IconData leftSquareOutlined = outlined.AntIconsOutlined.leftSquareOutlined;
+  static const String leftSquareTwoTone = twotone.AntIconsTwoTone.leftSquareTwoTone;
+  static const IconData likeFilled = filled.AntIconsFilled.likeFilled;
+  static const IconData likeOutlined = outlined.AntIconsOutlined.likeOutlined;
+  static const String likeTwoTone = twotone.AntIconsTwoTone.likeTwoTone;
+  static const IconData lineChartOutlined = outlined.AntIconsOutlined.lineChartOutlined;
+  static const IconData lineHeightOutlined = outlined.AntIconsOutlined.lineHeightOutlined;
+  static const IconData lineOutlined = outlined.AntIconsOutlined.lineOutlined;
+  static const IconData linkOutlined = outlined.AntIconsOutlined.linkOutlined;
+  static const IconData linkedinFilled = filled.AntIconsFilled.linkedinFilled;
+  static const IconData linkedinOutlined = outlined.AntIconsOutlined.linkedinOutlined;
+  static const IconData linuxOutlined = outlined.AntIconsOutlined.linuxOutlined;
+  static const IconData loading3QuartersOutlined = outlined.AntIconsOutlined.loading3QuartersOutlined;
+  static const IconData loadingOutlined = outlined.AntIconsOutlined.loadingOutlined;
+  static const IconData lockFilled = filled.AntIconsFilled.lockFilled;
+  static const IconData lockOutlined = outlined.AntIconsOutlined.lockOutlined;
+  static const String lockTwoTone = twotone.AntIconsTwoTone.lockTwoTone;
+  static const IconData loginOutlined = outlined.AntIconsOutlined.loginOutlined;
+  static const IconData logoutOutlined = outlined.AntIconsOutlined.logoutOutlined;
+  static const IconData macCommandFilled = filled.AntIconsFilled.macCommandFilled;
+  static const IconData macCommandOutlined = outlined.AntIconsOutlined.macCommandOutlined;
+  static const IconData mailFilled = filled.AntIconsFilled.mailFilled;
+  static const IconData mailOutlined = outlined.AntIconsOutlined.mailOutlined;
+  static const String mailTwoTone = twotone.AntIconsTwoTone.mailTwoTone;
+  static const IconData manOutlined = outlined.AntIconsOutlined.manOutlined;
+  static const IconData medicineBoxFilled = filled.AntIconsFilled.medicineBoxFilled;
+  static const IconData medicineBoxOutlined = outlined.AntIconsOutlined.medicineBoxOutlined;
+  static const String medicineBoxTwoTone = twotone.AntIconsTwoTone.medicineBoxTwoTone;
+  static const IconData mediumCircleFilled = filled.AntIconsFilled.mediumCircleFilled;
+  static const IconData mediumOutlined = outlined.AntIconsOutlined.mediumOutlined;
+  static const IconData mediumSquareFilled = filled.AntIconsFilled.mediumSquareFilled;
+  static const IconData mediumWorkmarkOutlined = outlined.AntIconsOutlined.mediumWorkmarkOutlined;
+  static const IconData mehFilled = filled.AntIconsFilled.mehFilled;
+  static const IconData mehOutlined = outlined.AntIconsOutlined.mehOutlined;
+  static const String mehTwoTone = twotone.AntIconsTwoTone.mehTwoTone;
+  static const IconData menuFoldOutlined = outlined.AntIconsOutlined.menuFoldOutlined;
+  static const IconData menuOutlined = outlined.AntIconsOutlined.menuOutlined;
+  static const IconData menuUnfoldOutlined = outlined.AntIconsOutlined.menuUnfoldOutlined;
+  static const IconData mergeCellsOutlined = outlined.AntIconsOutlined.mergeCellsOutlined;
+  static const IconData mergeFilled = filled.AntIconsFilled.mergeFilled;
+  static const IconData mergeOutlined = outlined.AntIconsOutlined.mergeOutlined;
+  static const IconData messageFilled = filled.AntIconsFilled.messageFilled;
+  static const IconData messageOutlined = outlined.AntIconsOutlined.messageOutlined;
+  static const String messageTwoTone = twotone.AntIconsTwoTone.messageTwoTone;
+  static const IconData minusCircleFilled = filled.AntIconsFilled.minusCircleFilled;
+  static const IconData minusCircleOutlined = outlined.AntIconsOutlined.minusCircleOutlined;
+  static const String minusCircleTwoTone = twotone.AntIconsTwoTone.minusCircleTwoTone;
+  static const IconData minusOutlined = outlined.AntIconsOutlined.minusOutlined;
+  static const IconData minusSquareFilled = filled.AntIconsFilled.minusSquareFilled;
+  static const IconData minusSquareOutlined = outlined.AntIconsOutlined.minusSquareOutlined;
+  static const String minusSquareTwoTone = twotone.AntIconsTwoTone.minusSquareTwoTone;
+  static const IconData mobileFilled = filled.AntIconsFilled.mobileFilled;
+  static const IconData mobileOutlined = outlined.AntIconsOutlined.mobileOutlined;
+  static const String mobileTwoTone = twotone.AntIconsTwoTone.mobileTwoTone;
+  static const IconData moneyCollectFilled = filled.AntIconsFilled.moneyCollectFilled;
+  static const IconData moneyCollectOutlined = outlined.AntIconsOutlined.moneyCollectOutlined;
+  static const String moneyCollectTwoTone = twotone.AntIconsTwoTone.moneyCollectTwoTone;
+  static const IconData monitorOutlined = outlined.AntIconsOutlined.monitorOutlined;
+  static const IconData moonFilled = filled.AntIconsFilled.moonFilled;
+  static const IconData moonOutlined = outlined.AntIconsOutlined.moonOutlined;
+  static const IconData moreOutlined = outlined.AntIconsOutlined.moreOutlined;
+  static const IconData mutedFilled = filled.AntIconsFilled.mutedFilled;
+  static const IconData mutedOutlined = outlined.AntIconsOutlined.mutedOutlined;
+  static const IconData nodeCollapseOutlined = outlined.AntIconsOutlined.nodeCollapseOutlined;
+  static const IconData nodeExpandOutlined = outlined.AntIconsOutlined.nodeExpandOutlined;
+  static const IconData nodeIndexOutlined = outlined.AntIconsOutlined.nodeIndexOutlined;
+  static const IconData notificationFilled = filled.AntIconsFilled.notificationFilled;
+  static const IconData notificationOutlined = outlined.AntIconsOutlined.notificationOutlined;
+  static const String notificationTwoTone = twotone.AntIconsTwoTone.notificationTwoTone;
+  static const IconData numberOutlined = outlined.AntIconsOutlined.numberOutlined;
+  static const IconData oneToOneOutlined = outlined.AntIconsOutlined.oneToOneOutlined;
+  static const IconData openAIFilled = filled.AntIconsFilled.openAIFilled;
+  static const IconData openAIOutlined = outlined.AntIconsOutlined.openAIOutlined;
+  static const IconData orderedListOutlined = outlined.AntIconsOutlined.orderedListOutlined;
+  static const IconData paperClipOutlined = outlined.AntIconsOutlined.paperClipOutlined;
+  static const IconData partitionOutlined = outlined.AntIconsOutlined.partitionOutlined;
+  static const IconData pauseCircleFilled = filled.AntIconsFilled.pauseCircleFilled;
+  static const IconData pauseCircleOutlined = outlined.AntIconsOutlined.pauseCircleOutlined;
+  static const String pauseCircleTwoTone = twotone.AntIconsTwoTone.pauseCircleTwoTone;
+  static const IconData pauseOutlined = outlined.AntIconsOutlined.pauseOutlined;
+  static const IconData payCircleFilled = filled.AntIconsFilled.payCircleFilled;
+  static const IconData payCircleOutlined = outlined.AntIconsOutlined.payCircleOutlined;
+  static const IconData percentageOutlined = outlined.AntIconsOutlined.percentageOutlined;
+  static const IconData phoneFilled = filled.AntIconsFilled.phoneFilled;
+  static const IconData phoneOutlined = outlined.AntIconsOutlined.phoneOutlined;
+  static const String phoneTwoTone = twotone.AntIconsTwoTone.phoneTwoTone;
+  static const IconData picCenterOutlined = outlined.AntIconsOutlined.picCenterOutlined;
+  static const IconData picLeftOutlined = outlined.AntIconsOutlined.picLeftOutlined;
+  static const IconData picRightOutlined = outlined.AntIconsOutlined.picRightOutlined;
+  static const IconData pictureFilled = filled.AntIconsFilled.pictureFilled;
+  static const IconData pictureOutlined = outlined.AntIconsOutlined.pictureOutlined;
+  static const String pictureTwoTone = twotone.AntIconsTwoTone.pictureTwoTone;
+  static const IconData pieChartFilled = filled.AntIconsFilled.pieChartFilled;
+  static const IconData pieChartOutlined = outlined.AntIconsOutlined.pieChartOutlined;
+  static const String pieChartTwoTone = twotone.AntIconsTwoTone.pieChartTwoTone;
+  static const IconData pinterestFilled = filled.AntIconsFilled.pinterestFilled;
+  static const IconData pinterestOutlined = outlined.AntIconsOutlined.pinterestOutlined;
+  static const IconData playCircleFilled = filled.AntIconsFilled.playCircleFilled;
+  static const IconData playCircleOutlined = outlined.AntIconsOutlined.playCircleOutlined;
+  static const String playCircleTwoTone = twotone.AntIconsTwoTone.playCircleTwoTone;
+  static const IconData playSquareFilled = filled.AntIconsFilled.playSquareFilled;
+  static const IconData playSquareOutlined = outlined.AntIconsOutlined.playSquareOutlined;
+  static const String playSquareTwoTone = twotone.AntIconsTwoTone.playSquareTwoTone;
+  static const IconData plusCircleFilled = filled.AntIconsFilled.plusCircleFilled;
+  static const IconData plusCircleOutlined = outlined.AntIconsOutlined.plusCircleOutlined;
+  static const String plusCircleTwoTone = twotone.AntIconsTwoTone.plusCircleTwoTone;
+  static const IconData plusOutlined = outlined.AntIconsOutlined.plusOutlined;
+  static const IconData plusSquareFilled = filled.AntIconsFilled.plusSquareFilled;
+  static const IconData plusSquareOutlined = outlined.AntIconsOutlined.plusSquareOutlined;
+  static const String plusSquareTwoTone = twotone.AntIconsTwoTone.plusSquareTwoTone;
+  static const IconData poundCircleFilled = filled.AntIconsFilled.poundCircleFilled;
+  static const IconData poundCircleOutlined = outlined.AntIconsOutlined.poundCircleOutlined;
+  static const String poundCircleTwoTone = twotone.AntIconsTwoTone.poundCircleTwoTone;
+  static const IconData poundOutlined = outlined.AntIconsOutlined.poundOutlined;
+  static const IconData poweroffOutlined = outlined.AntIconsOutlined.poweroffOutlined;
+  static const IconData printerFilled = filled.AntIconsFilled.printerFilled;
+  static const IconData printerOutlined = outlined.AntIconsOutlined.printerOutlined;
+  static const String printerTwoTone = twotone.AntIconsTwoTone.printerTwoTone;
+  static const IconData productFilled = filled.AntIconsFilled.productFilled;
+  static const IconData productOutlined = outlined.AntIconsOutlined.productOutlined;
+  static const IconData profileFilled = filled.AntIconsFilled.profileFilled;
+  static const IconData profileOutlined = outlined.AntIconsOutlined.profileOutlined;
+  static const String profileTwoTone = twotone.AntIconsTwoTone.profileTwoTone;
+  static const IconData projectFilled = filled.AntIconsFilled.projectFilled;
+  static const IconData projectOutlined = outlined.AntIconsOutlined.projectOutlined;
+  static const String projectTwoTone = twotone.AntIconsTwoTone.projectTwoTone;
+  static const IconData propertySafetyFilled = filled.AntIconsFilled.propertySafetyFilled;
+  static const IconData propertySafetyOutlined = outlined.AntIconsOutlined.propertySafetyOutlined;
+  static const String propertySafetyTwoTone = twotone.AntIconsTwoTone.propertySafetyTwoTone;
+  static const IconData pullRequestOutlined = outlined.AntIconsOutlined.pullRequestOutlined;
+  static const IconData pushpinFilled = filled.AntIconsFilled.pushpinFilled;
+  static const IconData pushpinOutlined = outlined.AntIconsOutlined.pushpinOutlined;
+  static const String pushpinTwoTone = twotone.AntIconsTwoTone.pushpinTwoTone;
+  static const IconData pythonOutlined = outlined.AntIconsOutlined.pythonOutlined;
+  static const IconData qqCircleFilled = filled.AntIconsFilled.qqCircleFilled;
+  static const IconData qqOutlined = outlined.AntIconsOutlined.qqOutlined;
+  static const IconData qqSquareFilled = filled.AntIconsFilled.qqSquareFilled;
+  static const IconData qrcodeOutlined = outlined.AntIconsOutlined.qrcodeOutlined;
+  static const IconData questionCircleFilled = filled.AntIconsFilled.questionCircleFilled;
+  static const IconData questionCircleOutlined = outlined.AntIconsOutlined.questionCircleOutlined;
+  static const String questionCircleTwoTone = twotone.AntIconsTwoTone.questionCircleTwoTone;
+  static const IconData questionOutlined = outlined.AntIconsOutlined.questionOutlined;
+  static const IconData radarChartOutlined = outlined.AntIconsOutlined.radarChartOutlined;
+  static const IconData radiusBottomleftOutlined = outlined.AntIconsOutlined.radiusBottomleftOutlined;
+  static const IconData radiusBottomrightOutlined = outlined.AntIconsOutlined.radiusBottomrightOutlined;
+  static const IconData radiusSettingOutlined = outlined.AntIconsOutlined.radiusSettingOutlined;
+  static const IconData radiusUpleftOutlined = outlined.AntIconsOutlined.radiusUpleftOutlined;
+  static const IconData radiusUprightOutlined = outlined.AntIconsOutlined.radiusUprightOutlined;
+  static const IconData readFilled = filled.AntIconsFilled.readFilled;
+  static const IconData readOutlined = outlined.AntIconsOutlined.readOutlined;
+  static const IconData reconciliationFilled = filled.AntIconsFilled.reconciliationFilled;
+  static const IconData reconciliationOutlined = outlined.AntIconsOutlined.reconciliationOutlined;
+  static const String reconciliationTwoTone = twotone.AntIconsTwoTone.reconciliationTwoTone;
+  static const IconData redEnvelopeFilled = filled.AntIconsFilled.redEnvelopeFilled;
+  static const IconData redEnvelopeOutlined = outlined.AntIconsOutlined.redEnvelopeOutlined;
+  static const String redEnvelopeTwoTone = twotone.AntIconsTwoTone.redEnvelopeTwoTone;
+  static const IconData redditCircleFilled = filled.AntIconsFilled.redditCircleFilled;
+  static const IconData redditOutlined = outlined.AntIconsOutlined.redditOutlined;
+  static const IconData redditSquareFilled = filled.AntIconsFilled.redditSquareFilled;
+  static const IconData redoOutlined = outlined.AntIconsOutlined.redoOutlined;
+  static const IconData reloadOutlined = outlined.AntIconsOutlined.reloadOutlined;
+  static const IconData restFilled = filled.AntIconsFilled.restFilled;
+  static const IconData restOutlined = outlined.AntIconsOutlined.restOutlined;
+  static const String restTwoTone = twotone.AntIconsTwoTone.restTwoTone;
+  static const IconData retweetOutlined = outlined.AntIconsOutlined.retweetOutlined;
+  static const IconData rightCircleFilled = filled.AntIconsFilled.rightCircleFilled;
+  static const IconData rightCircleOutlined = outlined.AntIconsOutlined.rightCircleOutlined;
+  static const String rightCircleTwoTone = twotone.AntIconsTwoTone.rightCircleTwoTone;
+  static const IconData rightOutlined = outlined.AntIconsOutlined.rightOutlined;
+  static const IconData rightSquareFilled = filled.AntIconsFilled.rightSquareFilled;
+  static const IconData rightSquareOutlined = outlined.AntIconsOutlined.rightSquareOutlined;
+  static const String rightSquareTwoTone = twotone.AntIconsTwoTone.rightSquareTwoTone;
+  static const IconData riseOutlined = outlined.AntIconsOutlined.riseOutlined;
+  static const IconData robotFilled = filled.AntIconsFilled.robotFilled;
+  static const IconData robotOutlined = outlined.AntIconsOutlined.robotOutlined;
+  static const IconData rocketFilled = filled.AntIconsFilled.rocketFilled;
+  static const IconData rocketOutlined = outlined.AntIconsOutlined.rocketOutlined;
+  static const String rocketTwoTone = twotone.AntIconsTwoTone.rocketTwoTone;
+  static const IconData rollbackOutlined = outlined.AntIconsOutlined.rollbackOutlined;
+  static const IconData rotateLeftOutlined = outlined.AntIconsOutlined.rotateLeftOutlined;
+  static const IconData rotateRightOutlined = outlined.AntIconsOutlined.rotateRightOutlined;
+  static const IconData rubyOutlined = outlined.AntIconsOutlined.rubyOutlined;
+  static const IconData safetyCertificateFilled = filled.AntIconsFilled.safetyCertificateFilled;
+  static const IconData safetyCertificateOutlined = outlined.AntIconsOutlined.safetyCertificateOutlined;
+  static const String safetyCertificateTwoTone = twotone.AntIconsTwoTone.safetyCertificateTwoTone;
+  static const IconData safetyOutlined = outlined.AntIconsOutlined.safetyOutlined;
+  static const IconData saveFilled = filled.AntIconsFilled.saveFilled;
+  static const IconData saveOutlined = outlined.AntIconsOutlined.saveOutlined;
+  static const String saveTwoTone = twotone.AntIconsTwoTone.saveTwoTone;
+  static const IconData scanOutlined = outlined.AntIconsOutlined.scanOutlined;
+  static const IconData scheduleFilled = filled.AntIconsFilled.scheduleFilled;
+  static const IconData scheduleOutlined = outlined.AntIconsOutlined.scheduleOutlined;
+  static const String scheduleTwoTone = twotone.AntIconsTwoTone.scheduleTwoTone;
+  static const IconData scissorOutlined = outlined.AntIconsOutlined.scissorOutlined;
+  static const IconData searchOutlined = outlined.AntIconsOutlined.searchOutlined;
+  static const IconData securityScanFilled = filled.AntIconsFilled.securityScanFilled;
+  static const IconData securityScanOutlined = outlined.AntIconsOutlined.securityScanOutlined;
+  static const String securityScanTwoTone = twotone.AntIconsTwoTone.securityScanTwoTone;
+  static const IconData selectOutlined = outlined.AntIconsOutlined.selectOutlined;
+  static const IconData sendOutlined = outlined.AntIconsOutlined.sendOutlined;
+  static const IconData settingFilled = filled.AntIconsFilled.settingFilled;
+  static const IconData settingOutlined = outlined.AntIconsOutlined.settingOutlined;
+  static const String settingTwoTone = twotone.AntIconsTwoTone.settingTwoTone;
+  static const IconData shakeOutlined = outlined.AntIconsOutlined.shakeOutlined;
+  static const IconData shareAltOutlined = outlined.AntIconsOutlined.shareAltOutlined;
+  static const IconData shopFilled = filled.AntIconsFilled.shopFilled;
+  static const IconData shopOutlined = outlined.AntIconsOutlined.shopOutlined;
+  static const String shopTwoTone = twotone.AntIconsTwoTone.shopTwoTone;
+  static const IconData shoppingCartOutlined = outlined.AntIconsOutlined.shoppingCartOutlined;
+  static const IconData shoppingFilled = filled.AntIconsFilled.shoppingFilled;
+  static const IconData shoppingOutlined = outlined.AntIconsOutlined.shoppingOutlined;
+  static const String shoppingTwoTone = twotone.AntIconsTwoTone.shoppingTwoTone;
+  static const IconData shrinkOutlined = outlined.AntIconsOutlined.shrinkOutlined;
+  static const IconData signalFilled = filled.AntIconsFilled.signalFilled;
+  static const IconData signatureFilled = filled.AntIconsFilled.signatureFilled;
+  static const IconData signatureOutlined = outlined.AntIconsOutlined.signatureOutlined;
+  static const IconData sisternodeOutlined = outlined.AntIconsOutlined.sisternodeOutlined;
+  static const IconData sketchCircleFilled = filled.AntIconsFilled.sketchCircleFilled;
+  static const IconData sketchOutlined = outlined.AntIconsOutlined.sketchOutlined;
+  static const IconData sketchSquareFilled = filled.AntIconsFilled.sketchSquareFilled;
+  static const IconData skinFilled = filled.AntIconsFilled.skinFilled;
+  static const IconData skinOutlined = outlined.AntIconsOutlined.skinOutlined;
+  static const String skinTwoTone = twotone.AntIconsTwoTone.skinTwoTone;
+  static const IconData skypeFilled = filled.AntIconsFilled.skypeFilled;
+  static const IconData skypeOutlined = outlined.AntIconsOutlined.skypeOutlined;
+  static const IconData slackCircleFilled = filled.AntIconsFilled.slackCircleFilled;
+  static const IconData slackOutlined = outlined.AntIconsOutlined.slackOutlined;
+  static const IconData slackSquareFilled = filled.AntIconsFilled.slackSquareFilled;
+  static const IconData slackSquareOutlined = outlined.AntIconsOutlined.slackSquareOutlined;
+  static const IconData slidersFilled = filled.AntIconsFilled.slidersFilled;
+  static const IconData slidersOutlined = outlined.AntIconsOutlined.slidersOutlined;
+  static const String slidersTwoTone = twotone.AntIconsTwoTone.slidersTwoTone;
+  static const IconData smallDashOutlined = outlined.AntIconsOutlined.smallDashOutlined;
+  static const IconData smileFilled = filled.AntIconsFilled.smileFilled;
+  static const IconData smileOutlined = outlined.AntIconsOutlined.smileOutlined;
+  static const String smileTwoTone = twotone.AntIconsTwoTone.smileTwoTone;
+  static const IconData snippetsFilled = filled.AntIconsFilled.snippetsFilled;
+  static const IconData snippetsOutlined = outlined.AntIconsOutlined.snippetsOutlined;
+  static const String snippetsTwoTone = twotone.AntIconsTwoTone.snippetsTwoTone;
+  static const IconData solutionOutlined = outlined.AntIconsOutlined.solutionOutlined;
+  static const IconData sortAscendingOutlined = outlined.AntIconsOutlined.sortAscendingOutlined;
+  static const IconData sortDescendingOutlined = outlined.AntIconsOutlined.sortDescendingOutlined;
+  static const IconData soundFilled = filled.AntIconsFilled.soundFilled;
+  static const IconData soundOutlined = outlined.AntIconsOutlined.soundOutlined;
+  static const String soundTwoTone = twotone.AntIconsTwoTone.soundTwoTone;
+  static const IconData splitCellsOutlined = outlined.AntIconsOutlined.splitCellsOutlined;
+  static const IconData spotifyFilled = filled.AntIconsFilled.spotifyFilled;
+  static const IconData spotifyOutlined = outlined.AntIconsOutlined.spotifyOutlined;
+  static const IconData starFilled = filled.AntIconsFilled.starFilled;
+  static const IconData starOutlined = outlined.AntIconsOutlined.starOutlined;
+  static const String starTwoTone = twotone.AntIconsTwoTone.starTwoTone;
+  static const IconData stepBackwardFilled = filled.AntIconsFilled.stepBackwardFilled;
+  static const IconData stepBackwardOutlined = outlined.AntIconsOutlined.stepBackwardOutlined;
+  static const IconData stepForwardFilled = filled.AntIconsFilled.stepForwardFilled;
+  static const IconData stepForwardOutlined = outlined.AntIconsOutlined.stepForwardOutlined;
+  static const IconData stockOutlined = outlined.AntIconsOutlined.stockOutlined;
+  static const IconData stopFilled = filled.AntIconsFilled.stopFilled;
+  static const IconData stopOutlined = outlined.AntIconsOutlined.stopOutlined;
+  static const String stopTwoTone = twotone.AntIconsTwoTone.stopTwoTone;
+  static const IconData strikethroughOutlined = outlined.AntIconsOutlined.strikethroughOutlined;
+  static const IconData subnodeOutlined = outlined.AntIconsOutlined.subnodeOutlined;
+  static const IconData sunFilled = filled.AntIconsFilled.sunFilled;
+  static const IconData sunOutlined = outlined.AntIconsOutlined.sunOutlined;
+  static const IconData swapLeftOutlined = outlined.AntIconsOutlined.swapLeftOutlined;
+  static const IconData swapOutlined = outlined.AntIconsOutlined.swapOutlined;
+  static const IconData swapRightOutlined = outlined.AntIconsOutlined.swapRightOutlined;
+  static const IconData switcherFilled = filled.AntIconsFilled.switcherFilled;
+  static const IconData switcherOutlined = outlined.AntIconsOutlined.switcherOutlined;
+  static const String switcherTwoTone = twotone.AntIconsTwoTone.switcherTwoTone;
+  static const IconData syncOutlined = outlined.AntIconsOutlined.syncOutlined;
+  static const IconData tableOutlined = outlined.AntIconsOutlined.tableOutlined;
+  static const IconData tabletFilled = filled.AntIconsFilled.tabletFilled;
+  static const IconData tabletOutlined = outlined.AntIconsOutlined.tabletOutlined;
+  static const String tabletTwoTone = twotone.AntIconsTwoTone.tabletTwoTone;
+  static const IconData tagFilled = filled.AntIconsFilled.tagFilled;
+  static const IconData tagOutlined = outlined.AntIconsOutlined.tagOutlined;
+  static const String tagTwoTone = twotone.AntIconsTwoTone.tagTwoTone;
+  static const IconData tagsFilled = filled.AntIconsFilled.tagsFilled;
+  static const IconData tagsOutlined = outlined.AntIconsOutlined.tagsOutlined;
+  static const String tagsTwoTone = twotone.AntIconsTwoTone.tagsTwoTone;
+  static const IconData taobaoCircleFilled = filled.AntIconsFilled.taobaoCircleFilled;
+  static const IconData taobaoCircleOutlined = outlined.AntIconsOutlined.taobaoCircleOutlined;
+  static const IconData taobaoOutlined = outlined.AntIconsOutlined.taobaoOutlined;
+  static const IconData taobaoSquareFilled = filled.AntIconsFilled.taobaoSquareFilled;
+  static const IconData teamOutlined = outlined.AntIconsOutlined.teamOutlined;
+  static const IconData thunderboltFilled = filled.AntIconsFilled.thunderboltFilled;
+  static const IconData thunderboltOutlined = outlined.AntIconsOutlined.thunderboltOutlined;
+  static const String thunderboltTwoTone = twotone.AntIconsTwoTone.thunderboltTwoTone;
+  static const IconData tikTokFilled = filled.AntIconsFilled.tikTokFilled;
+  static const IconData tikTokOutlined = outlined.AntIconsOutlined.tikTokOutlined;
+  static const IconData toTopOutlined = outlined.AntIconsOutlined.toTopOutlined;
+  static const IconData toolFilled = filled.AntIconsFilled.toolFilled;
+  static const IconData toolOutlined = outlined.AntIconsOutlined.toolOutlined;
+  static const String toolTwoTone = twotone.AntIconsTwoTone.toolTwoTone;
+  static const IconData trademarkCircleFilled = filled.AntIconsFilled.trademarkCircleFilled;
+  static const IconData trademarkCircleOutlined = outlined.AntIconsOutlined.trademarkCircleOutlined;
+  static const String trademarkCircleTwoTone = twotone.AntIconsTwoTone.trademarkCircleTwoTone;
+  static const IconData trademarkOutlined = outlined.AntIconsOutlined.trademarkOutlined;
+  static const IconData transactionOutlined = outlined.AntIconsOutlined.transactionOutlined;
+  static const IconData translationOutlined = outlined.AntIconsOutlined.translationOutlined;
+  static const IconData trophyFilled = filled.AntIconsFilled.trophyFilled;
+  static const IconData trophyOutlined = outlined.AntIconsOutlined.trophyOutlined;
+  static const String trophyTwoTone = twotone.AntIconsTwoTone.trophyTwoTone;
+  static const IconData truckFilled = filled.AntIconsFilled.truckFilled;
+  static const IconData truckOutlined = outlined.AntIconsOutlined.truckOutlined;
+  static const IconData twitchFilled = filled.AntIconsFilled.twitchFilled;
+  static const IconData twitchOutlined = outlined.AntIconsOutlined.twitchOutlined;
+  static const IconData twitterCircleFilled = filled.AntIconsFilled.twitterCircleFilled;
+  static const IconData twitterOutlined = outlined.AntIconsOutlined.twitterOutlined;
+  static const IconData twitterSquareFilled = filled.AntIconsFilled.twitterSquareFilled;
+  static const IconData underlineOutlined = outlined.AntIconsOutlined.underlineOutlined;
+  static const IconData undoOutlined = outlined.AntIconsOutlined.undoOutlined;
+  static const IconData ungroupOutlined = outlined.AntIconsOutlined.ungroupOutlined;
+  static const IconData unlockFilled = filled.AntIconsFilled.unlockFilled;
+  static const IconData unlockOutlined = outlined.AntIconsOutlined.unlockOutlined;
+  static const String unlockTwoTone = twotone.AntIconsTwoTone.unlockTwoTone;
+  static const IconData unorderedListOutlined = outlined.AntIconsOutlined.unorderedListOutlined;
+  static const IconData upCircleFilled = filled.AntIconsFilled.upCircleFilled;
+  static const IconData upCircleOutlined = outlined.AntIconsOutlined.upCircleOutlined;
+  static const String upCircleTwoTone = twotone.AntIconsTwoTone.upCircleTwoTone;
+  static const IconData upOutlined = outlined.AntIconsOutlined.upOutlined;
+  static const IconData upSquareFilled = filled.AntIconsFilled.upSquareFilled;
+  static const IconData upSquareOutlined = outlined.AntIconsOutlined.upSquareOutlined;
+  static const String upSquareTwoTone = twotone.AntIconsTwoTone.upSquareTwoTone;
+  static const IconData uploadOutlined = outlined.AntIconsOutlined.uploadOutlined;
+  static const IconData usbFilled = filled.AntIconsFilled.usbFilled;
+  static const IconData usbOutlined = outlined.AntIconsOutlined.usbOutlined;
+  static const String usbTwoTone = twotone.AntIconsTwoTone.usbTwoTone;
+  static const IconData userAddOutlined = outlined.AntIconsOutlined.userAddOutlined;
+  static const IconData userDeleteOutlined = outlined.AntIconsOutlined.userDeleteOutlined;
+  static const IconData userOutlined = outlined.AntIconsOutlined.userOutlined;
+  static const IconData userSwitchOutlined = outlined.AntIconsOutlined.userSwitchOutlined;
+  static const IconData usergroupAddOutlined = outlined.AntIconsOutlined.usergroupAddOutlined;
+  static const IconData usergroupDeleteOutlined = outlined.AntIconsOutlined.usergroupDeleteOutlined;
+  static const IconData verifiedOutlined = outlined.AntIconsOutlined.verifiedOutlined;
+  static const IconData verticalAlignBottomOutlined = outlined.AntIconsOutlined.verticalAlignBottomOutlined;
+  static const IconData verticalAlignMiddleOutlined = outlined.AntIconsOutlined.verticalAlignMiddleOutlined;
+  static const IconData verticalAlignTopOutlined = outlined.AntIconsOutlined.verticalAlignTopOutlined;
+  static const IconData verticalLeftOutlined = outlined.AntIconsOutlined.verticalLeftOutlined;
+  static const IconData verticalRightOutlined = outlined.AntIconsOutlined.verticalRightOutlined;
+  static const IconData videoCameraAddOutlined = outlined.AntIconsOutlined.videoCameraAddOutlined;
+  static const IconData videoCameraFilled = filled.AntIconsFilled.videoCameraFilled;
+  static const IconData videoCameraOutlined = outlined.AntIconsOutlined.videoCameraOutlined;
+  static const String videoCameraTwoTone = twotone.AntIconsTwoTone.videoCameraTwoTone;
+  static const IconData walletFilled = filled.AntIconsFilled.walletFilled;
+  static const IconData walletOutlined = outlined.AntIconsOutlined.walletOutlined;
+  static const String walletTwoTone = twotone.AntIconsTwoTone.walletTwoTone;
+  static const IconData warningFilled = filled.AntIconsFilled.warningFilled;
+  static const IconData warningOutlined = outlined.AntIconsOutlined.warningOutlined;
+  static const String warningTwoTone = twotone.AntIconsTwoTone.warningTwoTone;
+  static const IconData wechatFilled = filled.AntIconsFilled.wechatFilled;
+  static const IconData wechatOutlined = outlined.AntIconsOutlined.wechatOutlined;
+  static const IconData wechatWorkFilled = filled.AntIconsFilled.wechatWorkFilled;
+  static const IconData wechatWorkOutlined = outlined.AntIconsOutlined.wechatWorkOutlined;
+  static const IconData weiboCircleFilled = filled.AntIconsFilled.weiboCircleFilled;
+  static const IconData weiboCircleOutlined = outlined.AntIconsOutlined.weiboCircleOutlined;
+  static const IconData weiboOutlined = outlined.AntIconsOutlined.weiboOutlined;
+  static const IconData weiboSquareFilled = filled.AntIconsFilled.weiboSquareFilled;
+  static const IconData weiboSquareOutlined = outlined.AntIconsOutlined.weiboSquareOutlined;
+  static const IconData whatsAppOutlined = outlined.AntIconsOutlined.whatsAppOutlined;
+  static const IconData wifiOutlined = outlined.AntIconsOutlined.wifiOutlined;
+  static const IconData windowsFilled = filled.AntIconsFilled.windowsFilled;
+  static const IconData windowsOutlined = outlined.AntIconsOutlined.windowsOutlined;
+  static const IconData womanOutlined = outlined.AntIconsOutlined.womanOutlined;
+  static const IconData xFilled = filled.AntIconsFilled.xFilled;
+  static const IconData xOutlined = outlined.AntIconsOutlined.xOutlined;
+  static const IconData yahooFilled = filled.AntIconsFilled.yahooFilled;
+  static const IconData yahooOutlined = outlined.AntIconsOutlined.yahooOutlined;
+  static const IconData youtubeFilled = filled.AntIconsFilled.youtubeFilled;
+  static const IconData youtubeOutlined = outlined.AntIconsOutlined.youtubeOutlined;
+  static const IconData yuqueFilled = filled.AntIconsFilled.yuqueFilled;
+  static const IconData yuqueOutlined = outlined.AntIconsOutlined.yuqueOutlined;
+  static const IconData zhihuCircleFilled = filled.AntIconsFilled.zhihuCircleFilled;
+  static const IconData zhihuOutlined = outlined.AntIconsOutlined.zhihuOutlined;
+  static const IconData zhihuSquareFilled = filled.AntIconsFilled.zhihuSquareFilled;
+  static const IconData zoomInOutlined = outlined.AntIconsOutlined.zoomInOutlined;
+  static const IconData zoomOutOutlined = outlined.AntIconsOutlined.zoomOutOutlined;
 }
