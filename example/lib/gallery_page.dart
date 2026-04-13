@@ -2,6 +2,7 @@ import 'package:ant_icons_plus/ant_icons_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'icon_demo_page.dart';
 import 'icon_registry.dart';
 import 'widgets/color_selector.dart';
 import 'widgets/icon_detail_sheet.dart';
@@ -192,6 +193,17 @@ class _GalleryPageState extends State<GalleryPage>
                                 );
                               }
                             }
+                          },
+                        ),
+                        IconButton(
+                          tooltip: 'Open Icon Demo',
+                          icon: const Icon(Icons.lightbulb),
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => const IconDemoPage(),
+                              ),
+                            );
                           },
                         ),
                       ],
