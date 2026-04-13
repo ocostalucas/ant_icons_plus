@@ -4,65 +4,65 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  group('AntdIcons aggregator (font-based)', () {
+  group('AntIcons aggregator (font-based)', () {
     test('outlined icon should have correct fontFamily', () {
-      expect(AntdIcons.accountBookOutlined.fontFamily, 'AntdIcons');
+      expect(AntIcons.accountBookOutlined.fontFamily, 'AntIcons');
     });
 
     test('filled icon should have correct fontFamily', () {
-      expect(AntdIcons.accountBookFilled.fontFamily, 'AntdIcons');
+      expect(AntIcons.accountBookFilled.fontFamily, 'AntIcons');
     });
 
     test('outlined icon should have correct fontPackage', () {
-      expect(AntdIcons.accountBookOutlined.fontPackage, 'ant_icons_plus');
+      expect(AntIcons.accountBookOutlined.fontPackage, 'ant_icons_plus');
     });
 
     test('filled icon should have correct fontPackage', () {
-      expect(AntdIcons.accountBookFilled.fontPackage, 'ant_icons_plus');
+      expect(AntIcons.accountBookFilled.fontPackage, 'ant_icons_plus');
     });
 
     test('icons should have non-zero codePoint', () {
-      expect(AntdIcons.accountBookOutlined.codePoint, greaterThan(0));
-      expect(AntdIcons.accountBookFilled.codePoint, greaterThan(0));
+      expect(AntIcons.accountBookOutlined.codePoint, greaterThan(0));
+      expect(AntIcons.accountBookFilled.codePoint, greaterThan(0));
     });
 
     test('different icons should have different codePoints', () {
       expect(
-        AntdIcons.accountBookOutlined.codePoint,
-        isNot(equals(AntdIcons.accountBookFilled.codePoint)),
+        AntIcons.accountBookOutlined.codePoint,
+        isNot(equals(AntIcons.accountBookFilled.codePoint)),
       );
     });
   });
 
-  group('AntdIcons aggregator (two-tone)', () {
+  group('AntIcons aggregator (two-tone)', () {
     test('should expose a non-empty two-tone SVG string', () {
-      expect(AntdIcons.accountBookTwoTone, isNotEmpty);
+      expect(AntIcons.accountBookTwoTone, isNotEmpty);
     });
 
     test('should keep {color} placeholder in two-tone icons', () {
-      expect(AntdIcons.accountBookTwoTone, contains('{color}'));
+      expect(AntIcons.accountBookTwoTone, contains('{color}'));
     });
 
     test('should keep {secondaryColor} placeholder in two-tone icons', () {
-      expect(AntdIcons.accountBookTwoTone, contains('{secondaryColor}'));
+      expect(AntIcons.accountBookTwoTone, contains('{secondaryColor}'));
     });
   });
 
-  group('AntdIconsOutlined', () {
+  group('AntIconsOutlined', () {
     test('should expose outlined icons with correct fontFamily', () {
-      expect(AntdIconsOutlined.accountBookOutlined.fontFamily, 'AntdIcons');
+      expect(AntIconsOutlined.accountBookOutlined.fontFamily, 'AntIcons');
     });
   });
 
-  group('AntdIconsFilled', () {
+  group('AntIconsFilled', () {
     test('should expose filled icons with correct fontFamily', () {
-      expect(AntdIconsFilled.accountBookFilled.fontFamily, 'AntdIcons');
+      expect(AntIconsFilled.accountBookFilled.fontFamily, 'AntIcons');
     });
   });
 
-  group('AntdIconsTwoTone', () {
+  group('AntIconsTwoTone', () {
     test('should expose two-tone icon strings', () {
-      expect(AntdIconsTwoTone.accountBookTwoTone, isNotEmpty);
+      expect(AntIconsTwoTone.accountBookTwoTone, isNotEmpty);
     });
   });
 
@@ -73,7 +73,7 @@ void main() {
       await tester.pumpWidget(
         const Directionality(
           textDirection: TextDirection.ltr,
-          child: Icon(AntdIcons.accountBookOutlined),
+          child: Icon(AntIcons.accountBookOutlined),
         ),
       );
       expect(find.byType(Icon), findsOneWidget);
@@ -85,7 +85,7 @@ void main() {
       await tester.pumpWidget(
         const Directionality(
           textDirection: TextDirection.ltr,
-          child: Icon(AntdIcons.accountBookFilled),
+          child: Icon(AntIcons.accountBookFilled),
         ),
       );
       expect(find.byType(Icon), findsOneWidget);
@@ -95,7 +95,7 @@ void main() {
       await tester.pumpWidget(
         const Directionality(
           textDirection: TextDirection.ltr,
-          child: Icon(AntdIcons.accountBookFilled, size: 48),
+          child: Icon(AntIcons.accountBookFilled, size: 48),
         ),
       );
       final icon = tester.widget<Icon>(find.byType(Icon));
@@ -103,34 +103,34 @@ void main() {
     });
   });
 
-  group('AntdIcon widget (TwoTone)', () {
+  group('AntIcon widget (TwoTone)', () {
     test('_toHex should return #000000 for black', () {
-      expect(AntdIcon.toHexPublic(const Color(0xFF000000)), '#000000');
+      expect(AntIcon.toHexPublic(const Color(0xFF000000)), '#000000');
     });
 
     test('_toHex should return #ffffff for white', () {
-      expect(AntdIcon.toHexPublic(const Color(0xFFFFFFFF)), '#ffffff');
+      expect(AntIcon.toHexPublic(const Color(0xFFFFFFFF)), '#ffffff');
     });
 
     test('_toHex should return correct hex for Ant Design blue', () {
-      expect(AntdIcon.toHexPublic(const Color(0xFF1677FF)), '#1677ff');
+      expect(AntIcon.toHexPublic(const Color(0xFF1677FF)), '#1677ff');
     });
 
     testWidgets('should render a SvgPicture for two-tone icon', (tester) async {
       await tester.pumpWidget(
         const Directionality(
           textDirection: TextDirection.ltr,
-          child: AntdIcon(AntdIcons.accountBookTwoTone),
+          child: AntIcon(AntIcons.accountBookTwoTone),
         ),
       );
       expect(find.byType(SvgPicture), findsOneWidget);
     });
 
-    testWidgets('should respect custom size on AntdIcon', (tester) async {
+    testWidgets('should respect custom size on AntIcon', (tester) async {
       await tester.pumpWidget(
         const Directionality(
           textDirection: TextDirection.ltr,
-          child: AntdIcon(AntdIcons.accountBookTwoTone, size: 48),
+          child: AntIcon(AntIcons.accountBookTwoTone, size: 48),
         ),
       );
       final svg = tester.widget<SvgPicture>(find.byType(SvgPicture));
@@ -142,8 +142,8 @@ void main() {
       await tester.pumpWidget(
         const Directionality(
           textDirection: TextDirection.ltr,
-          child: AntdIcon(
-            AntdIcons.accountBookTwoTone,
+          child: AntIcon(
+            AntIcons.accountBookTwoTone,
             color: Color(0xFF1677FF),
             secondaryColor: Color(0xFFFF0000),
           ),
