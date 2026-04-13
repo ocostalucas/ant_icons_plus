@@ -22,7 +22,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  ant_icons_plus: ^1.0.1
+  ant_icons_plus: ^2.0.1
 ```
 
 Then run:
