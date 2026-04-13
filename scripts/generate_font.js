@@ -8,7 +8,7 @@ const { generateFonts } = require("fantasticon");
 
 const inputDir = process.argv[2] || ".tmp/svgs";
 const outputDir = process.argv[3] || ".tmp/font";
-const fontName = process.argv[4] || "AntdIcons";
+const fontName = process.argv[4] || "AntIcons";
 
 // Ensure output dir exists
 fs.mkdirSync(outputDir, { recursive: true });
