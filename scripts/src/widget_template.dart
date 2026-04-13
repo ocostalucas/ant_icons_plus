@@ -9,20 +9,20 @@ import 'package:flutter_svg/flutter_svg.dart';
 ///
 /// For Outlined and Filled icons, use the standard [Icon] widget:
 /// ```dart
-/// Icon(AntdIcons.userOutlined, size: 24, color: Colors.blue)
+/// Icon(AntIcons.userOutlined, size: 24, color: Colors.blue)
 /// ```
 ///
 /// For TwoTone icons, use this widget:
 /// ```dart
-/// AntdIcon(AntdIcons.heartTwoTone, size: 24, color: Colors.red)
+/// AntIcon(AntIcons.heartTwoTone, size: 24, color: Colors.red)
 /// ```
-class AntdIcon extends StatelessWidget {
+class AntIcon extends StatelessWidget {
   final String svgString;
   final double size;
   final Color? color;
   final Color? secondaryColor;
 
-  const AntdIcon(
+  const AntIcon(
     this.svgString, {
     super.key,
     this.size = 24.0,

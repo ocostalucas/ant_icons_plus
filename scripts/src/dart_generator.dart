@@ -25,7 +25,7 @@ String generateThemeFile(
   buffer.writeln('');
   buffer.writeln("import 'package:flutter/widgets.dart';");
   buffer.writeln('');
-  buffer.writeln('abstract class AntdIcons$themeLabel {');
+  buffer.writeln('abstract class AntIcons$themeLabel {');
 
   for (final icon in icons) {
     final constName = _toLowerCamel(icon.className);
@@ -54,7 +54,7 @@ String generateTwoToneFile(List<IconEntry> icons) {
   buffer.writeln('// Theme: TwoTone');
   buffer.writeln('// Total: ${icons.length} icons');
   buffer.writeln('');
-  buffer.writeln('abstract class AntdIconsTwoTone {');
+  buffer.writeln('abstract class AntIconsTwoTone {');
 
   for (final icon in icons) {
     final svg = buildTwoToneSvg(icon);
@@ -89,7 +89,7 @@ String generateEntryFile(int total, int outlined, int filled, int twoTone) {
   return buffer.toString();
 }
 
-/// Generates lib/src/ant_icons.dart — the AntdIcons aggregator class.
+/// Generates lib/src/ant_icons.dart — the AntIcons aggregator class.
 String generateAggregatorFile(
   List<IconEntry> fontIcons,
   Map<String, int> codepoints,
@@ -106,7 +106,7 @@ String generateAggregatorFile(
   buffer.writeln("import 'icons/ant_icons_plus_filled.dart' as filled;");
   buffer.writeln("import 'icons/ant_icons_plus_twotone.dart' as twotone;");
   buffer.writeln('');
-  buffer.writeln('abstract class AntdIcons {');
+  buffer.writeln('abstract class AntIcons {');
 
   // Merge all icons, sort by class name
   final allFont = List<IconEntry>.from(fontIcons);
@@ -122,7 +122,7 @@ String generateAggregatorFile(
       _AggEntry(
         constName: _toLowerCamel(icon.className),
         type: 'IconData',
-        ref: '$prefix.AntdIcons$suffix.${_toLowerCamel(icon.className)}',
+        ref: '$prefix.AntIcons$suffix.${_toLowerCamel(icon.className)}',
       ),
     );
   }
@@ -132,7 +132,7 @@ String generateAggregatorFile(
       _AggEntry(
         constName: _toLowerCamel(icon.className),
         type: 'String',
-        ref: 'twotone.AntdIconsTwoTone.${_toLowerCamel(icon.className)}',
+        ref: 'twotone.AntIconsTwoTone.${_toLowerCamel(icon.className)}',
       ),
     );
   }
@@ -198,7 +198,7 @@ String generateRegistryFile(
     if (!codepoints.containsKey(key)) continue;
     final constName = _toLowerCamel(icon.className);
     buffer.writeln(
-      "  IconItem(name: '${icon.name}', variant: IconVariant.outlined, iconData: AntdIcons.$constName, constName: '$constName'),",
+      "  IconItem(name: '${icon.name}', variant: IconVariant.outlined, iconData: AntIcons.$constName, constName: '$constName'),",
     );
   }
 
@@ -210,7 +210,7 @@ String generateRegistryFile(
     if (!codepoints.containsKey(key)) continue;
     final constName = _toLowerCamel(icon.className);
     buffer.writeln(
-      "  IconItem(name: '${icon.name}', variant: IconVariant.filled, iconData: AntdIcons.$constName, constName: '$constName'),",
+      "  IconItem(name: '${icon.name}', variant: IconVariant.filled, iconData: AntIcons.$constName, constName: '$constName'),",
     );
   }
 
@@ -220,7 +220,7 @@ String generateRegistryFile(
   for (final icon in sortedTT) {
     final constName = _toLowerCamel(icon.className);
     buffer.writeln(
-      "  IconItem(name: '${icon.name}', variant: IconVariant.twotone, svgString: AntdIcons.$constName, constName: '$constName'),",
+      "  IconItem(name: '${icon.name}', variant: IconVariant.twotone, svgString: AntIcons.$constName, constName: '$constName'),",
     );
   }
 

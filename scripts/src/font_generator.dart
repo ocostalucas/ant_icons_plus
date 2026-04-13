@@ -26,7 +26,7 @@ Future<void> runFantasticon() async {
   if (!fontDir.existsSync()) fontDir.createSync(recursive: true);
 
   final result = await Process.run('node', [
-    'tools/generate_font.js',
+    'scripts/generate_font.js',
     kTempSvgDir,
     kTempFontDir,
     kFontFamily,

@@ -21,6 +21,6 @@ const String kRegistryFile = 'example/lib/icon_registry.dart';
 
 // Font configuration
 const String kFontDir = 'lib/fonts';
-const String kFontFile = 'lib/fonts/AntdIcons.ttf';
-const String kFontFamily = 'AntdIcons';
+const String kFontFile = 'lib/fonts/AntIcons.ttf';
+const String kFontFamily = 'AntIcons';
 const String kFontPackage = 'ant_icons_plus';
