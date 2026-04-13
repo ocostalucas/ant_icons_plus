@@ -1,6 +1,6 @@
 name: ant_icons_plus
 description: Ant Design icon pack for Flutter providing comprehensive icon coverage, easy integration via font assets, and ready-to-use widgets for apps.
-version: 1.0.1
+version: 2.0.0
 homepage: https://github.com/ocostalucas/ant_icons_plus
 license: MIT
 
@@ -20,6 +20,6 @@ dev_dependencies:
 
 flutter:
   fonts:
-    - family: AntdIcons
+    - family: AntIcons
       fonts:
-        - asset: lib/fonts/AntdIcons.ttf
+        - asset: lib/fonts/AntIcons.ttf
