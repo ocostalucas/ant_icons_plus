@@ -14,14 +14,14 @@ import 'package:flutter_svg/flutter_svg.dart';
 /// ```
 class AntIcon extends StatelessWidget {
   final String svgString;
-  final double size;
+  final double? size;
   final Color? color;
   final Color? secondaryColor;
 
   const AntIcon(
     this.svgString, {
     super.key,
-    this.size = 24.0,
+    this.size,
     this.color,
     this.secondaryColor,
   });
@@ -29,6 +29,7 @@ class AntIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final iconTheme = IconTheme.of(context);
+    final resolvedSize = size ?? iconTheme.size ?? 24.0;
     final resolvedColor = color ?? iconTheme.color ?? const Color(0xFF000000);
     final resolvedSecondary = secondaryColor ?? const Color(0xFFFFFFFF);
 
@@ -47,12 +48,13 @@ class AntIcon extends StatelessWidget {
     final svg =
         '<svg xmlns="http://www.w3.org/2000/svg"'
         '$viewBox'
-        ' width="$size" height="$size"'
+        ' preserveAspectRatio="xMidYMid meet"'
+        ' width="$resolvedSize" height="$resolvedSize"'
         ' fill="${_toHex(resolvedColor)}">'
         '$inner'
         '</svg>';
 
-    return SvgPicture.string(svg, width: size, height: size);
+    return SvgPicture.string(svg, width: resolvedSize, height: resolvedSize);
   }
 
   static String _toHex(Color c) {
