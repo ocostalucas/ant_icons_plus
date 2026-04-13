@@ -20,7 +20,10 @@ const config = {
   name: fontName,
   fontTypes: ["ttf"],
   assetTypes: ["json"],
-  normalize: true,
+  // SVGs are already normalized to a 1024x1024 em box in the Dart
+  // preprocessing step. Disabling fantasticon's `normalize` avoids
+  // double-scaling that can produce oversized glyphs at runtime.
+  normalize: false,
   fontHeight: 1024,
 };
 
