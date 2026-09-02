@@ -1,4 +1,4 @@
-## [Unreleased]
+## [2.1.0]
 
 - Updated the icon source from `@ant-design/icons-svg` 4.4.2 to 4.6.0.
 - Regenerated the icon font, Dart APIs, and example gallery registry.
