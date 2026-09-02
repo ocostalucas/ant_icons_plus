@@ -33,6 +33,7 @@ abstract class AntIcons {
   static const IconData androidOutlined = outlined.AntIconsOutlined.androidOutlined;
   static const IconData antCloudOutlined = outlined.AntIconsOutlined.antCloudOutlined;
   static const IconData antDesignOutlined = outlined.AntIconsOutlined.antDesignOutlined;
+  static const IconData anthropicFilled = filled.AntIconsFilled.anthropicFilled;
   static const IconData apartmentOutlined = outlined.AntIconsOutlined.apartmentOutlined;
   static const IconData apiFilled = filled.AntIconsFilled.apiFilled;
   static const IconData apiOutlined = outlined.AntIconsOutlined.apiOutlined;
@@ -138,6 +139,7 @@ abstract class AntIcons {
   static const String ciCircleTwoTone = twotone.AntIconsTwoTone.ciCircleTwoTone;
   static const IconData ciOutlined = outlined.AntIconsOutlined.ciOutlined;
   static const String ciTwoTone = twotone.AntIconsTwoTone.ciTwoTone;
+  static const IconData claudeFilled = filled.AntIconsFilled.claudeFilled;
   static const IconData clearOutlined = outlined.AntIconsOutlined.clearOutlined;
   static const IconData clockCircleFilled = filled.AntIconsFilled.clockCircleFilled;
   static const IconData clockCircleOutlined = outlined.AntIconsOutlined.clockCircleOutlined;
@@ -209,6 +211,7 @@ abstract class AntIcons {
   static const IconData databaseFilled = filled.AntIconsFilled.databaseFilled;
   static const IconData databaseOutlined = outlined.AntIconsOutlined.databaseOutlined;
   static const String databaseTwoTone = twotone.AntIconsTwoTone.databaseTwoTone;
+  static const IconData deepSeekFilled = filled.AntIconsFilled.deepSeekFilled;
   static const IconData deleteColumnOutlined = outlined.AntIconsOutlined.deleteColumnOutlined;
   static const IconData deleteFilled = filled.AntIconsFilled.deleteFilled;
   static const IconData deleteOutlined = outlined.AntIconsOutlined.deleteOutlined;
@@ -259,6 +262,7 @@ abstract class AntIcons {
   static const IconData editFilled = filled.AntIconsFilled.editFilled;
   static const IconData editOutlined = outlined.AntIconsOutlined.editOutlined;
   static const String editTwoTone = twotone.AntIconsTwoTone.editTwoTone;
+  static const IconData elevenLabsFilled = filled.AntIconsFilled.elevenLabsFilled;
   static const IconData ellipsisOutlined = outlined.AntIconsOutlined.ellipsisOutlined;
   static const IconData enterOutlined = outlined.AntIconsOutlined.enterOutlined;
   static const IconData environmentFilled = filled.AntIconsFilled.environmentFilled;
@@ -381,6 +385,7 @@ abstract class AntIcons {
   static const IconData funnelPlotOutlined = outlined.AntIconsOutlined.funnelPlotOutlined;
   static const String funnelPlotTwoTone = twotone.AntIconsTwoTone.funnelPlotTwoTone;
   static const IconData gatewayOutlined = outlined.AntIconsOutlined.gatewayOutlined;
+  static const IconData geminiFilled = filled.AntIconsFilled.geminiFilled;
   static const IconData gifOutlined = outlined.AntIconsOutlined.gifOutlined;
   static const IconData giftFilled = filled.AntIconsFilled.giftFilled;
   static const IconData giftOutlined = outlined.AntIconsOutlined.giftOutlined;
@@ -423,6 +428,7 @@ abstract class AntIcons {
   static const IconData html5Filled = filled.AntIconsFilled.html5Filled;
   static const IconData html5Outlined = outlined.AntIconsOutlined.html5Outlined;
   static const String html5TwoTone = twotone.AntIconsTwoTone.html5TwoTone;
+  static const IconData huggingFaceFilled = filled.AntIconsFilled.huggingFaceFilled;
   static const IconData idcardFilled = filled.AntIconsFilled.idcardFilled;
   static const IconData idcardOutlined = outlined.AntIconsOutlined.idcardOutlined;
   static const String idcardTwoTone = twotone.AntIconsTwoTone.idcardTwoTone;
@@ -487,6 +493,7 @@ abstract class AntIcons {
   static const IconData mailOutlined = outlined.AntIconsOutlined.mailOutlined;
   static const String mailTwoTone = twotone.AntIconsTwoTone.mailTwoTone;
   static const IconData manOutlined = outlined.AntIconsOutlined.manOutlined;
+  static const IconData mastodonFilled = filled.AntIconsFilled.mastodonFilled;
   static const IconData medicineBoxFilled = filled.AntIconsFilled.medicineBoxFilled;
   static const IconData medicineBoxOutlined = outlined.AntIconsOutlined.medicineBoxOutlined;
   static const String medicineBoxTwoTone = twotone.AntIconsTwoTone.medicineBoxTwoTone;
@@ -506,6 +513,7 @@ abstract class AntIcons {
   static const IconData messageFilled = filled.AntIconsFilled.messageFilled;
   static const IconData messageOutlined = outlined.AntIconsOutlined.messageOutlined;
   static const String messageTwoTone = twotone.AntIconsTwoTone.messageTwoTone;
+  static const IconData metaFilled = filled.AntIconsFilled.metaFilled;
   static const IconData minusCircleFilled = filled.AntIconsFilled.minusCircleFilled;
   static const IconData minusCircleOutlined = outlined.AntIconsOutlined.minusCircleOutlined;
   static const String minusCircleTwoTone = twotone.AntIconsTwoTone.minusCircleTwoTone;
@@ -513,6 +521,7 @@ abstract class AntIcons {
   static const IconData minusSquareFilled = filled.AntIconsFilled.minusSquareFilled;
   static const IconData minusSquareOutlined = outlined.AntIconsOutlined.minusSquareOutlined;
   static const String minusSquareTwoTone = twotone.AntIconsTwoTone.minusSquareTwoTone;
+  static const IconData mistralFilled = filled.AntIconsFilled.mistralFilled;
   static const IconData mobileFilled = filled.AntIconsFilled.mobileFilled;
   static const IconData mobileOutlined = outlined.AntIconsOutlined.mobileOutlined;
   static const String mobileTwoTone = twotone.AntIconsTwoTone.mobileTwoTone;
@@ -525,6 +534,7 @@ abstract class AntIcons {
   static const IconData moreOutlined = outlined.AntIconsOutlined.moreOutlined;
   static const IconData mutedFilled = filled.AntIconsFilled.mutedFilled;
   static const IconData mutedOutlined = outlined.AntIconsOutlined.mutedOutlined;
+  static const IconData netflixFilled = filled.AntIconsFilled.netflixFilled;
   static const IconData nodeCollapseOutlined = outlined.AntIconsOutlined.nodeCollapseOutlined;
   static const IconData nodeExpandOutlined = outlined.AntIconsOutlined.nodeExpandOutlined;
   static const IconData nodeIndexOutlined = outlined.AntIconsOutlined.nodeIndexOutlined;
@@ -532,6 +542,7 @@ abstract class AntIcons {
   static const IconData notificationOutlined = outlined.AntIconsOutlined.notificationOutlined;
   static const String notificationTwoTone = twotone.AntIconsTwoTone.notificationTwoTone;
   static const IconData numberOutlined = outlined.AntIconsOutlined.numberOutlined;
+  static const IconData ollamaFilled = filled.AntIconsFilled.ollamaFilled;
   static const IconData oneToOneOutlined = outlined.AntIconsOutlined.oneToOneOutlined;
   static const IconData openAIFilled = filled.AntIconsFilled.openAIFilled;
   static const IconData openAIOutlined = outlined.AntIconsOutlined.openAIOutlined;
@@ -545,6 +556,7 @@ abstract class AntIcons {
   static const IconData payCircleFilled = filled.AntIconsFilled.payCircleFilled;
   static const IconData payCircleOutlined = outlined.AntIconsOutlined.payCircleOutlined;
   static const IconData percentageOutlined = outlined.AntIconsOutlined.percentageOutlined;
+  static const IconData perplexityFilled = filled.AntIconsFilled.perplexityFilled;
   static const IconData phoneFilled = filled.AntIconsFilled.phoneFilled;
   static const IconData phoneOutlined = outlined.AntIconsOutlined.phoneOutlined;
   static const String phoneTwoTone = twotone.AntIconsTwoTone.phoneTwoTone;
@@ -604,6 +616,7 @@ abstract class AntIcons {
   static const IconData questionCircleOutlined = outlined.AntIconsOutlined.questionCircleOutlined;
   static const String questionCircleTwoTone = twotone.AntIconsTwoTone.questionCircleTwoTone;
   static const IconData questionOutlined = outlined.AntIconsOutlined.questionOutlined;
+  static const IconData qwenFilled = filled.AntIconsFilled.qwenFilled;
   static const IconData radarChartOutlined = outlined.AntIconsOutlined.radarChartOutlined;
   static const IconData radiusBottomleftOutlined = outlined.AntIconsOutlined.radiusBottomleftOutlined;
   static const IconData radiusBottomrightOutlined = outlined.AntIconsOutlined.radiusBottomrightOutlined;
@@ -623,6 +636,7 @@ abstract class AntIcons {
   static const IconData redditSquareFilled = filled.AntIconsFilled.redditSquareFilled;
   static const IconData redoOutlined = outlined.AntIconsOutlined.redoOutlined;
   static const IconData reloadOutlined = outlined.AntIconsOutlined.reloadOutlined;
+  static const IconData replicateFilled = filled.AntIconsFilled.replicateFilled;
   static const IconData restFilled = filled.AntIconsFilled.restFilled;
   static const IconData restOutlined = outlined.AntIconsOutlined.restOutlined;
   static const String restTwoTone = twotone.AntIconsTwoTone.restTwoTone;
@@ -698,6 +712,7 @@ abstract class AntIcons {
   static const IconData smileFilled = filled.AntIconsFilled.smileFilled;
   static const IconData smileOutlined = outlined.AntIconsOutlined.smileOutlined;
   static const String smileTwoTone = twotone.AntIconsTwoTone.smileTwoTone;
+  static const IconData snapchatFilled = filled.AntIconsFilled.snapchatFilled;
   static const IconData snippetsFilled = filled.AntIconsFilled.snippetsFilled;
   static const IconData snippetsOutlined = outlined.AntIconsOutlined.snippetsOutlined;
   static const String snippetsTwoTone = twotone.AntIconsTwoTone.snippetsTwoTone;
@@ -747,6 +762,8 @@ abstract class AntIcons {
   static const IconData taobaoOutlined = outlined.AntIconsOutlined.taobaoOutlined;
   static const IconData taobaoSquareFilled = filled.AntIconsFilled.taobaoSquareFilled;
   static const IconData teamOutlined = outlined.AntIconsOutlined.teamOutlined;
+  static const IconData telegramFilled = filled.AntIconsFilled.telegramFilled;
+  static const IconData threadsFilled = filled.AntIconsFilled.threadsFilled;
   static const IconData thunderboltFilled = filled.AntIconsFilled.thunderboltFilled;
   static const IconData thunderboltOutlined = outlined.AntIconsOutlined.thunderboltOutlined;
   static const String thunderboltTwoTone = twotone.AntIconsTwoTone.thunderboltTwoTone;

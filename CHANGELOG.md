@@ -1,3 +1,10 @@
+## [Unreleased]
+
+- Updated the icon source from `@ant-design/icons-svg` 4.4.2 to 4.6.0.
+- Regenerated the icon font, Dart APIs, and example gallery registry.
+- Added 17 Filled brand icons: Anthropic, Claude, DeepSeek, ElevenLabs, Gemini, Hugging Face, Mastodon, Meta, Mistral, Netflix, Ollama, Perplexity, Qwen, Replicate, Snapchat, Telegram, and Threads.
+- Increased the collection from 831 to 848 icons: 447 Outlined, 251 Filled, and 150 TwoTone.
+
 ## [2.0.1]
 
 - Fixed icon glyph sizing: icons rendered via `Icon` widget now visually match the expected size (e.g. `size: 24` produces a ~20 dp icon, consistent with Material Icons).

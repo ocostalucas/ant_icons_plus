@@ -1,9 +1,9 @@
 // GENERATED AUTOMATICALLY — DO NOT EDIT MANUALLY
 // To update: dart run scripts/generate.dart
 //
-// Total: 831 icons
+// Total: 848 icons
 //   Outlined: 447
-//   Filled:   234
+//   Filled:   251
 //   TwoTone:  150
 
 export 'src/ant_icon.dart';

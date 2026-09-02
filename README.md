@@ -3,7 +3,7 @@
 [![pub package](https://img.shields.io/pub/v/ant_icons_plus.svg)](https://pub.dev/packages/ant_icons_plus)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-A Flutter package with **831 [Ant Design](https://ant.design/components/icon) icons** ready to use, in **Outlined**, **Filled**, and **TwoTone** variants.
+A Flutter package with **848 [Ant Design](https://ant.design/components/icon) icons** ready to use, in **Outlined**, **Filled**, and **TwoTone** variants.
 
 Live demo / Gallery: https://ocostalucas.github.io/ant_icons_plus/
 
@@ -12,9 +12,9 @@ Live demo / Gallery: https://ocostalucas.github.io/ant_icons_plus/
 | Variant   | Count   |
 | --------- | ------- |
 | Outlined  | 447     |
-| Filled    | 234       |
+| Filled    | 251       |
 | TwoTone   | 150      |
-| **Total** | **831**    |
+| **Total** | **848**    |
 
 ## Installation
 
@@ -142,7 +142,7 @@ icons need two colors, so they use inline SVG with color placeholders instead.
 
 ## Icon source
 
-Icons are sourced from [`@ant-design/icons-svg`](https://www.npmjs.com/package/@ant-design/icons-svg) **v4.4.2**.
+Icons are sourced from [`@ant-design/icons-svg`](https://www.npmjs.com/package/@ant-design/icons-svg) **v4.6.0**.
 
 ## License
 
